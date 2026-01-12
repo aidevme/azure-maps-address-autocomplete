@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ImportExportXml version="9.1.0.643" SolutionPackageVersion="9.1" languagecode="1033" generatedBy="CrmLive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <SolutionManifest>
+    <!-- Unique Name of Cds Solution-->
+    <UniqueName>AzureMapsAddressSolution</UniqueName>
+    <LocalizedNames>
+      <!-- Localized Solution Name in language code -->
+      <LocalizedName description="AzureMapsAddressSolution" languagecode="1031" />
+      <LocalizedName description="AzureMapsAddressSolution" languagecode="1033" />
+      <LocalizedName description="AzureMapsAddressSolution" languagecode="1036" />
+      <LocalizedName description="AzureMapsAddressSolution" languagecode="1038" />
+      <LocalizedName description="AzureMapsAddressSolution" languagecode="1040" />
+      <LocalizedName description="AzureMapsAddressSolution" languagecode="2070" />
+      <LocalizedName description="AzureMapsAddressSolution" languagecode="3082" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="Ein PowerApps Component Framework (PCF) Steuerelement für die automatische Adressvervollständigung mit Azure Maps. Bietet intelligente Adresssuche, Geokodierung und interaktive Kartenvorschau für Dynamics 365 und Power Apps." languagecode="1031" />
+      <Description description="A PowerApps Component Framework (PCF) control for address autocomplete powered by Azure Maps. Provides intelligent address search, geocoding, and interactive map preview for Dynamics 365 and Power Apps." languagecode="1033" />
+      <Description description="Un contrôle PowerApps Component Framework (PCF) pour l'autocomplétion d'adresses alimenté par Azure Maps. Fournit une recherche d'adresse intelligente, le géocodage et un aperçu de carte interactif pour Dynamics 365 et Power Apps." languagecode="1036" />
+      <Description description="Egy PowerApps Component Framework (PCF) vezérlőelem címek automatikus kiegészítéséhez Azure Maps segítségével. Intelligens címkeresést, geokódolást és interaktív térképes előnézetet biztosít Dynamics 365 és Power Apps alkalmazásokhoz." languagecode="1038" />
+      <Description description="Un controllo PowerApps Component Framework (PCF) per il completamento automatico degli indirizzi basato su Azure Maps. Fornisce ricerca intelligente degli indirizzi, geocodifica e anteprima interattiva della mappa per Dynamics 365 e Power Apps." languagecode="1040" />
+      <Description description="Um controlo PowerApps Component Framework (PCF) para preenchimento automático de endereços com Azure Maps. Fornece pesquisa inteligente de endereços, geocodificação e pré-visualização interativa de mapas para Dynamics 365 e Power Apps." languagecode="2070" />
+      <Description description="Un control de PowerApps Component Framework (PCF) para autocompletado de direcciones con Azure Maps. Proporciona búsqueda inteligente de direcciones, geocodificación y vista previa interactiva de mapas para Dynamics 365 y Power Apps." languagecode="3082" />
+    </Descriptions>
+    <Version>1.0.0.11</Version>
+    <!-- Solution Package Type: Unmanaged(0)/Managed(1)/Both(2)-->
+    <Managed>2</Managed>
+    <Publisher>
+      <!-- Unique Publisher Name of Cds Solution -->
+      <UniqueName>aidevme</UniqueName>
+      <LocalizedNames>
+        <!-- Localized Cds Publisher Name in language code-->
+        <LocalizedName description="aidevme" languagecode="1033" />
+      </LocalizedNames>
+      <Descriptions>
+        <!-- Description of Cds Publisher in language code -->
+        <Description description="aidevme" languagecode="1033" />
+      </Descriptions>
+      <EMailAddress xsi:nil="true"></EMailAddress>
+      <SupportingWebsiteUrl xsi:nil="true"></SupportingWebsiteUrl>
+      <!-- Customization Prefix for the Cds Publisher-->
+      <CustomizationPrefix>aidevme</CustomizationPrefix>
+      <!-- Derived Option Value Prefix for the Customization Prefix of Cds Publisher -->
+      <CustomizationOptionValuePrefix>31689</CustomizationOptionValuePrefix>
+      <Addresses>
+        <!-- Address of the Publisher-->
+        <Address>
+          <AddressNumber>1</AddressNumber>
+          <AddressTypeCode>1</AddressTypeCode>
+          <City xsi:nil="true"></City>
+          <County xsi:nil="true"></County>
+          <Country xsi:nil="true"></Country>
+          <Fax xsi:nil="true"></Fax>
+          <FreightTermsCode xsi:nil="true"></FreightTermsCode>
+          <ImportSequenceNumber xsi:nil="true"></ImportSequenceNumber>
+          <Latitude xsi:nil="true"></Latitude>
+          <Line1 xsi:nil="true"></Line1>
+          <Line2 xsi:nil="true"></Line2>
+          <Line3 xsi:nil="true"></Line3>
+          <Longitude xsi:nil="true"></Longitude>
+          <Name xsi:nil="true"></Name>
+          <PostalCode xsi:nil="true"></PostalCode>
+          <PostOfficeBox xsi:nil="true"></PostOfficeBox>
+          <PrimaryContactName xsi:nil="true"></PrimaryContactName>
+          <ShippingMethodCode>1</ShippingMethodCode>
+          <StateOrProvince xsi:nil="true"></StateOrProvince>
+          <Telephone1 xsi:nil="true"></Telephone1>
+          <Telephone2 xsi:nil="true"></Telephone2>
+          <Telephone3 xsi:nil="true"></Telephone3>
+          <TimeZoneRuleVersionNumber xsi:nil="true"></TimeZoneRuleVersionNumber>
+          <UPSZone xsi:nil="true"></UPSZone>
+          <UTCOffset xsi:nil="true"></UTCOffset>
+          <UTCConversionTimeZoneCode xsi:nil="true"></UTCConversionTimeZoneCode>
+        </Address>
+        <Address>
+          <AddressNumber>2</AddressNumber>
+          <AddressTypeCode>1</AddressTypeCode>
+          <City xsi:nil="true"></City>
+          <County xsi:nil="true"></County>
+          <Country xsi:nil="true"></Country>
+          <Fax xsi:nil="true"></Fax>
+          <FreightTermsCode xsi:nil="true"></FreightTermsCode>
+          <ImportSequenceNumber xsi:nil="true"></ImportSequenceNumber>
+          <Latitude xsi:nil="true"></Latitude>
+          <Line1 xsi:nil="true"></Line1>
+          <Line2 xsi:nil="true"></Line2>
+          <Line3 xsi:nil="true"></Line3>
+          <Longitude xsi:nil="true"></Longitude>
+          <Name xsi:nil="true"></Name>
+          <PostalCode xsi:nil="true"></PostalCode>
+          <PostOfficeBox xsi:nil="true"></PostOfficeBox>
+          <PrimaryContactName xsi:nil="true"></PrimaryContactName>
+          <ShippingMethodCode>1</ShippingMethodCode>
+          <StateOrProvince xsi:nil="true"></StateOrProvince>
+          <Telephone1 xsi:nil="true"></Telephone1>
+          <Telephone2 xsi:nil="true"></Telephone2>
+          <Telephone3 xsi:nil="true"></Telephone3>
+          <TimeZoneRuleVersionNumber xsi:nil="true"></TimeZoneRuleVersionNumber>
+          <UPSZone xsi:nil="true"></UPSZone>
+          <UTCOffset xsi:nil="true"></UTCOffset>
+          <UTCConversionTimeZoneCode xsi:nil="true"></UTCConversionTimeZoneCode>
+        </Address>
+      </Addresses>
+    </Publisher>
+    <RootComponents />
+    <MissingDependencies />
+  </SolutionManifest>
+</ImportExportXml>

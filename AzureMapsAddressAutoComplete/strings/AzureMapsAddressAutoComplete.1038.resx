@@ -1,0 +1,806 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+<xsd:schema id="root" xmlns="" xmlns:xsd="https://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+<xsd:import namespace="https://www.w3.org/XML/1998/namespace" />
+<xsd:element name="root" msdata:IsDataSet="true">
+<xsd:complexType>
+<xsd:choice maxOccurs="unbounded">
+  <xsd:element name="metadata">
+	<xsd:complexType>
+	  <xsd:sequence>
+		<xsd:element name="value" type="xsd:string" minOccurs="0" />
+	  </xsd:sequence>
+	  <xsd:attribute name="name" use="required" type="xsd:string" />
+	  <xsd:attribute name="type" type="xsd:string" />
+	  <xsd:attribute name="mimetype" type="xsd:string" />
+	  <xsd:attribute ref="xml:space" />
+	</xsd:complexType>
+  </xsd:element>
+  <xsd:element name="assembly">
+	<xsd:complexType>
+	  <xsd:attribute name="alias" type="xsd:string" />
+	  <xsd:attribute name="name" type="xsd:string" />
+	</xsd:complexType>
+  </xsd:element>
+  <xsd:element name="data">
+	<xsd:complexType>
+	  <xsd:sequence>
+		<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+		<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+	  </xsd:sequence>
+	  <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+	  <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+	  <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+	  <xsd:attribute ref="xml:space" />
+	</xsd:complexType>
+  </xsd:element>
+  <xsd:element name="resheader">
+	<xsd:complexType>
+	  <xsd:sequence>
+		<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+	  </xsd:sequence>
+	  <xsd:attribute name="name" type="xsd:string" use="required" />
+	</xsd:complexType>
+  </xsd:element>
+</xsd:choice>
+</xsd:complexType>
+</xsd:element>
+</xsd:schema>
+<resheader name="resmimetype">
+<value>text/microsoft-resx</value>
+</resheader>
+<resheader name="version">
+<value>2.0</value>
+</resheader>
+<resheader name="reader">
+<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+</resheader>
+<resheader name="writer">
+<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+</resheader>
+
+  <!-- Vezérlő neve és leírása -->
+  <data name="AzureMapsAddressAutoComplete" xml:space="preserve">
+    <value>Azure Maps cím automatikus kiegészítés</value>
+    <comment>Vezérlő megjelenítési neve</comment>
+  </data>
+  <data name="AzureMapsAddressAutoComplete description" xml:space="preserve">
+    <value>Egy PowerApps Component Framework (PCF) vezérlő Azure Maps alapú cím automatikus kiegészítéshez. Intelligens címkeresést, geokódolást és interaktív térkép előnézetet biztosít.</value>
+    <comment>Vezérlő leírása</comment>
+  </data>
+
+  <!-- Címkereső mező -->
+  <data name="azureMapsAddressSearchAutoComplete_Display_Key" xml:space="preserve">
+    <value>Cím</value>
+    <comment>Megjelenítési név a fő címmezőhöz</comment>
+  </data>
+  <data name="azureMapsAddressSearchAutoComplete_Desc_Key" xml:space="preserve">
+    <value>Az elsődleges címmező az automatikus kiegészítéshez. Ez a mező indítja az Azure Maps címkeresést.</value>
+    <comment>Leírás a fő címmezőhöz</comment>
+  </data>
+
+  <!-- Utca -->
+  <data name="street_Display_Key" xml:space="preserve">
+    <value>Utca</value>
+    <comment>Megjelenítési név az utca mezőhöz</comment>
+  </data>
+  <data name="street_Desc_Key" xml:space="preserve">
+    <value>Az utca mező a kiválasztott cím utcanevének és házszámának kitöltéséhez.</value>
+    <comment>Leírás az utca mezőhöz</comment>
+  </data>
+
+  <!-- Város -->
+  <data name="city_Display_Key" xml:space="preserve">
+    <value>Város</value>
+    <comment>Megjelenítési név a város mezőhöz</comment>
+  </data>
+  <data name="city_Desc_Key" xml:space="preserve">
+    <value>A város mező a kiválasztott cím településnevének kitöltéséhez.</value>
+    <comment>Leírás a város mezőhöz</comment>
+  </data>
+
+  <!-- Irányítószám -->
+  <data name="postalCode_Display_Key" xml:space="preserve">
+    <value>Irányítószám</value>
+    <comment>Megjelenítési név az irányítószám mezőhöz</comment>
+  </data>
+  <data name="postalCode_Desc_Key" xml:space="preserve">
+    <value>Az irányítószám mező a kiválasztott címből való kitöltéshez.</value>
+    <comment>Leírás az irányítószám mezőhöz</comment>
+  </data>
+
+  <!-- Megye/Járás -->
+  <data name="county_Display_Key" xml:space="preserve">
+    <value>Megye/Járás</value>
+    <comment>Megjelenítési név a megye/járás mezőhöz</comment>
+  </data>
+  <data name="county_Desc_Key" xml:space="preserve">
+    <value>A megye vagy járás mező a kiválasztott címből való kitöltéshez.</value>
+    <comment>Leírás a megye/járás mezőhöz</comment>
+  </data>
+
+  <!-- Állam/Tartomány -->
+  <data name="stateProvince_Display_Key" xml:space="preserve">
+    <value>Állam/Tartomány</value>
+    <comment>Megjelenítési név az állam/tartomány mezőhöz</comment>
+  </data>
+  <data name="stateProvince_Desc_Key" xml:space="preserve">
+    <value>Az állam, tartomány vagy régió mező a kiválasztott címből való kitöltéshez.</value>
+    <comment>Leírás az állam/tartomány mezőhöz</comment>
+  </data>
+
+  <!-- Ország -->
+  <data name="country_Display_Key" xml:space="preserve">
+    <value>Ország</value>
+    <comment>Megjelenítési név az ország mezőhöz</comment>
+  </data>
+  <data name="country_Desc_Key" xml:space="preserve">
+    <value>Az ország mező a kiválasztott cím országnevének kitöltéséhez.</value>
+    <comment>Leírás az ország mezőhöz</comment>
+  </data>
+
+  <!-- Hosszúsági fok -->
+  <data name="longitude_Display_Key" xml:space="preserve">
+    <value>Hosszúsági fok</value>
+    <comment>Megjelenítési név a hosszúsági fok mezőhöz</comment>
+  </data>
+  <data name="longitude_Desc_Key" xml:space="preserve">
+    <value>A hosszúsági koordináta mező a geokódolt pozíció kitöltéséhez (tizedesfokban).</value>
+    <comment>Leírás a hosszúsági fok mezőhöz</comment>
+  </data>
+
+  <!-- Szélességi fok -->
+  <data name="latitude_Display_Key" xml:space="preserve">
+    <value>Szélességi fok</value>
+    <comment>Megjelenítési név a szélességi fok mezőhöz</comment>
+  </data>
+  <data name="latitude_Desc_Key" xml:space="preserve">
+    <value>A szélességi koordináta mező a geokódolt pozíció kitöltéséhez (tizedesfokban).</value>
+    <comment>Leírás a szélességi fok mezőhöz</comment>
+  </data>
+
+  <!-- Eredmény pontszám -->
+  <data name="resultScore_Display_Key" xml:space="preserve">
+    <value>Eredmény pontszám</value>
+    <comment>Megjelenítési név az eredmény pontszám mezőhöz</comment>
+  </data>
+  <data name="resultScore_Desc_Key" xml:space="preserve">
+    <value>A megbízhatósági pontszám mező a geokódolás egyezési minőségének kitöltéséhez (0-1 skála).</value>
+    <comment>Leírás az eredmény pontszám mezőhöz</comment>
+  </data>
+
+  <!-- Alapértelmezett országok -->
+  <data name="defaultCountries_Display_Key" xml:space="preserve">
+    <value>Alapértelmezett országok</value>
+    <comment>Megjelenítési név az alapértelmezett országok beállításhoz</comment>
+  </data>
+  <data name="defaultCountries_Desc_Key" xml:space="preserve">
+    <value>Vesszővel elválasztott ISO 3166-1 alfa-2 országkódok listája a címkeresési eredmények szűkítéséhez (pl. "HU,AT,SK").</value>
+    <comment>Leírás az alapértelmezett országok beállításhoz</comment>
+  </data>
+
+  <!-- Térkép megjelenítése -->
+  <data name="showMaps_Display_Key" xml:space="preserve">
+    <value>Térkép előnézet megjelenítése</value>
+    <comment>Megjelenítési név a térkép megjelenítés kapcsolóhoz</comment>
+  </data>
+  <data name="showMaps_Desc_Key" xml:space="preserve">
+    <value>Az interaktív térkép előnézet engedélyezése vagy letiltása a címjavaslatokhoz.</value>
+    <comment>Leírás a térkép megjelenítés kapcsolóhoz</comment>
+  </data>
+
+  <!-- Térkép méret -->
+  <data name="mapSize_Display_Key" xml:space="preserve">
+    <value>Térkép méret</value>
+    <comment>Megjelenítési név a térkép méret beállításhoz</comment>
+  </data>
+  <data name="mapSize_Desc_Key" xml:space="preserve">
+    <value>A térkép előnézet panel mérete megjelenítéskor. Válasszon Kicsi, Közepes vagy Nagy méret közül.</value>
+    <comment>Leírás a térkép méret beállításhoz</comment>
+  </data>
+  <data name="mapSize_small_Display_Key" xml:space="preserve">
+    <value>Kicsi</value>
+    <comment>Kis térkép méret opció</comment>
+  </data>
+  <data name="mapSize_small_Desc_Key" xml:space="preserve">
+    <value>Kis térkép előnézet panel megjelenítése (300x200 pixel)</value>
+    <comment>Kis térkép méret opció leírása</comment>
+  </data>
+  <data name="mapSize_medium_Display_Key" xml:space="preserve">
+    <value>Közepes</value>
+    <comment>Közepes térkép méret opció</comment>
+  </data>
+  <data name="mapSize_medium_Desc_Key" xml:space="preserve">
+    <value>Közepes térkép előnézet panel megjelenítése (500x350 pixel)</value>
+    <comment>Közepes térkép méret opció leírása</comment>
+  </data>
+  <data name="mapSize_large_Display_Key" xml:space="preserve">
+    <value>Nagy</value>
+    <comment>Nagy térkép méret opció</comment>
+  </data>
+  <data name="mapSize_large_Desc_Key" xml:space="preserve">
+    <value>Nagy térkép előnézet panel megjelenítése (700x500 pixel)</value>
+    <comment>Nagy térkép méret opció leírása</comment>
+  </data>
+
+   <!-- Use User Language -->
+  <data name="useUserLanguage_Display_Key" xml:space="preserve">
+    <value>Felhasználói nyelv használata</value>
+    <comment>Megjelenítési név a felhasználói nyelv kapcsolóhoz</comment>
+  </data>
+  <data name="useUserLanguage_Desc_Key" xml:space="preserve">
+    <value>Engedélyezi vagy letiltja a felhasználó nyelvi beállításának használatát a címjavaslatokhoz.</value>
+    <comment>Leírás a felhasználói nyelv kapcsolóhoz</comment>
+  </data>
+
+  <!-- Default Language -->
+  <data name="defaultLanguage_Display_Key" xml:space="preserve">
+    <value>Alapértelmezett nyelv</value>
+    <comment>Megjelenítési név az alapértelmezett nyelv beállításhoz</comment>
+  </data>
+  <data name="defaultLanguage_Desc_Key" xml:space="preserve">
+    <value>Az alapértelmezett nyelv a címkeresési eredményekhez, ha a felhasználó nyelvi beállítása nem érhető el vagy le van tiltva.</value>
+    <comment>Leírás az alapértelmezett nyelv beállításhoz</comment>
+  </data>
+  <data name="defaultLanguage_af-ZA_Display_Key" xml:space="preserve">
+    <value>Afrikaans (Dél-Afrika)</value>
+    <comment>Afrikaans nyelvi opció</comment>
+  </data>
+  <data name="defaultLanguage_af-ZA_Desc_Key" xml:space="preserve">
+    <value>Afrikaans (Dél-Afrika) használata a címkeresési eredményekhez</value>
+    <comment>Leírás az afrikaans nyelvi opcióhoz</comment>
+  </data>
+  <data name="defaultLanguage_ar_Display_Key" xml:space="preserve">
+    <value>Arab</value>
+    <comment>Arab nyelvi opció</comment>
+  </data>
+  <data name="defaultLanguage_ar_Desc_Key" xml:space="preserve">
+    <value>Arab használata a címkeresési eredményekhez</value>
+    <comment>Leírás az arab nyelvi opcióhoz</comment>
+  </data>
+  <data name="defaultLanguage_bg-BG_Display_Key" xml:space="preserve">
+    <value>Bolgár (Bulgária)</value>
+    <comment>Bolgár nyelvi opció</comment>
+  </data>
+  <data name="defaultLanguage_bg-BG_Desc_Key" xml:space="preserve">
+    <value>Bolgár (Bulgária) használata a címkeresési eredményekhez</value>
+    <comment>Leírás a bolgár nyelvi opcióhoz</comment>
+  </data>
+  <data name="defaultLanguage_ca-ES_Display_Key" xml:space="preserve">
+    <value>Katalán (Spanyolország)</value>
+    <comment>Katalán nyelvi opció</comment>
+  </data>
+  <data name="defaultLanguage_ca-ES_Desc_Key" xml:space="preserve">
+    <value>Katalán (Spanyolország) használata a címkeresési eredményekhez</value>
+    <comment>Leírás a katalán nyelvi opcióhoz</comment>
+  </data>
+  <data name="defaultLanguage_cs-CZ_Display_Key" xml:space="preserve">
+    <value>Cseh (Csehország)</value>
+    <comment>Cseh nyelvi opció</comment>
+  </data>
+  <data name="defaultLanguage_cs-CZ_Desc_Key" xml:space="preserve">
+    <value>Cseh (Csehország) használata a címkeresési eredményekhez</value>
+    <comment>Leírás a cseh nyelvi opcióhoz</comment>
+  </data>
+  <data name="defaultLanguage_da-DK_Display_Key" xml:space="preserve">
+    <value>Dán (Dánia)</value>
+    <comment>Dán nyelvi opció</comment>
+  </data>
+  <data name="defaultLanguage_da-DK_Desc_Key" xml:space="preserve">
+    <value>Dán (Dánia) használata a címkeresési eredményekhez</value>
+    <comment>Leírás a dán nyelvi opcióhoz</comment>
+  </data>
+  <data name="defaultLanguage_de-DE_Display_Key" xml:space="preserve">
+    <value>Német (Németország)</value>
+    <comment>Német nyelvi opció</comment>
+  </data>
+  <data name="defaultLanguage_de-DE_Desc_Key" xml:space="preserve">
+    <value>Német (Németország) használata a címkeresési eredményekhez</value>
+    <comment>Leírás a német nyelvi opcióhoz</comment>
+  </data>
+  <data name="defaultLanguage_el-GR_Display_Key" xml:space="preserve">
+    <value>Görög (Görögország)</value>
+    <comment>Görög nyelvi opció</comment>
+  </data>
+  <data name="defaultLanguage_el-GR_Desc_Key" xml:space="preserve">
+    <value>Görög (Görögország) használata a címkeresési eredményekhez</value>
+    <comment>Leírás a görög nyelvi opcióhoz</comment>
+  </data>
+  <data name="defaultLanguage_en-AU_Display_Key" xml:space="preserve">
+    <value>Angol (Ausztrália)</value>
+    <comment>Angol ausztráliai nyelvi opció</comment>
+  </data>
+  <data name="defaultLanguage_en-AU_Desc_Key" xml:space="preserve">
+    <value>Angol (Ausztrália) használata a címkeresési eredményekhez</value>
+    <comment>Leírás az angol ausztráliai nyelvi opcióhoz</comment>
+  </data>
+  <data name="defaultLanguage_en-GB_Display_Key" xml:space="preserve">
+    <value>Angol (Egyesült Királyság)</value>
+    <comment>Angol brit nyelvi opció</comment>
+  </data>
+  <data name="defaultLanguage_en-GB_Desc_Key" xml:space="preserve">
+    <value>Angol (Egyesült Királyság) használata a címkeresési eredményekhez</value>
+    <comment>Leírás az angol brit nyelvi opcióhoz</comment>
+  </data>
+  <data name="defaultLanguage_en-NZ_Display_Key" xml:space="preserve">
+    <value>Angol (Új-Zéland)</value>
+    <comment>Angol új-zélandi nyelvi opció</comment>
+  </data>
+  <data name="defaultLanguage_en-NZ_Desc_Key" xml:space="preserve">
+    <value>Angol (Új-Zéland) használata a címkeresési eredményekhez</value>
+    <comment>Leírás az angol új-zélandi nyelvi opcióhoz</comment>
+  </data>
+  <data name="defaultLanguage_en-US_Display_Key" xml:space="preserve">
+    <value>Angol (Egyesült Államok)</value>
+    <comment>Angol amerikai nyelvi opció</comment>
+  </data>
+  <data name="defaultLanguage_en-US_Desc_Key" xml:space="preserve">
+    <value>Angol (Egyesült Államok) használata a címkeresési eredményekhez</value>
+    <comment>Leírás az angol amerikai nyelvi opcióhoz</comment>
+  </data>
+  <data name="defaultLanguage_es-419_Display_Key" xml:space="preserve">
+    <value>Spanyol (Latin-Amerika)</value>
+    <comment>Spanyol latin-amerikai nyelvi opció</comment>
+  </data>
+  <data name="defaultLanguage_es-419_Desc_Key" xml:space="preserve">
+    <value>Spanyol (Latin-Amerika) használata a címkeresési eredményekhez</value>
+    <comment>Leírás a spanyol latin-amerikai nyelvi opcióhoz</comment>
+  </data>
+  <data name="defaultLanguage_es-ES_Display_Key" xml:space="preserve">
+    <value>Spanyol (Spanyolország)</value>
+    <comment>Spanyol spanyolországi nyelvi opció</comment>
+  </data>
+  <data name="defaultLanguage_es-ES_Desc_Key" xml:space="preserve">
+    <value>Spanyol (Spanyolország) használata a címkeresési eredményekhez</value>
+    <comment>Leírás a spanyol spanyolországi nyelvi opcióhoz</comment>
+  </data>
+  <data name="defaultLanguage_es-MX_Display_Key" xml:space="preserve">
+    <value>Spanyol (Mexikó)</value>
+    <comment>Spanyol mexikói nyelvi opció</comment>
+  </data>
+  <data name="defaultLanguage_es-MX_Desc_Key" xml:space="preserve">
+    <value>Spanyol (Mexikó) használata a címkeresési eredményekhez</value>
+    <comment>Leírás a spanyol mexikói nyelvi opcióhoz</comment>
+  </data>
+  <data name="defaultLanguage_et-EE_Display_Key" xml:space="preserve">
+    <value>Észt (Észtország)</value>
+    <comment>Észt nyelvi opció</comment>
+  </data>
+  <data name="defaultLanguage_et-EE_Desc_Key" xml:space="preserve">
+    <value>Észt (Észtország) használata a címkeresési eredményekhez</value>
+    <comment>Leírás az észt nyelvi opcióhoz</comment>
+  </data>
+  <data name="defaultLanguage_eu-ES_Display_Key" xml:space="preserve">
+    <value>Baszk (Spanyolország)</value>
+    <comment>Baszk nyelvi opció</comment>
+  </data>
+  <data name="defaultLanguage_eu-ES_Desc_Key" xml:space="preserve">
+    <value>Baszk (Spanyolország) használata a címkeresési eredményekhez</value>
+    <comment>Leírás a baszk nyelvi opcióhoz</comment>
+  </data>
+  <data name="defaultLanguage_fi-FI_Display_Key" xml:space="preserve">
+    <value>Finn (Finnország)</value>
+    <comment>Finn nyelvi opció</comment>
+  </data>
+  <data name="defaultLanguage_fi-FI_Desc_Key" xml:space="preserve">
+    <value>Finn (Finnország) használata a címkeresési eredményekhez</value>
+    <comment>Leírás a finn nyelvi opcióhoz</comment>
+  </data>
+  <data name="defaultLanguage_fr-CA_Display_Key" xml:space="preserve">
+    <value>Francia (Kanada)</value>
+    <comment>Francia kanadai nyelvi opció</comment>
+  </data>
+  <data name="defaultLanguage_fr-CA_Desc_Key" xml:space="preserve">
+    <value>Francia (Kanada) használata a címkeresési eredményekhez</value>
+    <comment>Leírás a francia kanadai nyelvi opcióhoz</comment>
+  </data>
+  <data name="defaultLanguage_fr-FR_Display_Key" xml:space="preserve">
+    <value>Francia (Franciaország)</value>
+    <comment>Francia franciaországi nyelvi opció</comment>
+  </data>
+  <data name="defaultLanguage_fr-FR_Desc_Key" xml:space="preserve">
+    <value>Francia (Franciaország) használata a címkeresési eredményekhez</value>
+    <comment>Leírás a francia franciaországi nyelvi opcióhoz</comment>
+  </data>
+  <data name="defaultLanguage_gl-ES_Display_Key" xml:space="preserve">
+    <value>Galíciai (Spanyolország)</value>
+    <comment>Galíciai nyelvi opció</comment>
+  </data>
+  <data name="defaultLanguage_gl-ES_Desc_Key" xml:space="preserve">
+    <value>Galíciai (Spanyolország) használata a címkeresési eredményekhez</value>
+    <comment>Leírás a galíciai nyelvi opcióhoz</comment>
+  </data>
+  <data name="defaultLanguage_he-IL_Display_Key" xml:space="preserve">
+    <value>Héber (Izrael)</value>
+    <comment>Héber nyelvi opció</comment>
+  </data>
+  <data name="defaultLanguage_he-IL_Desc_Key" xml:space="preserve">
+    <value>Héber (Izrael) használata a címkeresési eredményekhez</value>
+    <comment>Leírás a héber nyelvi opcióhoz</comment>
+  </data>
+  <data name="defaultLanguage_hr-HR_Display_Key" xml:space="preserve">
+    <value>Horvát (Horvátország)</value>
+    <comment>Horvát nyelvi opció</comment>
+  </data>
+  <data name="defaultLanguage_hr-HR_Desc_Key" xml:space="preserve">
+    <value>Horvát (Horvátország) használata a címkeresési eredményekhez</value>
+    <comment>Leírás a horvát nyelvi opcióhoz</comment>
+  </data>
+  <data name="defaultLanguage_hu-HU_Display_Key" xml:space="preserve">
+    <value>Magyar (Magyarország)</value>
+    <comment>Magyar nyelvi opció</comment>
+  </data>
+  <data name="defaultLanguage_hu-HU_Desc_Key" xml:space="preserve">
+    <value>Magyar (Magyarország) használata a címkeresési eredményekhez</value>
+    <comment>Leírás a magyar nyelvi opcióhoz</comment>
+  </data>
+  <data name="defaultLanguage_id-ID_Display_Key" xml:space="preserve">
+    <value>Indonéz (Indonézia)</value>
+    <comment>Indonéz nyelvi opció</comment>
+  </data>
+  <data name="defaultLanguage_id-ID_Desc_Key" xml:space="preserve">
+    <value>Indonéz (Indonézia) használata a címkeresési eredményekhez</value>
+    <comment>Leírás az indonéz nyelvi opcióhoz</comment>
+  </data>
+  <data name="defaultLanguage_it-IT_Display_Key" xml:space="preserve">
+    <value>Olasz (Olaszország)</value>
+    <comment>Olasz nyelvi opció</comment>
+  </data>
+  <data name="defaultLanguage_it-IT_Desc_Key" xml:space="preserve">
+    <value>Olasz (Olaszország) használata a címkeresési eredményekhez</value>
+    <comment>Leírás az olasz nyelvi opcióhoz</comment>
+  </data>
+  <data name="defaultLanguage_kk-KZ_Display_Key" xml:space="preserve">
+    <value>Kazah (Kazahsztán)</value>
+    <comment>Kazah nyelvi opció</comment>
+  </data>
+  <data name="defaultLanguage_kk-KZ_Desc_Key" xml:space="preserve">
+    <value>Kazah (Kazahsztán) használata a címkeresési eredményekhez</value>
+    <comment>Leírás a kazah nyelvi opcióhoz</comment>
+  </data>
+  <data name="defaultLanguage_lt-LT_Display_Key" xml:space="preserve">
+    <value>Litván (Litvánia)</value>
+    <comment>Litván nyelvi opció</comment>
+  </data>
+  <data name="defaultLanguage_lt-LT_Desc_Key" xml:space="preserve">
+    <value>Litván (Litvánia) használata a címkeresési eredményekhez</value>
+    <comment>Leírás a litván nyelvi opcióhoz</comment>
+  </data>
+  <data name="defaultLanguage_lv-LV_Display_Key" xml:space="preserve">
+    <value>Lett (Lettország)</value>
+    <comment>Lett nyelvi opció</comment>
+  </data>
+  <data name="defaultLanguage_lv-LV_Desc_Key" xml:space="preserve">
+    <value>Lett (Lettország) használata a címkeresési eredményekhez</value>
+    <comment>Leírás a lett nyelvi opcióhoz</comment>
+  </data>
+  <data name="defaultLanguage_ms-MY_Display_Key" xml:space="preserve">
+    <value>Maláj (Malajzia)</value>
+    <comment>Maláj nyelvi opció</comment>
+  </data>
+  <data name="defaultLanguage_ms-MY_Desc_Key" xml:space="preserve">
+    <value>Maláj (Malajzia) használata a címkeresési eredményekhez</value>
+    <comment>Leírás a maláj nyelvi opcióhoz</comment>
+  </data>
+  <data name="defaultLanguage_nb-NO_Display_Key" xml:space="preserve">
+    <value>Norvég Bokmål (Norvégia)</value>
+    <comment>Norvég Bokmål nyelvi opció</comment>
+  </data>
+  <data name="defaultLanguage_nb-NO_Desc_Key" xml:space="preserve">
+    <value>Norvég Bokmål (Norvégia) használata a címkeresési eredményekhez</value>
+    <comment>Leírás a norvég Bokmål nyelvi opcióhoz</comment>
+  </data>
+  <data name="defaultLanguage_nl-BE_Display_Key" xml:space="preserve">
+    <value>Holland (Belgium)</value>
+    <comment>Holland belga nyelvi opció</comment>
+  </data>
+  <data name="defaultLanguage_nl-BE_Desc_Key" xml:space="preserve">
+    <value>Holland (Belgium) használata a címkeresési eredményekhez</value>
+    <comment>Leírás a holland belga nyelvi opcióhoz</comment>
+  </data>
+  <data name="defaultLanguage_nl-NL_Display_Key" xml:space="preserve">
+    <value>Holland (Hollandia)</value>
+    <comment>Holland nyelvi opció</comment>
+  </data>
+  <data name="defaultLanguage_nl-NL_Desc_Key" xml:space="preserve">
+    <value>Holland (Hollandia) használata a címkeresési eredményekhez</value>
+    <comment>Leírás a holland nyelvi opcióhoz</comment>
+  </data>
+  <data name="defaultLanguage_pl-PL_Display_Key" xml:space="preserve">
+    <value>Lengyel (Lengyelország)</value>
+    <comment>Lengyel nyelvi opció</comment>
+  </data>
+  <data name="defaultLanguage_pl-PL_Desc_Key" xml:space="preserve">
+    <value>Lengyel (Lengyelország) használata a címkeresési eredményekhez</value>
+    <comment>Leírás a lengyel nyelvi opcióhoz</comment>
+  </data>
+  <data name="defaultLanguage_pt-BR_Display_Key" xml:space="preserve">
+    <value>Portugál (Brazília)</value>
+    <comment>Portugál brazíliai nyelvi opció</comment>
+  </data>
+  <data name="defaultLanguage_pt-BR_Desc_Key" xml:space="preserve">
+    <value>Portugál (Brazília) használata a címkeresési eredményekhez</value>
+    <comment>Leírás a portugál brazíliai nyelvi opcióhoz</comment>
+  </data>
+  <data name="defaultLanguage_pt-PT_Display_Key" xml:space="preserve">
+    <value>Portugál (Portugália)</value>
+    <comment>Portugál portugáliai nyelvi opció</comment>
+  </data>
+  <data name="defaultLanguage_pt-PT_Desc_Key" xml:space="preserve">
+    <value>Portugál (Portugália) használata a címkeresési eredményekhez</value>
+    <comment>Leírás a portugál portugáliai nyelvi opcióhoz</comment>
+  </data>
+  <data name="defaultLanguage_ro-RO_Display_Key" xml:space="preserve">
+    <value>Román (Románia)</value>
+    <comment>Román nyelvi opció</comment>
+  </data>
+  <data name="defaultLanguage_ro-RO_Desc_Key" xml:space="preserve">
+    <value>Román (Románia) használata a címkeresési eredményekhez</value>
+    <comment>Leírás a román nyelvi opcióhoz</comment>
+  </data>
+  <data name="defaultLanguage_ru-RU_Display_Key" xml:space="preserve">
+    <value>Orosz (Oroszország)</value>
+    <comment>Orosz nyelvi opció</comment>
+  </data>
+  <data name="defaultLanguage_ru-RU_Desc_Key" xml:space="preserve">
+    <value>Orosz (Oroszország) használata a címkeresési eredményekhez</value>
+    <comment>Leírás az orosz nyelvi opcióhoz</comment>
+  </data>
+  <data name="defaultLanguage_sk-SK_Display_Key" xml:space="preserve">
+    <value>Szlovák (Szlovákia)</value>
+    <comment>Szlovák nyelvi opció</comment>
+  </data>
+  <data name="defaultLanguage_sk-SK_Desc_Key" xml:space="preserve">
+    <value>Szlovák (Szlovákia) használata a címkeresési eredményekhez</value>
+    <comment>Leírás a szlovák nyelvi opcióhoz</comment>
+  </data>
+  <data name="defaultLanguage_sl-SI_Display_Key" xml:space="preserve">
+    <value>Szlovén (Szlovénia)</value>
+    <comment>Szlovén nyelvi opció</comment>
+  </data>
+  <data name="defaultLanguage_sl-SI_Desc_Key" xml:space="preserve">
+    <value>Szlovén (Szlovénia) használata a címkeresési eredményekhez</value>
+    <comment>Leírás a szlovén nyelvi opcióhoz</comment>
+  </data>
+  <data name="defaultLanguage_sr-Cyrl-RS_Display_Key" xml:space="preserve">
+    <value>Szerb cirill (Szerbia)</value>
+    <comment>Szerb cirill nyelvi opció</comment>
+  </data>
+  <data name="defaultLanguage_sr-Cyrl-RS_Desc_Key" xml:space="preserve">
+    <value>Szerb cirill (Szerbia) használata a címkeresési eredményekhez</value>
+    <comment>Leírás a szerb cirill nyelvi opcióhoz</comment>
+  </data>
+  <data name="defaultLanguage_sv-SE_Display_Key" xml:space="preserve">
+    <value>Svéd (Svédország)</value>
+    <comment>Svéd nyelvi opció</comment>
+  </data>
+  <data name="defaultLanguage_sv-SE_Desc_Key" xml:space="preserve">
+    <value>Svéd (Svédország) használata a címkeresési eredményekhez</value>
+    <comment>Leírás a svéd nyelvi opcióhoz</comment>
+  </data>
+  <data name="defaultLanguage_th-TH_Display_Key" xml:space="preserve">
+    <value>Thai (Thaiföld)</value>
+    <comment>Thai nyelvi opció</comment>
+  </data>
+  <data name="defaultLanguage_th-TH_Desc_Key" xml:space="preserve">
+    <value>Thai (Thaiföld) használata a címkeresési eredményekhez</value>
+    <comment>Leírás a thai nyelvi opcióhoz</comment>
+  </data>
+  <data name="defaultLanguage_tr-TR_Display_Key" xml:space="preserve">
+    <value>Török (Törökország)</value>
+    <comment>Török nyelvi opció</comment>
+  </data>
+  <data name="defaultLanguage_tr-TR_Desc_Key" xml:space="preserve">
+    <value>Török (Törökország) használata a címkeresési eredményekhez</value>
+    <comment>Leírás a török nyelvi opcióhoz</comment>
+  </data>
+  <data name="defaultLanguage_uk-UA_Display_Key" xml:space="preserve">
+    <value>Ukrán (Ukrajna)</value>
+    <comment>Ukrán nyelvi opció</comment>
+  </data>
+  <data name="defaultLanguage_uk-UA_Desc_Key" xml:space="preserve">
+    <value>Ukrán (Ukrajna) használata a címkeresési eredményekhez</value>
+    <comment>Leírás az ukrán nyelvi opcióhoz</comment>
+  </data>
+  <data name="defaultLanguage_vi-VN_Display_Key" xml:space="preserve">
+    <value>Vietnámi (Vietnám)</value>
+    <comment>Vietnámi nyelvi opció</comment>
+  </data>
+  <data name="defaultLanguage_vi-VN_Desc_Key" xml:space="preserve">
+    <value>Vietnámi (Vietnám) használata a címkeresési eredményekhez</value>
+    <comment>Leírás a vietnámi nyelvi opcióhoz</comment>
+  </data>
+  <data name="defaultLanguage_zh-Hans-CN_Display_Key" xml:space="preserve">
+    <value>Egyszerűsített kínai (Kína)</value>
+    <comment>Egyszerűsített kínai nyelvi opció</comment>
+  </data>
+  <data name="defaultLanguage_zh-Hans-CN_Desc_Key" xml:space="preserve">
+    <value>Egyszerűsített kínai (Kína) használata a címkeresési eredményekhez</value>
+    <comment>Leírás az egyszerűsített kínai nyelvi opcióhoz</comment>
+  </data>
+  <data name="defaultLanguage_zh-Hant-TW_Display_Key" xml:space="preserve">
+    <value>Hagyományos kínai (Tajvan)</value>
+    <comment>Hagyományos kínai nyelvi opció</comment>
+  </data>
+  <data name="defaultLanguage_zh-Hant-TW_Desc_Key" xml:space="preserve">
+    <value>Hagyományos kínai (Tajvan) használata a címkeresési eredményekhez</value>
+    <comment>Leírás a hagyományos kínai nyelvi opcióhoz</comment>
+  </data>
+
+  <!-- További paraméterek -->
+  <data name="additionalParameters_Display_Key" xml:space="preserve">
+    <value>További paraméterek</value>
+    <comment>Megjelenítési név a további paraméterek beállításhoz</comment>
+  </data>
+  <data name="additionalParameters_Desc_Key" xml:space="preserve">
+    <value>JSON objektum további Azure Maps API paraméterekkel a keresési viselkedés testreszabásához.</value>
+    <comment>Leírás a további paraméterek beállításhoz</comment>
+  </data>
+
+  <!-- Előfizetési kulcs -->
+  <data name="subscriptionKey_Display_Key" xml:space="preserve">
+    <value>Azure Maps előfizetési kulcs</value>
+    <comment>Megjelenítési név az előfizetési kulcs beállításhoz</comment>
+  </data>
+  <data name="subscriptionKey_Desc_Key" xml:space="preserve">
+    <value>Az Azure Maps fiók előfizetési kulcsa az API hitelesítéshez. Az Azure Portalon szerezhető be.</value>
+    <comment>Leírás az előfizetési kulcs beállításhoz</comment>
+  </data>
+  <!-- Felhasználói felületi szövegek - Helyőrzők és tippek -->
+  <data name="addressInputPlaceholder_Key" xml:space="preserve">
+    <value>Adjon meg egy címet...</value>
+    <comment>Helyőrző szöveg a címbeviteli mezőhöz</comment>
+  </data>
+  <data name="addressSelectedHint_Key" xml:space="preserve">
+    <value>Cím sikeresen kiválasztva</value>
+    <comment>Tájékoztató üzenet sikeres címválasztáskor</comment>
+  </data>
+  <data name="addressSuggestionsAriaLabel_Key" xml:space="preserve">
+    <value>Címjavaslatok</value>
+    <comment>Aria címke a címjavaslatok listájához</comment>
+  </data>
+
+  <!-- Hibapárbeszéd -->
+  <data name="errorDialogTitle_Key" xml:space="preserve">
+    <value>Címkeresési hiba</value>
+    <comment>Alapértelmezett cím a hibapárbeszédhez</comment>
+  </data>
+  <data name="errorHttpStatus_Key" xml:space="preserve">
+    <value>HTTP állapot:</value>
+    <comment>Címke a HTTP álapotkódhoz a hibapárbeszédben</comment>
+  </data>
+  <data name="errorTarget_Key" xml:space="preserve">
+    <value>Cél:</value>
+    <comment>Címke a hiba céljához a hibapárbeszédben</comment>
+  </data>
+  <data name="errorDetails_Key" xml:space="preserve">
+    <value>Részletek:</value>
+    <comment>Címke a hiba részleteihez a hibapárbeszédben</comment>
+  </data>
+  <data name="errorOkButton_Key" xml:space="preserve">
+    <value>OK</value>
+    <comment>OK gomb szövege a hibapárbeszédben</comment>
+  </data>
+
+  <!-- HTTP állapot hibaüzenetek -->
+  <data name="errorHttp400_Key" xml:space="preserve">
+    <value>A keresési kérés érvénytelen volt. Kérjük, ellenőrizze a bevitelt.</value>
+    <comment>Hibaüzenet HTTP 400 Bad Request esetén</comment>
+  </data>
+  <data name="errorHttp401_Key" xml:space="preserve">
+    <value>Hitelesítés sikertelen. Kérjük, ellenőrizze előfizetési kulcsát.</value>
+    <comment>Hibaüzenet HTTP 401 Unauthorized esetén</comment>
+  </data>
+  <data name="errorHttp403_Key" xml:space="preserve">
+    <value>Hozzáférés megtagadva. Előfizetése nem rendelkezhet engedéllyel ehhez a művelethez.</value>
+    <comment>Hibaüzenet HTTP 403 Forbidden esetén</comment>
+  </data>
+  <data name="errorHttp404_Key" xml:space="preserve">
+    <value>A kért erőforrás nem található.</value>
+    <comment>Hibaüzenet HTTP 404 Not Found esetén</comment>
+  </data>
+  <data name="errorHttp429_Key" xml:space="preserve">
+    <value>Túl sok kérés. Kérjük, várjon egy pillanatot, és próbálja újra.</value>
+    <comment>Hibaüzenet HTTP 429 Too Many Requests esetén</comment>
+  </data>
+  <data name="errorHttp500_Key" xml:space="preserve">
+    <value>Az Azure Maps szolgáltatás hibába ütközött. Kérjük, próbálja újra később.</value>
+    <comment>Hibaüzenet HTTP 500 Internal Server Error esetén</comment>
+  </data>
+  <data name="errorHttp503_Key" xml:space="preserve">
+    <value>Az Azure Maps szolgáltatás ideiglenesen nem érhető el. Kérjük, próbálja újra később.</value>
+    <comment>Hibaüzenet HTTP 503 Service Unavailable esetén</comment>
+  </data>
+  <data name="errorHttpDefault_Key" xml:space="preserve">
+    <value>Váratlan hiba történt a címek keresése közben.</value>
+    <comment>Alapértelmezett hibaüzenet váratlan HTTP hibákhoz</comment>
+  </data>
+
+  <!-- Térkép panel -->
+  <data name="mapPanelLoading_Key" xml:space="preserve">
+    <value>Térkép betöltése...</value>
+    <comment>Betöltési üzenet a térkép spinnerhez</comment>
+  </data>
+  <data name="mapPanelShowDetails_Key" xml:space="preserve">
+    <value>Cím részletek megjelenítése</value>
+    <comment>Aria címke a cím részletek gombhoz</comment>
+  </data>
+  <data name="mapPanelClose_Key" xml:space="preserve">
+    <value>Bezárás</value>
+    <comment>Aria címke a bezárás gombhoz</comment>
+  </data>
+  <data name="mapPanelMapShowing_Key" xml:space="preserve">
+    <value>Térkép, mely mutatja</value>
+    <comment>Aria címke előtag a címet mutató térképhez</comment>
+  </data>
+  <data name="mapPanelCountry_Key" xml:space="preserve">
+    <value>Ország:</value>
+    <comment>Címke az országhoz a cím részletekben</comment>
+  </data>
+  <data name="mapPanelSubdivision_Key" xml:space="preserve">
+    <value>Közigazgatási egység:</value>
+    <comment>Címke a közigazgatási egységhez a cím részletekben</comment>
+  </data>
+  <data name="mapPanelMunicipality_Key" xml:space="preserve">
+    <value>Település:</value>
+    <comment>Címke a településhez a cím részletekben</comment>
+  </data>
+  <data name="mapPanelNeighbourhood_Key" xml:space="preserve">
+    <value>Környék:</value>
+    <comment>Címke a környékhez a cím részletekben</comment>
+  </data>
+  <data name="mapPanelPostalCode_Key" xml:space="preserve">
+    <value>Irányítószám:</value>
+    <comment>Címke az irányítószámhoz a cím részletekben</comment>
+  </data>
+  <data name="mapPanelCoordinates_Key" xml:space="preserve">
+    <value>Koordináták:</value>
+    <comment>Címke a koordinátákhoz a cím részletekben</comment>
+  </data>
+
+  <!-- Azure Maps Panel mezőcímkék -->
+  <data name="azure-maps-panel-street" xml:space="preserve">
+    <value>Utca</value>
+    <comment>Címke az utca mezőhöz a cím részletek panelen</comment>
+  </data>
+  <data name="azure-maps-panel-city" xml:space="preserve">
+    <value>Város</value>
+    <comment>Címke a város mezőhöz a cím részletek panelen</comment>
+  </data>
+  <data name="azure-maps-panel-postalCode" xml:space="preserve">
+    <value>Irányítószám</value>
+    <comment>Címke az irányítószám mezőhöz a cím részletek panelen</comment>
+  </data>
+  <data name="azure-maps-panel-county" xml:space="preserve">
+    <value>Megye</value>
+    <comment>Címke a megye mezőhöz a cím részletek panelen</comment>
+  </data>
+  <data name="azure-maps-panel-stateProvince" xml:space="preserve">
+    <value>Állam/Tartomány</value>
+    <comment>Címke az állam/tartomány mezőhöz a cím részletek panelen</comment>
+  </data>
+  <data name="azure-maps-panel-country" xml:space="preserve">
+    <value>Ország</value>
+    <comment>Címke az ország mezőhöz a cím részletek panelen</comment>
+  </data>
+  <data name="azure-maps-panel-longitude" xml:space="preserve">
+    <value>Hosszúsági fok</value>
+    <comment>Címke a hosszúsági fok mezőhöz a cím részletek panelen</comment>
+  </data>
+  <data name="azure-maps-panel-latitude" xml:space="preserve">
+    <value>Szélességi fok</value>
+    <comment>Címke a szélességi fok mezőhöz a cím részletek panelen</comment>
+  </data>
+  <data name="azure-maps-panel-geographicCoordinates" xml:space="preserve">
+    <value>Földrajzi koordináták</value>
+    <comment>Elválasztó szöveg a földrajzi koordináták szakaszhoz a cím részletek panelen</comment>
+  </data>
+  <data name="azure-maps-panel-cancel" xml:space="preserve">
+    <value>Mégse</value>
+    <comment>Mégse gomb szövege a cím részletek panelen</comment>
+  </data>
+  <data name="azure-maps-panel-select" xml:space="preserve">
+    <value>Kiválasztás</value>
+    <comment>Kiválasztás gomb szövege a cím részletek panelen</comment>
+  </data>
+</root>

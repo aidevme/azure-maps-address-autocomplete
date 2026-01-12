@@ -1,0 +1,74 @@
+/**
+ * Azure Maps Marker Styles
+ *
+ * CSS styles for the custom map marker with bounce and pulse animations.
+ * These styles are used by the useAzureMap hook for displaying location markers.
+ */
+
+.azure-maps-pin {
+  width: 30px;
+  height: 30px;
+  border-radius: 50% 50% 50% 0;
+  background: #0078D4;
+  position: absolute;
+  transform: rotate(-45deg);
+  left: 50%;
+  top: 50%;
+  margin: -20px 0 0 -20px;
+}
+
+.azure-maps-pin::after {
+  content: "";
+  width: 14px;
+  height: 14px;
+  margin: 8px 0 0 8px;
+  background: #e6e6e6;
+  position: absolute;
+  border-radius: 50%;
+}
+
+.azure-maps-bounce {
+  animation: azure-maps-bounce 0.4s ease-out;
+}
+
+@keyframes azure-maps-bounce {
+  0% {
+    transform: rotate(-45deg) translateY(-200px);
+    opacity: 0;
+  }
+  60% {
+    transform: rotate(-45deg) translateY(10px);
+  }
+  80% {
+    transform: rotate(-45deg) translateY(-5px);
+  }
+  100% {
+    transform: rotate(-45deg) translateY(0);
+    opacity: 1;
+  }
+}
+
+.azure-maps-pulse {
+  background: rgba(0, 120, 212, 0.4);
+  border-radius: 50%;
+  height: 14px;
+  width: 14px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin: 11px 0 0 -12px;
+  transform: rotateX(55deg);
+  z-index: -2;
+  animation: azure-maps-pulse 1s ease-out infinite;
+}
+
+@keyframes azure-maps-pulse {
+  0% {
+    transform: rotateX(55deg) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: rotateX(55deg) scale(1.5);
+    opacity: 0;
+  }
+}

@@ -1,0 +1,2760 @@
+[
+  {
+    "Country": "Afghanistan",
+    "CountryISO2": "AF",
+    "CountryISO3": "AFG",
+    "LocalizedCountryName": {
+      "1031": "Afghanistan",
+      "1033": "Afghanistan",
+      "1036": "Afghanistan",
+      "1038": "Afganisztán",
+      "1040": "Afghanistan",
+      "2070": "Afeganistão",
+      "3082": "Afganistán"
+    }
+  },
+  {
+    "Country": "Albania",
+    "CountryISO2": "AL",
+    "CountryISO3": "ALB",
+    "LocalizedCountryName": {
+      "1031": "Albanien",
+      "1033": "Albania",
+      "1036": "Albanie",
+      "1038": "Albánia",
+      "1040": "Albania",
+      "2070": "Albânia",
+      "3082": "Albania"
+    }
+  },
+  {
+    "Country": "Algeria",
+    "CountryISO2": "DZ",
+    "CountryISO3": "DZA",
+    "LocalizedCountryName": {
+      "1031": "Algerien",
+      "1033": "Algeria",
+      "1036": "Algérie",
+      "1038": "Algéria",
+      "1040": "Algeria",
+      "2070": "Argélia",
+      "3082": "Argelia"
+    }
+  },
+  {
+    "Country": "Andorra",
+    "CountryISO2": "AD",
+    "CountryISO3": "AND",
+    "LocalizedCountryName": {
+      "1031": "Andorra",
+      "1033": "Andorra",
+      "1036": "Andorre",
+      "1038": "Andorra",
+      "1040": "Andorra",
+      "2070": "Andorra",
+      "3082": "Andorra"
+    }
+  },
+  {
+    "Country": "Angola",
+    "CountryISO2": "AO",
+    "CountryISO3": "AGO",
+    "LocalizedCountryName": {
+      "1031": "Angola",
+      "1033": "Angola",
+      "1036": "Angola",
+      "1038": "Angola",
+      "1040": "Angola",
+      "2070": "Angola",
+      "3082": "Angola"
+    }
+  },
+  {
+    "Country": "Antigua and Barbuda",
+    "CountryISO2": "AG",
+    "CountryISO3": "ATG",
+    "LocalizedCountryName": {
+      "1031": "Antigua und Barbuda",
+      "1033": "Antigua and Barbuda",
+      "1036": "Antigua-et-Barbuda",
+      "1038": "Antigua és Barbuda",
+      "1040": "Antigua e Barbuda",
+      "2070": "Antígua e Barbuda",
+      "3082": "Antigua y Barbuda"
+    }
+  },
+  {
+    "Country": "Argentina",
+    "CountryISO2": "AR",
+    "CountryISO3": "ARG",
+    "LocalizedCountryName": {
+      "1031": "Argentinien",
+      "1033": "Argentina",
+      "1036": "Argentine",
+      "1038": "Argentína",
+      "1040": "Argentina",
+      "2070": "Argentina",
+      "3082": "Argentina"
+    }
+  },
+  {
+    "Country": "Armenia",
+    "CountryISO2": "AM",
+    "CountryISO3": "ARM",
+    "LocalizedCountryName": {
+      "1031": "Armenien",
+      "1033": "Armenia",
+      "1036": "Arménie",
+      "1038": "Örményország",
+      "1040": "Armenia",
+      "2070": "Armênia",
+      "3082": "Armenia"
+    }
+  },
+  {
+    "Country": "Australia",
+    "CountryISO2": "AU",
+    "CountryISO3": "AUS",
+    "LocalizedCountryName": {
+      "1031": "Australien",
+      "1033": "Australia",
+      "1036": "Australie",
+      "1038": "Ausztrália",
+      "1040": "Australia",
+      "2070": "Austrália",
+      "3082": "Australia"
+    }
+  },
+  {
+    "Country": "Austria",
+    "CountryISO2": "AT",
+    "CountryISO3": "AUT",
+    "LocalizedCountryName": {
+      "1031": "Österreich",
+      "1033": "Austria",
+      "1036": "Autriche",
+      "1038": "Ausztria",
+      "1040": "Austria",
+      "2070": "Áustria",
+      "3082": "Austria"
+    }
+  },
+  {
+    "Country": "Azerbaijan",
+    "CountryISO2": "AZ",
+    "CountryISO3": "AZE",
+    "LocalizedCountryName": {
+      "1031": "Aserbaidschan",
+      "1033": "Azerbaijan",
+      "1036": "Azerbaïdjan",
+      "1038": "Azerbajdzsán",
+      "1040": "Azerbaigian",
+      "2070": "Azerbaijão",
+      "3082": "Azerbaiyán"
+    }
+  },
+  {
+    "Country": "Bahamas",
+    "CountryISO2": "BS",
+    "CountryISO3": "BHS",
+    "LocalizedCountryName": {
+      "1031": "Bahamas",
+      "1033": "Bahamas",
+      "1036": "Bahamas",
+      "1038": "Bahama-szigetek",
+      "1040": "Bahamas",
+      "2070": "Bahamas",
+      "3082": "Bahamas"
+    }
+  },
+  {
+    "Country": "Bahrain",
+    "CountryISO2": "BH",
+    "CountryISO3": "BHR",
+    "LocalizedCountryName": {
+      "1031": "Bahrain",
+      "1033": "Bahrain",
+      "1036": "Bahreïn",
+      "1038": "Bahrein",
+      "1040": "Bahrein",
+      "2070": "Bahrein",
+      "3082": "Baréin"
+    }
+  },
+  {
+    "Country": "Bangladesh",
+    "CountryISO2": "BD",
+    "CountryISO3": "BGD",
+    "LocalizedCountryName": {
+      "1031": "Bangladesch",
+      "1033": "Bangladesh",
+      "1036": "Bangladesh",
+      "1038": "Banglades",
+      "1040": "Bangladesh",
+      "2070": "Bangladesh",
+      "3082": "Bangladés"
+    }
+  },
+  {
+    "Country": "Barbados",
+    "CountryISO2": "BB",
+    "CountryISO3": "BRB",
+    "LocalizedCountryName": {
+      "1031": "Barbados",
+      "1033": "Barbados",
+      "1036": "Barbade",
+      "1038": "Barbados",
+      "1040": "Barbados",
+      "2070": "Barbados",
+      "3082": "Barbados"
+    }
+  },
+  {
+    "Country": "Belarus",
+    "CountryISO2": "BY",
+    "CountryISO3": "BLR",
+    "LocalizedCountryName": {
+      "1031": "Belarus",
+      "1033": "Belarus",
+      "1036": "Biélorussie",
+      "1038": "Fehéroroszország",
+      "1040": "Bielorussia",
+      "2070": "Bielorrússia",
+      "3082": "Bielorrusia"
+    }
+  },
+  {
+    "Country": "Belgium",
+    "CountryISO2": "BE",
+    "CountryISO3": "BEL",
+    "LocalizedCountryName": {
+      "1031": "Belgien",
+      "1033": "Belgium",
+      "1036": "Belgique",
+      "1038": "Belgium",
+      "1040": "Belgio",
+      "2070": "Bélgica",
+      "3082": "Bélgica"
+    }
+  },
+  {
+    "Country": "Belize",
+    "CountryISO2": "BZ",
+    "CountryISO3": "BLZ",
+    "LocalizedCountryName": {
+      "1031": "Belize",
+      "1033": "Belize",
+      "1036": "Belize",
+      "1038": "Belize",
+      "1040": "Belize",
+      "2070": "Belize",
+      "3082": "Belice"
+    }
+  },
+  {
+    "Country": "Benin",
+    "CountryISO2": "BJ",
+    "CountryISO3": "BEN",
+    "LocalizedCountryName": {
+      "1031": "Benin",
+      "1033": "Benin",
+      "1036": "Bénin",
+      "1038": "Benin",
+      "1040": "Benin",
+      "2070": "Benim",
+      "3082": "Benín"
+    }
+  },
+  {
+    "Country": "Bhutan",
+    "CountryISO2": "BT",
+    "CountryISO3": "BTN",
+    "LocalizedCountryName": {
+      "1031": "Bhutan",
+      "1033": "Bhutan",
+      "1036": "Bhoutan",
+      "1038": "Bhután",
+      "1040": "Bhutan",
+      "2070": "Butão",
+      "3082": "Bután"
+    }
+  },
+  {
+    "Country": "Bolivia",
+    "CountryISO2": "BO",
+    "CountryISO3": "BOL",
+    "LocalizedCountryName": {
+      "1031": "Bolivien",
+      "1033": "Bolivia",
+      "1036": "Bolivie",
+      "1038": "Bolívia",
+      "1040": "Bolivia",
+      "2070": "Bolívia",
+      "3082": "Bolivia"
+    }
+  },
+  {
+    "Country": "Bosnia and Herzegovina",
+    "CountryISO2": "BA",
+    "CountryISO3": "BIH",
+    "LocalizedCountryName": {
+      "1031": "Bosnien und Herzegowina",
+      "1033": "Bosnia and Herzegovina",
+      "1036": "Bosnie-Herzégovine",
+      "1038": "Bosznia-Hercegovina",
+      "1040": "Bosnia ed Erzegovina",
+      "2070": "Bósnia e Herzegovina",
+      "3082": "Bosnia y Herzegovina"
+    }
+  },
+  {
+    "Country": "Botswana",
+    "CountryISO2": "BW",
+    "CountryISO3": "BWA",
+    "LocalizedCountryName": {
+      "1031": "Botswana",
+      "1033": "Botswana",
+      "1036": "Botswana",
+      "1038": "Botswana",
+      "1040": "Botswana",
+      "2070": "Botsuana",
+      "3082": "Botsuana"
+    }
+  },
+  {
+    "Country": "Brazil",
+    "CountryISO2": "BR",
+    "CountryISO3": "BRA",
+    "LocalizedCountryName": {
+      "1031": "Brasilien",
+      "1033": "Brazil",
+      "1036": "Brésil",
+      "1038": "Brazília",
+      "1040": "Brasile",
+      "2070": "Brasil",
+      "3082": "Brasil"
+    }
+  },
+  {
+    "Country": "Brunei",
+    "CountryISO2": "BN",
+    "CountryISO3": "BRN",
+    "LocalizedCountryName": {
+      "1031": "Brunei",
+      "1033": "Brunei",
+      "1036": "Brunei",
+      "1038": "Brunei",
+      "1040": "Brunei",
+      "2070": "Brunei",
+      "3082": "Brunéi"
+    }
+  },
+  {
+    "Country": "Bulgaria",
+    "CountryISO2": "BG",
+    "CountryISO3": "BGR",
+    "LocalizedCountryName": {
+      "1031": "Bulgarien",
+      "1033": "Bulgaria",
+      "1036": "Bulgarie",
+      "1038": "Bulgária",
+      "1040": "Bulgaria",
+      "2070": "Bulgária",
+      "3082": "Bulgaria"
+    }
+  },
+  {
+    "Country": "Burkina Faso",
+    "CountryISO2": "BF",
+    "CountryISO3": "BFA",
+    "LocalizedCountryName": {
+      "1031": "Burkina Faso",
+      "1033": "Burkina Faso",
+      "1036": "Burkina Faso",
+      "1038": "Burkina Faso",
+      "1040": "Burkina Faso",
+      "2070": "Burkina Faso",
+      "3082": "Burkina Faso"
+    }
+  },
+  {
+    "Country": "Burundi",
+    "CountryISO2": "BI",
+    "CountryISO3": "BDI",
+    "LocalizedCountryName": {
+      "1031": "Burundi",
+      "1033": "Burundi",
+      "1036": "Burundi",
+      "1038": "Burundi",
+      "1040": "Burundi",
+      "2070": "Burundi",
+      "3082": "Burundi"
+    }
+  },
+  {
+    "Country": "Cabo Verde",
+    "CountryISO2": "CV",
+    "CountryISO3": "CPV",
+    "LocalizedCountryName": {
+      "1031": "Kap Verde",
+      "1033": "Cabo Verde",
+      "1036": "Cap-Vert",
+      "1038": "Zöld-foki Köztársaság",
+      "1040": "Capo Verde",
+      "2070": "Cabo Verde",
+      "3082": "Cabo Verde"
+    }
+  },
+  {
+    "Country": "Cambodia",
+    "CountryISO2": "KH",
+    "CountryISO3": "KHM",
+    "LocalizedCountryName": {
+      "1031": "Kambodscha",
+      "1033": "Cambodia",
+      "1036": "Cambodge",
+      "1038": "Kambodzsa",
+      "1040": "Cambogia",
+      "2070": "Camboja",
+      "3082": "Camboya"
+    }
+  },
+  {
+    "Country": "Cameroon",
+    "CountryISO2": "CM",
+    "CountryISO3": "CMR",
+    "LocalizedCountryName": {
+      "1031": "Kamerun",
+      "1033": "Cameroon",
+      "1036": "Cameroun",
+      "1038": "Kamerun",
+      "1040": "Camerun",
+      "2070": "Camarões",
+      "3082": "Camerún"
+    }
+  },
+  {
+    "Country": "Canada",
+    "CountryISO2": "CA",
+    "CountryISO3": "CAN",
+    "LocalizedCountryName": {
+      "1031": "Kanada",
+      "1033": "Canada",
+      "1036": "Canada",
+      "1038": "Kanada",
+      "1040": "Canada",
+      "2070": "Canadá",
+      "3082": "Canadá"
+    }
+  },
+  {
+    "Country": "Central African Republic",
+    "CountryISO2": "CF",
+    "CountryISO3": "CAF",
+    "LocalizedCountryName": {
+      "1031": "Zentralafrikanische Republik",
+      "1033": "Central African Republic",
+      "1036": "République centrafricaine",
+      "1038": "Közép-afrikai Köztársaság",
+      "1040": "Repubblica Centrafricana",
+      "2070": "República Centro-Africana",
+      "3082": "República Centroafricana"
+    }
+  },
+  {
+    "Country": "Chad",
+    "CountryISO2": "TD",
+    "CountryISO3": "TCD",
+    "LocalizedCountryName": {
+      "1031": "Tschad",
+      "1033": "Chad",
+      "1036": "Tchad",
+      "1038": "Csád",
+      "1040": "Ciad",
+      "2070": "Chade",
+      "3082": "Chad"
+    }
+  },
+  {
+    "Country": "Chile",
+    "CountryISO2": "CL",
+    "CountryISO3": "CHL",
+    "LocalizedCountryName": {
+      "1031": "Chile",
+      "1033": "Chile",
+      "1036": "Chili",
+      "1038": "Chile",
+      "1040": "Cile",
+      "2070": "Chile",
+      "3082": "Chile"
+    }
+  },
+  {
+    "Country": "China",
+    "CountryISO2": "CN",
+    "CountryISO3": "CHN",
+    "LocalizedCountryName": {
+      "1031": "China",
+      "1033": "China",
+      "1036": "Chine",
+      "1038": "Kína",
+      "1040": "Cina",
+      "2070": "China",
+      "3082": "China"
+    }
+  },
+  {
+    "Country": "Colombia",
+    "CountryISO2": "CO",
+    "CountryISO3": "COL",
+    "LocalizedCountryName": {
+      "1031": "Kolumbien",
+      "1033": "Colombia",
+      "1036": "Colombie",
+      "1038": "Kolumbia",
+      "1040": "Colombia",
+      "2070": "Colômbia",
+      "3082": "Colombia"
+    }
+  },
+  {
+    "Country": "Comoros",
+    "CountryISO2": "KM",
+    "CountryISO3": "COM",
+    "LocalizedCountryName": {
+      "1031": "Komoren",
+      "1033": "Comoros",
+      "1036": "Comores",
+      "1038": "Comore-szigetek",
+      "1040": "Comore",
+      "2070": "Comores",
+      "3082": "Comoras"
+    }
+  },
+  {
+    "Country": "Congo (Democratic Republic)",
+    "CountryISO2": "CD",
+    "CountryISO3": "COD",
+    "LocalizedCountryName": {
+      "1031": "Kongo (Demokratische Republik)",
+      "1033": "Congo (Democratic Republic)",
+      "1036": "Congo (République démocratique)",
+      "1038": "Kongói Demokratikus Köztársaság",
+      "1040": "Congo (Repubblica Democratica)",
+      "2070": "Congo (República Democrática)",
+      "3082": "Congo (República Democrática)"
+    }
+  },
+  {
+    "Country": "Congo (Republic)",
+    "CountryISO2": "CG",
+    "CountryISO3": "COG",
+    "LocalizedCountryName": {
+      "1031": "Kongo (Republik)",
+      "1033": "Congo (Republic)",
+      "1036": "Congo (République)",
+      "1038": "Kongói Köztársaság",
+      "1040": "Congo (Repubblica)",
+      "2070": "Congo (República)",
+      "3082": "Congo (República)"
+    }
+  },
+  {
+    "Country": "Costa Rica",
+    "CountryISO2": "CR",
+    "CountryISO3": "CRI",
+    "LocalizedCountryName": {
+      "1031": "Costa Rica",
+      "1033": "Costa Rica",
+      "1036": "Costa Rica",
+      "1038": "Costa Rica",
+      "1040": "Costa Rica",
+      "2070": "Costa Rica",
+      "3082": "Costa Rica"
+    }
+  },
+  {
+    "Country": "Croatia",
+    "CountryISO2": "HR",
+    "CountryISO3": "HRV",
+    "LocalizedCountryName": {
+      "1031": "Kroatien",
+      "1033": "Croatia",
+      "1036": "Croatie",
+      "1038": "Horvátország",
+      "1040": "Croazia",
+      "2070": "Croácia",
+      "3082": "Croacia"
+    }
+  },
+  {
+    "Country": "Cuba",
+    "CountryISO2": "CU",
+    "CountryISO3": "CUB",
+    "LocalizedCountryName": {
+      "1031": "Kuba",
+      "1033": "Cuba",
+      "1036": "Cuba",
+      "1038": "Kuba",
+      "1040": "Cuba",
+      "2070": "Cuba",
+      "3082": "Cuba"
+    }
+  },
+  {
+    "Country": "Cyprus",
+    "CountryISO2": "CY",
+    "CountryISO3": "CYP",
+    "LocalizedCountryName": {
+      "1031": "Zypern",
+      "1033": "Cyprus",
+      "1036": "Chypre",
+      "1038": "Ciprus",
+      "1040": "Cipro",
+      "2070": "Chipre",
+      "3082": "Chipre"
+    }
+  },
+  {
+    "Country": "Czech Republic",
+    "CountryISO2": "CZ",
+    "CountryISO3": "CZE",
+    "LocalizedCountryName": {
+      "1031": "Tschechien",
+      "1033": "Czech Republic",
+      "1036": "République tchèque",
+      "1038": "Csehország",
+      "1040": "Repubblica Ceca",
+      "2070": "República Checa",
+      "3082": "República Checa"
+    }
+  },
+  {
+    "Country": "Denmark",
+    "CountryISO2": "DK",
+    "CountryISO3": "DNK",
+    "LocalizedCountryName": {
+      "1031": "Dänemark",
+      "1033": "Denmark",
+      "1036": "Danemark",
+      "1038": "Dánia",
+      "1040": "Danimarca",
+      "2070": "Dinamarca",
+      "3082": "Dinamarca"
+    }
+  },
+  {
+    "Country": "Djibouti",
+    "CountryISO2": "DJ",
+    "CountryISO3": "DJI",
+    "LocalizedCountryName": {
+      "1031": "Dschibuti",
+      "1033": "Djibouti",
+      "1036": "Djibouti",
+      "1038": "Dzsibuti",
+      "1040": "Gibuti",
+      "2070": "Djibuti",
+      "3082": "Yibuti"
+    }
+  },
+  {
+    "Country": "Dominica",
+    "CountryISO2": "DM",
+    "CountryISO3": "DMA",
+    "LocalizedCountryName": {
+      "1031": "Dominica",
+      "1033": "Dominica",
+      "1036": "Dominique",
+      "1038": "Dominika",
+      "1040": "Dominica",
+      "2070": "Dominica",
+      "3082": "Dominica"
+    }
+  },
+  {
+    "Country": "Dominican Republic",
+    "CountryISO2": "DO",
+    "CountryISO3": "DOM",
+    "LocalizedCountryName": {
+      "1031": "Dominikanische Republik",
+      "1033": "Dominican Republic",
+      "1036": "République dominicaine",
+      "1038": "Dominikai Köztársaság",
+      "1040": "Repubblica Dominicana",
+      "2070": "República Dominicana",
+      "3082": "República Dominicana"
+    }
+  },
+  {
+    "Country": "Ecuador",
+    "CountryISO2": "EC",
+    "CountryISO3": "ECU",
+    "LocalizedCountryName": {
+      "1031": "Ecuador",
+      "1033": "Ecuador",
+      "1036": "Équateur",
+      "1038": "Ecuador",
+      "1040": "Ecuador",
+      "2070": "Equador",
+      "3082": "Ecuador"
+    }
+  },
+  {
+    "Country": "Egypt",
+    "CountryISO2": "EG",
+    "CountryISO3": "EGY",
+    "LocalizedCountryName": {
+      "1031": "Ägypten",
+      "1033": "Egypt",
+      "1036": "Égypte",
+      "1038": "Egyiptom",
+      "1040": "Egitto",
+      "2070": "Egito",
+      "3082": "Egipto"
+    }
+  },
+  {
+    "Country": "El Salvador",
+    "CountryISO2": "SV",
+    "CountryISO3": "SLV",
+    "LocalizedCountryName": {
+      "1031": "El Salvador",
+      "1033": "El Salvador",
+      "1036": "Salvador",
+      "1038": "Salvador",
+      "1040": "El Salvador",
+      "2070": "El Salvador",
+      "3082": "El Salvador"
+    }
+  },
+  {
+    "Country": "Equatorial Guinea",
+    "CountryISO2": "GQ",
+    "CountryISO3": "GNQ",
+    "LocalizedCountryName": {
+      "1031": "Äquatorialguinea",
+      "1033": "Equatorial Guinea",
+      "1036": "Guinée équatoriale",
+      "1038": "Egyenlítői-Guinea",
+      "1040": "Guinea Equatoriale",
+      "2070": "Guiné Equatorial",
+      "3082": "Guinea Ecuatorial"
+    }
+  },
+  {
+    "Country": "Eritrea",
+    "CountryISO2": "ER",
+    "CountryISO3": "ERI",
+    "LocalizedCountryName": {
+      "1031": "Eritrea",
+      "1033": "Eritrea",
+      "1036": "Érythrée",
+      "1038": "Eritrea",
+      "1040": "Eritrea",
+      "2070": "Eritreia",
+      "3082": "Eritrea"
+    }
+  },
+  {
+    "Country": "Estonia",
+    "CountryISO2": "EE",
+    "CountryISO3": "EST",
+    "LocalizedCountryName": {
+      "1031": "Estland",
+      "1033": "Estonia",
+      "1036": "Estonie",
+      "1038": "Észtország",
+      "1040": "Estonia",
+      "2070": "Estônia",
+      "3082": "Estonia"
+    }
+  },
+  {
+    "Country": "Eswatini",
+    "CountryISO2": "SZ",
+    "CountryISO3": "SWZ",
+    "LocalizedCountryName": {
+      "1031": "Eswatini",
+      "1033": "Eswatini",
+      "1036": "Eswatini",
+      "1038": "Szváziföld",
+      "1040": "Eswatini",
+      "2070": "Essuatíni",
+      "3082": "Esuatini"
+    }
+  },
+  {
+    "Country": "Ethiopia",
+    "CountryISO2": "ET",
+    "CountryISO3": "ETH",
+    "LocalizedCountryName": {
+      "1031": "Äthiopien",
+      "1033": "Ethiopia",
+      "1036": "Éthiopie",
+      "1038": "Etiópia",
+      "1040": "Etiopia",
+      "2070": "Etiópia",
+      "3082": "Etiopía"
+    }
+  },
+  {
+    "Country": "Fiji",
+    "CountryISO2": "FJ",
+    "CountryISO3": "FJI",
+    "LocalizedCountryName": {
+      "1031": "Fidschi",
+      "1033": "Fiji",
+      "1036": "Fidji",
+      "1038": "Fidzsi-szigetek",
+      "1040": "Figi",
+      "2070": "Fiji",
+      "3082": "Fiyi"
+    }
+  },
+  {
+    "Country": "Finland",
+    "CountryISO2": "FI",
+    "CountryISO3": "FIN",
+    "LocalizedCountryName": {
+      "1031": "Finnland",
+      "1033": "Finland",
+      "1036": "Finlande",
+      "1038": "Finnország",
+      "1040": "Finlandia",
+      "2070": "Finlândia",
+      "3082": "Finlandia"
+    }
+  },
+  {
+    "Country": "France",
+    "CountryISO2": "FR",
+    "CountryISO3": "FRA",
+    "LocalizedCountryName": {
+      "1031": "Frankreich",
+      "1033": "France",
+      "1036": "France",
+      "1038": "Franciaország",
+      "1040": "Francia",
+      "2070": "França",
+      "3082": "Francia"
+    }
+  },
+  {
+    "Country": "Gabon",
+    "CountryISO2": "GA",
+    "CountryISO3": "GAB",
+    "LocalizedCountryName": {
+      "1031": "Gabun",
+      "1033": "Gabon",
+      "1036": "Gabon",
+      "1038": "Gabon",
+      "1040": "Gabon",
+      "2070": "Gabão",
+      "3082": "Gabón"
+    }
+  },
+  {
+    "Country": "Gambia",
+    "CountryISO2": "GM",
+    "CountryISO3": "GMB",
+    "LocalizedCountryName": {
+      "1031": "Gambia",
+      "1033": "Gambia",
+      "1036": "Gambie",
+      "1038": "Gambia",
+      "1040": "Gambia",
+      "2070": "Gâmbia",
+      "3082": "Gambia"
+    }
+  },
+  {
+    "Country": "Georgia",
+    "CountryISO2": "GE",
+    "CountryISO3": "GEO",
+    "LocalizedCountryName": {
+      "1031": "Georgien",
+      "1033": "Georgia",
+      "1036": "Géorgie",
+      "1038": "Grúzia",
+      "1040": "Georgia",
+      "2070": "Geórgia",
+      "3082": "Georgia"
+    }
+  },
+  {
+    "Country": "Germany",
+    "CountryISO2": "DE",
+    "CountryISO3": "DEU",
+    "LocalizedCountryName": {
+      "1031": "Deutschland",
+      "1033": "Germany",
+      "1036": "Allemagne",
+      "1038": "Németország",
+      "1040": "Germania",
+      "2070": "Alemanha",
+      "3082": "Alemania"
+    }
+  },
+  {
+    "Country": "Ghana",
+    "CountryISO2": "GH",
+    "CountryISO3": "GHA",
+    "LocalizedCountryName": {
+      "1031": "Ghana",
+      "1033": "Ghana",
+      "1036": "Ghana",
+      "1038": "Ghána",
+      "1040": "Ghana",
+      "2070": "Gana",
+      "3082": "Ghana"
+    }
+  },
+  {
+    "Country": "Greece",
+    "CountryISO2": "GR",
+    "CountryISO3": "GRC",
+    "LocalizedCountryName": {
+      "1031": "Griechenland",
+      "1033": "Greece",
+      "1036": "Grèce",
+      "1038": "Görögország",
+      "1040": "Grecia",
+      "2070": "Grécia",
+      "3082": "Grecia"
+    }
+  },
+  {
+    "Country": "Grenada",
+    "CountryISO2": "GD",
+    "CountryISO3": "GRD",
+    "LocalizedCountryName": {
+      "1031": "Grenada",
+      "1033": "Grenada",
+      "1036": "Grenade",
+      "1038": "Grenada",
+      "1040": "Grenada",
+      "2070": "Granada",
+      "3082": "Granada"
+    }
+  },
+  {
+    "Country": "Guatemala",
+    "CountryISO2": "GT",
+    "CountryISO3": "GTM",
+    "LocalizedCountryName": {
+      "1031": "Guatemala",
+      "1033": "Guatemala",
+      "1036": "Guatemala",
+      "1038": "Guatemala",
+      "1040": "Guatemala",
+      "2070": "Guatemala",
+      "3082": "Guatemala"
+    }
+  },
+  {
+    "Country": "Guinea",
+    "CountryISO2": "GN",
+    "CountryISO3": "GIN",
+    "LocalizedCountryName": {
+      "1031": "Guinea",
+      "1033": "Guinea",
+      "1036": "Guinée",
+      "1038": "Guinea",
+      "1040": "Guinea",
+      "2070": "Guiné",
+      "3082": "Guinea"
+    }
+  },
+  {
+    "Country": "Guinea-Bissau",
+    "CountryISO2": "GW",
+    "CountryISO3": "GNB",
+    "LocalizedCountryName": {
+      "1031": "Guinea-Bissau",
+      "1033": "Guinea-Bissau",
+      "1036": "Guinée-Bissau",
+      "1038": "Bissau-Guinea",
+      "1040": "Guinea-Bissau",
+      "2070": "Guiné-Bissau",
+      "3082": "Guinea-Bisáu"
+    }
+  },
+  {
+    "Country": "Guyana",
+    "CountryISO2": "GY",
+    "CountryISO3": "GUY",
+    "LocalizedCountryName": {
+      "1031": "Guyana",
+      "1033": "Guyana",
+      "1036": "Guyana",
+      "1038": "Guyana",
+      "1040": "Guyana",
+      "2070": "Guiana",
+      "3082": "Guyana"
+    }
+  },
+  {
+    "Country": "Haiti",
+    "CountryISO2": "HT",
+    "CountryISO3": "HTI",
+    "LocalizedCountryName": {
+      "1031": "Haiti",
+      "1033": "Haiti",
+      "1036": "Haïti",
+      "1038": "Haiti",
+      "1040": "Haiti",
+      "2070": "Haiti",
+      "3082": "Haití"
+    }
+  },
+  {
+    "Country": "Honduras",
+    "CountryISO2": "HN",
+    "CountryISO3": "HND",
+    "LocalizedCountryName": {
+      "1031": "Honduras",
+      "1033": "Honduras",
+      "1036": "Honduras",
+      "1038": "Honduras",
+      "1040": "Honduras",
+      "2070": "Honduras",
+      "3082": "Honduras"
+    }
+  },
+  {
+    "Country": "Hungary",
+    "CountryISO2": "HU",
+    "CountryISO3": "HUN",
+    "LocalizedCountryName": {
+      "1031": "Ungarn",
+      "1033": "Hungary",
+      "1036": "Hongrie",
+      "1038": "Magyarország",
+      "1040": "Ungheria",
+      "2070": "Hungria",
+      "3082": "Hungría"
+    }
+  },
+  {
+    "Country": "Iceland",
+    "CountryISO2": "IS",
+    "CountryISO3": "ISL",
+    "LocalizedCountryName": {
+      "1031": "Island",
+      "1033": "Iceland",
+      "1036": "Islande",
+      "1038": "Izland",
+      "1040": "Islanda",
+      "2070": "Islândia",
+      "3082": "Islandia"
+    }
+  },
+  {
+    "Country": "India",
+    "CountryISO2": "IN",
+    "CountryISO3": "IND",
+    "LocalizedCountryName": {
+      "1031": "Indien",
+      "1033": "India",
+      "1036": "Inde",
+      "1038": "India",
+      "1040": "India",
+      "2070": "Índia",
+      "3082": "India"
+    }
+  },
+  {
+    "Country": "Indonesia",
+    "CountryISO2": "ID",
+    "CountryISO3": "IDN",
+    "LocalizedCountryName": {
+      "1031": "Indonesien",
+      "1033": "Indonesia",
+      "1036": "Indonésie",
+      "1038": "Indonézia",
+      "1040": "Indonesia",
+      "2070": "Indonésia",
+      "3082": "Indonesia"
+    }
+  },
+  {
+    "Country": "Iran",
+    "CountryISO2": "IR",
+    "CountryISO3": "IRN",
+    "LocalizedCountryName": {
+      "1031": "Iran",
+      "1033": "Iran",
+      "1036": "Iran",
+      "1038": "Irán",
+      "1040": "Iran",
+      "2070": "Irã",
+      "3082": "Irán"
+    }
+  },
+  {
+    "Country": "Iraq",
+    "CountryISO2": "IQ",
+    "CountryISO3": "IRQ",
+    "LocalizedCountryName": {
+      "1031": "Irak",
+      "1033": "Iraq",
+      "1036": "Irak",
+      "1038": "Irak",
+      "1040": "Iraq",
+      "2070": "Iraque",
+      "3082": "Irak"
+    }
+  },
+  {
+    "Country": "Ireland",
+    "CountryISO2": "IE",
+    "CountryISO3": "IRL",
+    "LocalizedCountryName": {
+      "1031": "Irland",
+      "1033": "Ireland",
+      "1036": "Irlande",
+      "1038": "Írország",
+      "1040": "Irlanda",
+      "2070": "Irlanda",
+      "3082": "Irlanda"
+    }
+  },
+  {
+    "Country": "Israel",
+    "CountryISO2": "IL",
+    "CountryISO3": "ISR",
+    "LocalizedCountryName": {
+      "1031": "Israel",
+      "1033": "Israel",
+      "1036": "Israël",
+      "1038": "Izrael",
+      "1040": "Israele",
+      "2070": "Israel",
+      "3082": "Israel"
+    }
+  },
+  {
+    "Country": "Italy",
+    "CountryISO2": "IT",
+    "CountryISO3": "ITA",
+    "LocalizedCountryName": {
+      "1031": "Italien",
+      "1033": "Italy",
+      "1036": "Italie",
+      "1038": "Olaszország",
+      "1040": "Italia",
+      "2070": "Itália",
+      "3082": "Italia"
+    }
+  },
+  {
+    "Country": "Ivory Coast",
+    "CountryISO2": "CI",
+    "CountryISO3": "CIV",
+    "LocalizedCountryName": {
+      "1031": "Elfenbeinküste",
+      "1033": "Ivory Coast",
+      "1036": "Côte d'Ivoire",
+      "1038": "Elefántcsontpart",
+      "1040": "Costa d'Avorio",
+      "2070": "Costa do Marfim",
+      "3082": "Costa de Marfil"
+    }
+  },
+  {
+    "Country": "Jamaica",
+    "CountryISO2": "JM",
+    "CountryISO3": "JAM",
+    "LocalizedCountryName": {
+      "1031": "Jamaika",
+      "1033": "Jamaica",
+      "1036": "Jamaïque",
+      "1038": "Jamaica",
+      "1040": "Giamaica",
+      "2070": "Jamaica",
+      "3082": "Jamaica"
+    }
+  },
+  {
+    "Country": "Japan",
+    "CountryISO2": "JP",
+    "CountryISO3": "JPN",
+    "LocalizedCountryName": {
+      "1031": "Japan",
+      "1033": "Japan",
+      "1036": "Japon",
+      "1038": "Japán",
+      "1040": "Giappone",
+      "2070": "Japão",
+      "3082": "Japón"
+    }
+  },
+  {
+    "Country": "Jordan",
+    "CountryISO2": "JO",
+    "CountryISO3": "JOR",
+    "LocalizedCountryName": {
+      "1031": "Jordanien",
+      "1033": "Jordan",
+      "1036": "Jordanie",
+      "1038": "Jordánia",
+      "1040": "Giordania",
+      "2070": "Jordânia",
+      "3082": "Jordania"
+    }
+  },
+  {
+    "Country": "Kazakhstan",
+    "CountryISO2": "KZ",
+    "CountryISO3": "KAZ",
+    "LocalizedCountryName": {
+      "1031": "Kasachstan",
+      "1033": "Kazakhstan",
+      "1036": "Kazakhstan",
+      "1038": "Kazahsztán",
+      "1040": "Kazakistan",
+      "2070": "Cazaquistão",
+      "3082": "Kazajistán"
+    }
+  },
+  {
+    "Country": "Kenya",
+    "CountryISO2": "KE",
+    "CountryISO3": "KEN",
+    "LocalizedCountryName": {
+      "1031": "Kenia",
+      "1033": "Kenya",
+      "1036": "Kenya",
+      "1038": "Kenya",
+      "1040": "Kenya",
+      "2070": "Quênia",
+      "3082": "Kenia"
+    }
+  },
+  {
+    "Country": "Kiribati",
+    "CountryISO2": "KI",
+    "CountryISO3": "KIR",
+    "LocalizedCountryName": {
+      "1031": "Kiribati",
+      "1033": "Kiribati",
+      "1036": "Kiribati",
+      "1038": "Kiribati",
+      "1040": "Kiribati",
+      "2070": "Quiribati",
+      "3082": "Kiribati"
+    }
+  },
+  {
+    "Country": "Kosovo",
+    "CountryISO2": "XK",
+    "CountryISO3": "XKX",
+    "LocalizedCountryName": {
+      "1031": "Kosovo",
+      "1033": "Kosovo",
+      "1036": "Kosovo",
+      "1038": "Koszovó",
+      "1040": "Kosovo",
+      "2070": "Kosovo",
+      "3082": "Kosovo"
+    }
+  },
+  {
+    "Country": "Kuwait",
+    "CountryISO2": "KW",
+    "CountryISO3": "KWT",
+    "LocalizedCountryName": {
+      "1031": "Kuwait",
+      "1033": "Kuwait",
+      "1036": "Koweït",
+      "1038": "Kuvait",
+      "1040": "Kuwait",
+      "2070": "Kuwait",
+      "3082": "Kuwait"
+    }
+  },
+  {
+    "Country": "Kyrgyzstan",
+    "CountryISO2": "KG",
+    "CountryISO3": "KGZ",
+    "LocalizedCountryName": {
+      "1031": "Kirgisistan",
+      "1033": "Kyrgyzstan",
+      "1036": "Kirghizistan",
+      "1038": "Kirgizisztán",
+      "1040": "Kirghizistan",
+      "2070": "Quirguistão",
+      "3082": "Kirguistán"
+    }
+  },
+  {
+    "Country": "Laos",
+    "CountryISO2": "LA",
+    "CountryISO3": "LAO",
+    "LocalizedCountryName": {
+      "1031": "Laos",
+      "1033": "Laos",
+      "1036": "Laos",
+      "1038": "Laosz",
+      "1040": "Laos",
+      "2070": "Laos",
+      "3082": "Laos"
+    }
+  },
+  {
+    "Country": "Latvia",
+    "CountryISO2": "LV",
+    "CountryISO3": "LVA",
+    "LocalizedCountryName": {
+      "1031": "Lettland",
+      "1033": "Latvia",
+      "1036": "Lettonie",
+      "1038": "Lettország",
+      "1040": "Lettonia",
+      "2070": "Letônia",
+      "3082": "Letonia"
+    }
+  },
+  {
+    "Country": "Lebanon",
+    "CountryISO2": "LB",
+    "CountryISO3": "LBN",
+    "LocalizedCountryName": {
+      "1031": "Libanon",
+      "1033": "Lebanon",
+      "1036": "Liban",
+      "1038": "Libanon",
+      "1040": "Libano",
+      "2070": "Líbano",
+      "3082": "Líbano"
+    }
+  },
+  {
+    "Country": "Lesotho",
+    "CountryISO2": "LS",
+    "CountryISO3": "LSO",
+    "LocalizedCountryName": {
+      "1031": "Lesotho",
+      "1033": "Lesotho",
+      "1036": "Lesotho",
+      "1038": "Lesotho",
+      "1040": "Lesotho",
+      "2070": "Lesoto",
+      "3082": "Lesoto"
+    }
+  },
+  {
+    "Country": "Liberia",
+    "CountryISO2": "LR",
+    "CountryISO3": "LBR",
+    "LocalizedCountryName": {
+      "1031": "Liberia",
+      "1033": "Liberia",
+      "1036": "Liberia",
+      "1038": "Libéria",
+      "1040": "Liberia",
+      "2070": "Libéria",
+      "3082": "Liberia"
+    }
+  },
+  {
+    "Country": "Libya",
+    "CountryISO2": "LY",
+    "CountryISO3": "LBY",
+    "LocalizedCountryName": {
+      "1031": "Libyen",
+      "1033": "Libya",
+      "1036": "Libye",
+      "1038": "Líbia",
+      "1040": "Libia",
+      "2070": "Líbia",
+      "3082": "Libia"
+    }
+  },
+  {
+    "Country": "Liechtenstein",
+    "CountryISO2": "LI",
+    "CountryISO3": "LIE",
+    "LocalizedCountryName": {
+      "1031": "Liechtenstein",
+      "1033": "Liechtenstein",
+      "1036": "Liechtenstein",
+      "1038": "Liechtenstein",
+      "1040": "Liechtenstein",
+      "2070": "Liechtenstein",
+      "3082": "Liechtenstein"
+    }
+  },
+  {
+    "Country": "Lithuania",
+    "CountryISO2": "LT",
+    "CountryISO3": "LTU",
+    "LocalizedCountryName": {
+      "1031": "Litauen",
+      "1033": "Lithuania",
+      "1036": "Lituanie",
+      "1038": "Litvánia",
+      "1040": "Lituania",
+      "2070": "Lituânia",
+      "3082": "Lituania"
+    }
+  },
+  {
+    "Country": "Luxembourg",
+    "CountryISO2": "LU",
+    "CountryISO3": "LUX",
+    "LocalizedCountryName": {
+      "1031": "Luxemburg",
+      "1033": "Luxembourg",
+      "1036": "Luxembourg",
+      "1038": "Luxemburg",
+      "1040": "Lussemburgo",
+      "2070": "Luxemburgo",
+      "3082": "Luxemburgo"
+    }
+  },
+  {
+    "Country": "Madagascar",
+    "CountryISO2": "MG",
+    "CountryISO3": "MDG",
+    "LocalizedCountryName": {
+      "1031": "Madagaskar",
+      "1033": "Madagascar",
+      "1036": "Madagascar",
+      "1038": "Madagaszkár",
+      "1040": "Madagascar",
+      "2070": "Madagáscar",
+      "3082": "Madagascar"
+    }
+  },
+  {
+    "Country": "Malawi",
+    "CountryISO2": "MW",
+    "CountryISO3": "MWI",
+    "LocalizedCountryName": {
+      "1031": "Malawi",
+      "1033": "Malawi",
+      "1036": "Malawi",
+      "1038": "Malawi",
+      "1040": "Malawi",
+      "2070": "Malaui",
+      "3082": "Malaui"
+    }
+  },
+  {
+    "Country": "Malaysia",
+    "CountryISO2": "MY",
+    "CountryISO3": "MYS",
+    "LocalizedCountryName": {
+      "1031": "Malaysia",
+      "1033": "Malaysia",
+      "1036": "Malaisie",
+      "1038": "Malajzia",
+      "1040": "Malesia",
+      "2070": "Malásia",
+      "3082": "Malasia"
+    }
+  },
+  {
+    "Country": "Maldives",
+    "CountryISO2": "MV",
+    "CountryISO3": "MDV",
+    "LocalizedCountryName": {
+      "1031": "Malediven",
+      "1033": "Maldives",
+      "1036": "Maldives",
+      "1038": "Maldív-szigetek",
+      "1040": "Maldive",
+      "2070": "Maldivas",
+      "3082": "Maldivas"
+    }
+  },
+  {
+    "Country": "Mali",
+    "CountryISO2": "ML",
+    "CountryISO3": "MLI",
+    "LocalizedCountryName": {
+      "1031": "Mali",
+      "1033": "Mali",
+      "1036": "Mali",
+      "1038": "Mali",
+      "1040": "Mali",
+      "2070": "Mali",
+      "3082": "Malí"
+    }
+  },
+  {
+    "Country": "Malta",
+    "CountryISO2": "MT",
+    "CountryISO3": "MLT",
+    "LocalizedCountryName": {
+      "1031": "Malta",
+      "1033": "Malta",
+      "1036": "Malte",
+      "1038": "Málta",
+      "1040": "Malta",
+      "2070": "Malta",
+      "3082": "Malta"
+    }
+  },
+  {
+    "Country": "Marshall Islands",
+    "CountryISO2": "MH",
+    "CountryISO3": "MHL",
+    "LocalizedCountryName": {
+      "1031": "Marshallinseln",
+      "1033": "Marshall Islands",
+      "1036": "Îles Marshall",
+      "1038": "Marshall-szigetek",
+      "1040": "Isole Marshall",
+      "2070": "Ilhas Marshall",
+      "3082": "Islas Marshall"
+    }
+  },
+  {
+    "Country": "Mauritania",
+    "CountryISO2": "MR",
+    "CountryISO3": "MRT",
+    "LocalizedCountryName": {
+      "1031": "Mauretanien",
+      "1033": "Mauritania",
+      "1036": "Mauritanie",
+      "1038": "Mauritánia",
+      "1040": "Mauritania",
+      "2070": "Mauritânia",
+      "3082": "Mauritania"
+    }
+  },
+  {
+    "Country": "Mauritius",
+    "CountryISO2": "MU",
+    "CountryISO3": "MUS",
+    "LocalizedCountryName": {
+      "1031": "Mauritius",
+      "1033": "Mauritius",
+      "1036": "Maurice",
+      "1038": "Mauritius",
+      "1040": "Mauritius",
+      "2070": "Maurícia",
+      "3082": "Mauricio"
+    }
+  },
+  {
+    "Country": "Mexico",
+    "CountryISO2": "MX",
+    "CountryISO3": "MEX",
+    "LocalizedCountryName": {
+      "1031": "Mexiko",
+      "1033": "Mexico",
+      "1036": "Mexique",
+      "1038": "Mexikó",
+      "1040": "Messico",
+      "2070": "México",
+      "3082": "México"
+    }
+  },
+  {
+    "Country": "Micronesia",
+    "CountryISO2": "FM",
+    "CountryISO3": "FSM",
+    "LocalizedCountryName": {
+      "1031": "Mikronesien",
+      "1033": "Micronesia",
+      "1036": "Micronésie",
+      "1038": "Mikronézia",
+      "1040": "Micronesia",
+      "2070": "Micronésia",
+      "3082": "Micronesia"
+    }
+  },
+  {
+    "Country": "Moldova",
+    "CountryISO2": "MD",
+    "CountryISO3": "MDA",
+    "LocalizedCountryName": {
+      "1031": "Moldau",
+      "1033": "Moldova",
+      "1036": "Moldavie",
+      "1038": "Moldova",
+      "1040": "Moldavia",
+      "2070": "Moldávia",
+      "3082": "Moldavia"
+    }
+  },
+  {
+    "Country": "Monaco",
+    "CountryISO2": "MC",
+    "CountryISO3": "MCO",
+    "LocalizedCountryName": {
+      "1031": "Monaco",
+      "1033": "Monaco",
+      "1036": "Monaco",
+      "1038": "Monaco",
+      "1040": "Monaco",
+      "2070": "Mônaco",
+      "3082": "Mónaco"
+    }
+  },
+  {
+    "Country": "Mongolia",
+    "CountryISO2": "MN",
+    "CountryISO3": "MNG",
+    "LocalizedCountryName": {
+      "1031": "Mongolei",
+      "1033": "Mongolia",
+      "1036": "Mongolie",
+      "1038": "Mongólia",
+      "1040": "Mongolia",
+      "2070": "Mongólia",
+      "3082": "Mongolia"
+    }
+  },
+  {
+    "Country": "Montenegro",
+    "CountryISO2": "ME",
+    "CountryISO3": "MNE",
+    "LocalizedCountryName": {
+      "1031": "Montenegro",
+      "1033": "Montenegro",
+      "1036": "Monténégro",
+      "1038": "Montenegró",
+      "1040": "Montenegro",
+      "2070": "Montenegro",
+      "3082": "Montenegro"
+    }
+  },
+  {
+    "Country": "Morocco",
+    "CountryISO2": "MA",
+    "CountryISO3": "MAR",
+    "LocalizedCountryName": {
+      "1031": "Marokko",
+      "1033": "Morocco",
+      "1036": "Maroc",
+      "1038": "Marokkó",
+      "1040": "Marocco",
+      "2070": "Marrocos",
+      "3082": "Marruecos"
+    }
+  },
+  {
+    "Country": "Mozambique",
+    "CountryISO2": "MZ",
+    "CountryISO3": "MOZ",
+    "LocalizedCountryName": {
+      "1031": "Mosambik",
+      "1033": "Mozambique",
+      "1036": "Mozambique",
+      "1038": "Mozambik",
+      "1040": "Mozambico",
+      "2070": "Moçambique",
+      "3082": "Mozambique"
+    }
+  },
+  {
+    "Country": "Myanmar",
+    "CountryISO2": "MM",
+    "CountryISO3": "MMR",
+    "LocalizedCountryName": {
+      "1031": "Myanmar",
+      "1033": "Myanmar",
+      "1036": "Myanmar",
+      "1038": "Mianmar",
+      "1040": "Myanmar",
+      "2070": "Mianmar",
+      "3082": "Birmania"
+    }
+  },
+  {
+    "Country": "Namibia",
+    "CountryISO2": "NA",
+    "CountryISO3": "NAM",
+    "LocalizedCountryName": {
+      "1031": "Namibia",
+      "1033": "Namibia",
+      "1036": "Namibie",
+      "1038": "Namíbia",
+      "1040": "Namibia",
+      "2070": "Namíbia",
+      "3082": "Namibia"
+    }
+  },
+  {
+    "Country": "Nauru",
+    "CountryISO2": "NR",
+    "CountryISO3": "NRU",
+    "LocalizedCountryName": {
+      "1031": "Nauru",
+      "1033": "Nauru",
+      "1036": "Nauru",
+      "1038": "Nauru",
+      "1040": "Nauru",
+      "2070": "Nauru",
+      "3082": "Nauru"
+    }
+  },
+  {
+    "Country": "Nepal",
+    "CountryISO2": "NP",
+    "CountryISO3": "NPL",
+    "LocalizedCountryName": {
+      "1031": "Nepal",
+      "1033": "Nepal",
+      "1036": "Népal",
+      "1038": "Nepál",
+      "1040": "Nepal",
+      "2070": "Nepal",
+      "3082": "Nepal"
+    }
+  },
+  {
+    "Country": "Netherlands",
+    "CountryISO2": "NL",
+    "CountryISO3": "NLD",
+    "LocalizedCountryName": {
+      "1031": "Niederlande",
+      "1033": "Netherlands",
+      "1036": "Pays-Bas",
+      "1038": "Hollandia",
+      "1040": "Paesi Bassi",
+      "2070": "Países Baixos",
+      "3082": "Países Bajos"
+    }
+  },
+  {
+    "Country": "New Zealand",
+    "CountryISO2": "NZ",
+    "CountryISO3": "NZL",
+    "LocalizedCountryName": {
+      "1031": "Neuseeland",
+      "1033": "New Zealand",
+      "1036": "Nouvelle-Zélande",
+      "1038": "Új-Zéland",
+      "1040": "Nuova Zelanda",
+      "2070": "Nova Zelândia",
+      "3082": "Nueva Zelanda"
+    }
+  },
+  {
+    "Country": "Nicaragua",
+    "CountryISO2": "NI",
+    "CountryISO3": "NIC",
+    "LocalizedCountryName": {
+      "1031": "Nicaragua",
+      "1033": "Nicaragua",
+      "1036": "Nicaragua",
+      "1038": "Nicaragua",
+      "1040": "Nicaragua",
+      "2070": "Nicarágua",
+      "3082": "Nicaragua"
+    }
+  },
+  {
+    "Country": "Niger",
+    "CountryISO2": "NE",
+    "CountryISO3": "NER",
+    "LocalizedCountryName": {
+      "1031": "Niger",
+      "1033": "Niger",
+      "1036": "Niger",
+      "1038": "Niger",
+      "1040": "Niger",
+      "2070": "Níger",
+      "3082": "Níger"
+    }
+  },
+  {
+    "Country": "Nigeria",
+    "CountryISO2": "NG",
+    "CountryISO3": "NGA",
+    "LocalizedCountryName": {
+      "1031": "Nigeria",
+      "1033": "Nigeria",
+      "1036": "Nigeria",
+      "1038": "Nigéria",
+      "1040": "Nigeria",
+      "2070": "Nigéria",
+      "3082": "Nigeria"
+    }
+  },
+  {
+    "Country": "North Korea",
+    "CountryISO2": "KP",
+    "CountryISO3": "PRK",
+    "LocalizedCountryName": {
+      "1031": "Nordkorea",
+      "1033": "North Korea",
+      "1036": "Corée du Nord",
+      "1038": "Észak-Korea",
+      "1040": "Corea del Nord",
+      "2070": "Coreia do Norte",
+      "3082": "Corea del Norte"
+    }
+  },
+  {
+    "Country": "North Macedonia",
+    "CountryISO2": "MK",
+    "CountryISO3": "MKD",
+    "LocalizedCountryName": {
+      "1031": "Nordmazedonien",
+      "1033": "North Macedonia",
+      "1036": "Macédoine du Nord",
+      "1038": "Észak-Macedónia",
+      "1040": "Macedonia del Nord",
+      "2070": "Macedônia do Norte",
+      "3082": "Macedonia del Norte"
+    }
+  },
+  {
+    "Country": "Norway",
+    "CountryISO2": "NO",
+    "CountryISO3": "NOR",
+    "LocalizedCountryName": {
+      "1031": "Norwegen",
+      "1033": "Norway",
+      "1036": "Norvège",
+      "1038": "Norvégia",
+      "1040": "Norvegia",
+      "2070": "Noruega",
+      "3082": "Noruega"
+    }
+  },
+  {
+    "Country": "Oman",
+    "CountryISO2": "OM",
+    "CountryISO3": "OMN",
+    "LocalizedCountryName": {
+      "1031": "Oman",
+      "1033": "Oman",
+      "1036": "Oman",
+      "1038": "Omán",
+      "1040": "Oman",
+      "2070": "Omã",
+      "3082": "Omán"
+    }
+  },
+  {
+    "Country": "Pakistan",
+    "CountryISO2": "PK",
+    "CountryISO3": "PAK",
+    "LocalizedCountryName": {
+      "1031": "Pakistan",
+      "1033": "Pakistan",
+      "1036": "Pakistan",
+      "1038": "Pakisztán",
+      "1040": "Pakistan",
+      "2070": "Paquistão",
+      "3082": "Pakistán"
+    }
+  },
+  {
+    "Country": "Palau",
+    "CountryISO2": "PW",
+    "CountryISO3": "PLW",
+    "LocalizedCountryName": {
+      "1031": "Palau",
+      "1033": "Palau",
+      "1036": "Palaos",
+      "1038": "Palau",
+      "1040": "Palau",
+      "2070": "Palau",
+      "3082": "Palaos"
+    }
+  },
+  {
+    "Country": "Palestine",
+    "CountryISO2": "PS",
+    "CountryISO3": "PSE",
+    "LocalizedCountryName": {
+      "1031": "Palästina",
+      "1033": "Palestine",
+      "1036": "Palestine",
+      "1038": "Palesztin",
+      "1040": "Palestina",
+      "2070": "Palestina",
+      "3082": "Palestina"
+    }
+  },
+  {
+    "Country": "Panama",
+    "CountryISO2": "PA",
+    "CountryISO3": "PAN",
+    "LocalizedCountryName": {
+      "1031": "Panama",
+      "1033": "Panama",
+      "1036": "Panama",
+      "1038": "Panama",
+      "1040": "Panama",
+      "2070": "Panamá",
+      "3082": "Panamá"
+    }
+  },
+  {
+    "Country": "Papua New Guinea",
+    "CountryISO2": "PG",
+    "CountryISO3": "PNG",
+    "LocalizedCountryName": {
+      "1031": "Papua-Neuguinea",
+      "1033": "Papua New Guinea",
+      "1036": "Papouasie-Nouvelle-Guinée",
+      "1038": "Pápua Új-Guinea",
+      "1040": "Papua Nuova Guinea",
+      "2070": "Papua-Nova Guiné",
+      "3082": "Papúa Nueva Guinea"
+    }
+  },
+  {
+    "Country": "Paraguay",
+    "CountryISO2": "PY",
+    "CountryISO3": "PRY",
+    "LocalizedCountryName": {
+      "1031": "Paraguay",
+      "1033": "Paraguay",
+      "1036": "Paraguay",
+      "1038": "Paraguay",
+      "1040": "Paraguay",
+      "2070": "Paraguai",
+      "3082": "Paraguay"
+    }
+  },
+  {
+    "Country": "Peru",
+    "CountryISO2": "PE",
+    "CountryISO3": "PER",
+    "LocalizedCountryName": {
+      "1031": "Peru",
+      "1033": "Peru",
+      "1036": "Pérou",
+      "1038": "Peru",
+      "1040": "Perù",
+      "2070": "Peru",
+      "3082": "Perú"
+    }
+  },
+  {
+    "Country": "Philippines",
+    "CountryISO2": "PH",
+    "CountryISO3": "PHL",
+    "LocalizedCountryName": {
+      "1031": "Philippinen",
+      "1033": "Philippines",
+      "1036": "Philippines",
+      "1038": "Fülöp-szigetek",
+      "1040": "Filippine",
+      "2070": "Filipinas",
+      "3082": "Filipinas"
+    }
+  },
+  {
+    "Country": "Poland",
+    "CountryISO2": "PL",
+    "CountryISO3": "POL",
+    "LocalizedCountryName": {
+      "1031": "Polen",
+      "1033": "Poland",
+      "1036": "Pologne",
+      "1038": "Lengyelország",
+      "1040": "Polonia",
+      "2070": "Polônia",
+      "3082": "Polonia"
+    }
+  },
+  {
+    "Country": "Portugal",
+    "CountryISO2": "PT",
+    "CountryISO3": "PRT",
+    "LocalizedCountryName": {
+      "1031": "Portugal",
+      "1033": "Portugal",
+      "1036": "Portugal",
+      "1038": "Portugália",
+      "1040": "Portogallo",
+      "2070": "Portugal",
+      "3082": "Portugal"
+    }
+  },
+  {
+    "Country": "Qatar",
+    "CountryISO2": "QA",
+    "CountryISO3": "QAT",
+    "LocalizedCountryName": {
+      "1031": "Katar",
+      "1033": "Qatar",
+      "1036": "Qatar",
+      "1038": "Katar",
+      "1040": "Qatar",
+      "2070": "Catar",
+      "3082": "Catar"
+    }
+  },
+  {
+    "Country": "Romania",
+    "CountryISO2": "RO",
+    "CountryISO3": "ROU",
+    "LocalizedCountryName": {
+      "1031": "Rumänien",
+      "1033": "Romania",
+      "1036": "Roumanie",
+      "1038": "Románia",
+      "1040": "Romania",
+      "2070": "Romênia",
+      "3082": "Rumania"
+    }
+  },
+  {
+    "Country": "Russia",
+    "CountryISO2": "RU",
+    "CountryISO3": "RUS",
+    "LocalizedCountryName": {
+      "1031": "Russland",
+      "1033": "Russia",
+      "1036": "Russie",
+      "1038": "Oroszország",
+      "1040": "Russia",
+      "2070": "Rússia",
+      "3082": "Rusia"
+    }
+  },
+  {
+    "Country": "Rwanda",
+    "CountryISO2": "RW",
+    "CountryISO3": "RWA",
+    "LocalizedCountryName": {
+      "1031": "Ruanda",
+      "1033": "Rwanda",
+      "1036": "Rwanda",
+      "1038": "Ruanda",
+      "1040": "Ruanda",
+      "2070": "Ruanda",
+      "3082": "Ruanda"
+    }
+  },
+  {
+    "Country": "Saint Kitts and Nevis",
+    "CountryISO2": "KN",
+    "CountryISO3": "KNA",
+    "LocalizedCountryName": {
+      "1031": "St. Kitts und Nevis",
+      "1033": "Saint Kitts and Nevis",
+      "1036": "Saint-Christophe-et-Niévès",
+      "1038": "Saint Kitts és Nevis",
+      "1040": "Saint Kitts e Nevis",
+      "2070": "São Cristóvão e Neves",
+      "3082": "San Cristóbal y Nieves"
+    }
+  },
+  {
+    "Country": "Saint Lucia",
+    "CountryISO2": "LC",
+    "CountryISO3": "LCA",
+    "LocalizedCountryName": {
+      "1031": "St. Lucia",
+      "1033": "Saint Lucia",
+      "1036": "Sainte-Lucie",
+      "1038": "Saint Lucia",
+      "1040": "Santa Lucia",
+      "2070": "Santa Lúcia",
+      "3082": "Santa Lucía"
+    }
+  },
+  {
+    "Country": "Saint Vincent and the Grenadines",
+    "CountryISO2": "VC",
+    "CountryISO3": "VCT",
+    "LocalizedCountryName": {
+      "1031": "St. Vincent und die Grenadinen",
+      "1033": "Saint Vincent and the Grenadines",
+      "1036": "Saint-Vincent-et-les-Grenadines",
+      "1038": "Saint Vincent és a Grenadine-szigetek",
+      "1040": "Saint Vincent e Grenadine",
+      "2070": "São Vicente e Granadinas",
+      "3082": "San Vicente y las Granadinas"
+    }
+  },
+  {
+    "Country": "Samoa",
+    "CountryISO2": "WS",
+    "CountryISO3": "WSM",
+    "LocalizedCountryName": {
+      "1031": "Samoa",
+      "1033": "Samoa",
+      "1036": "Samoa",
+      "1038": "Szamoa",
+      "1040": "Samoa",
+      "2070": "Samoa",
+      "3082": "Samoa"
+    }
+  },
+  {
+    "Country": "San Marino",
+    "CountryISO2": "SM",
+    "CountryISO3": "SMR",
+    "LocalizedCountryName": {
+      "1031": "San Marino",
+      "1033": "San Marino",
+      "1036": "Saint-Marin",
+      "1038": "San Marino",
+      "1040": "San Marino",
+      "2070": "San Marino",
+      "3082": "San Marino"
+    }
+  },
+  {
+    "Country": "Sao Tome and Principe",
+    "CountryISO2": "ST",
+    "CountryISO3": "STP",
+    "LocalizedCountryName": {
+      "1031": "São Tomé und Príncipe",
+      "1033": "Sao Tome and Principe",
+      "1036": "Sao Tomé-et-Principe",
+      "1038": "São Tomé és Príncipe",
+      "1040": "São Tomé e Príncipe",
+      "2070": "São Tomé e Príncipe",
+      "3082": "Santo Tomé y Príncipe"
+    }
+  },
+  {
+    "Country": "Saudi Arabia",
+    "CountryISO2": "SA",
+    "CountryISO3": "SAU",
+    "LocalizedCountryName": {
+      "1031": "Saudi-Arabien",
+      "1033": "Saudi Arabia",
+      "1036": "Arabie saoudite",
+      "1038": "Szaúd-Arábia",
+      "1040": "Arabia Saudita",
+      "2070": "Arábia Saudita",
+      "3082": "Arabia Saudita"
+    }
+  },
+  {
+    "Country": "Senegal",
+    "CountryISO2": "SN",
+    "CountryISO3": "SEN",
+    "LocalizedCountryName": {
+      "1031": "Senegal",
+      "1033": "Senegal",
+      "1036": "Sénégal",
+      "1038": "Szenegál",
+      "1040": "Senegal",
+      "2070": "Senegal",
+      "3082": "Senegal"
+    }
+  },
+  {
+    "Country": "Serbia",
+    "CountryISO2": "RS",
+    "CountryISO3": "SRB",
+    "LocalizedCountryName": {
+      "1031": "Serbien",
+      "1033": "Serbia",
+      "1036": "Serbie",
+      "1038": "Szerbia",
+      "1040": "Serbia",
+      "2070": "Sérvia",
+      "3082": "Serbia"
+    }
+  },
+  {
+    "Country": "Seychelles",
+    "CountryISO2": "SC",
+    "CountryISO3": "SYC",
+    "LocalizedCountryName": {
+      "1031": "Seychellen",
+      "1033": "Seychelles",
+      "1036": "Seychelles",
+      "1038": "Seychelle-szigetek",
+      "1040": "Seychelles",
+      "2070": "Seicheles",
+      "3082": "Seychelles"
+    }
+  },
+  {
+    "Country": "Sierra Leone",
+    "CountryISO2": "SL",
+    "CountryISO3": "SLE",
+    "LocalizedCountryName": {
+      "1031": "Sierra Leone",
+      "1033": "Sierra Leone",
+      "1036": "Sierra Leone",
+      "1038": "Sierra Leone",
+      "1040": "Sierra Leone",
+      "2070": "Serra Leoa",
+      "3082": "Sierra Leona"
+    }
+  },
+  {
+    "Country": "Singapore",
+    "CountryISO2": "SG",
+    "CountryISO3": "SGP",
+    "LocalizedCountryName": {
+      "1031": "Singapur",
+      "1033": "Singapore",
+      "1036": "Singapour",
+      "1038": "Szingapúr",
+      "1040": "Singapore",
+      "2070": "Singapura",
+      "3082": "Singapur"
+    }
+  },
+  {
+    "Country": "Slovakia",
+    "CountryISO2": "SK",
+    "CountryISO3": "SVK",
+    "LocalizedCountryName": {
+      "1031": "Slowakei",
+      "1033": "Slovakia",
+      "1036": "Slovaquie",
+      "1038": "Szlovákia",
+      "1040": "Slovacchia",
+      "2070": "Eslováquia",
+      "3082": "Eslovaquia"
+    }
+  },
+  {
+    "Country": "Slovenia",
+    "CountryISO2": "SI",
+    "CountryISO3": "SVN",
+    "LocalizedCountryName": {
+      "1031": "Slowenien",
+      "1033": "Slovenia",
+      "1036": "Slovénie",
+      "1038": "Szlovénia",
+      "1040": "Slovenia",
+      "2070": "Eslovênia",
+      "3082": "Eslovenia"
+    }
+  },
+  {
+    "Country": "Solomon Islands",
+    "CountryISO2": "SB",
+    "CountryISO3": "SLB",
+    "LocalizedCountryName": {
+      "1031": "Salomonen",
+      "1033": "Solomon Islands",
+      "1036": "Îles Salomon",
+      "1038": "Salamon-szigetek",
+      "1040": "Isole Salomone",
+      "2070": "Ilhas Salomão",
+      "3082": "Islas Salomón"
+    }
+  },
+  {
+    "Country": "Somalia",
+    "CountryISO2": "SO",
+    "CountryISO3": "SOM",
+    "LocalizedCountryName": {
+      "1031": "Somalia",
+      "1033": "Somalia",
+      "1036": "Somalie",
+      "1038": "Szomália",
+      "1040": "Somalia",
+      "2070": "Somália",
+      "3082": "Somalia"
+    }
+  },
+  {
+    "Country": "South Africa",
+    "CountryISO2": "ZA",
+    "CountryISO3": "ZAF",
+    "LocalizedCountryName": {
+      "1031": "Südafrika",
+      "1033": "South Africa",
+      "1036": "Afrique du Sud",
+      "1038": "Dél-afrikai Köztársaság",
+      "1040": "Sudafrica",
+      "2070": "África do Sul",
+      "3082": "Sudáfrica"
+    }
+  },
+  {
+    "Country": "South Korea",
+    "CountryISO2": "KR",
+    "CountryISO3": "KOR",
+    "LocalizedCountryName": {
+      "1031": "Südkorea",
+      "1033": "South Korea",
+      "1036": "Corée du Sud",
+      "1038": "Dél-Korea",
+      "1040": "Corea del Sud",
+      "2070": "Coreia do Sul",
+      "3082": "Corea del Sur"
+    }
+  },
+  {
+    "Country": "South Sudan",
+    "CountryISO2": "SS",
+    "CountryISO3": "SSD",
+    "LocalizedCountryName": {
+      "1031": "Südsudan",
+      "1033": "South Sudan",
+      "1036": "Soudan du Sud",
+      "1038": "Dél-Szudán",
+      "1040": "Sudan del Sud",
+      "2070": "Sudão do Sul",
+      "3082": "Sudán del Sur"
+    }
+  },
+  {
+    "Country": "Spain",
+    "CountryISO2": "ES",
+    "CountryISO3": "ESP",
+    "LocalizedCountryName": {
+      "1031": "Spanien",
+      "1033": "Spain",
+      "1036": "Espagne",
+      "1038": "Spanyolország",
+      "1040": "Spagna",
+      "2070": "Espanha",
+      "3082": "España"
+    }
+  },
+  {
+    "Country": "Sri Lanka",
+    "CountryISO2": "LK",
+    "CountryISO3": "LKA",
+    "LocalizedCountryName": {
+      "1031": "Sri Lanka",
+      "1033": "Sri Lanka",
+      "1036": "Sri Lanka",
+      "1038": "Srí Lanka",
+      "1040": "Sri Lanka",
+      "2070": "Sri Lanka",
+      "3082": "Sri Lanka"
+    }
+  },
+  {
+    "Country": "Sudan",
+    "CountryISO2": "SD",
+    "CountryISO3": "SDN",
+    "LocalizedCountryName": {
+      "1031": "Sudan",
+      "1033": "Sudan",
+      "1036": "Soudan",
+      "1038": "Szudán",
+      "1040": "Sudan",
+      "2070": "Sudão",
+      "3082": "Sudán"
+    }
+  },
+  {
+    "Country": "Suriname",
+    "CountryISO2": "SR",
+    "CountryISO3": "SUR",
+    "LocalizedCountryName": {
+      "1031": "Suriname",
+      "1033": "Suriname",
+      "1036": "Suriname",
+      "1038": "Suriname",
+      "1040": "Suriname",
+      "2070": "Suriname",
+      "3082": "Surinam"
+    }
+  },
+  {
+    "Country": "Sweden",
+    "CountryISO2": "SE",
+    "CountryISO3": "SWE",
+    "LocalizedCountryName": {
+      "1031": "Schweden",
+      "1033": "Sweden",
+      "1036": "Suède",
+      "1038": "Svédország",
+      "1040": "Svezia",
+      "2070": "Suécia",
+      "3082": "Suecia"
+    }
+  },
+  {
+    "Country": "Switzerland",
+    "CountryISO2": "CH",
+    "CountryISO3": "CHE",
+    "LocalizedCountryName": {
+      "1031": "Schweiz",
+      "1033": "Switzerland",
+      "1036": "Suisse",
+      "1038": "Svájc",
+      "1040": "Svizzera",
+      "2070": "Suíça",
+      "3082": "Suiza"
+    }
+  },
+  {
+    "Country": "Syria",
+    "CountryISO2": "SY",
+    "CountryISO3": "SYR",
+    "LocalizedCountryName": {
+      "1031": "Syrien",
+      "1033": "Syria",
+      "1036": "Syrie",
+      "1038": "Szíria",
+      "1040": "Siria",
+      "2070": "Síria",
+      "3082": "Siria"
+    }
+  },
+  {
+    "Country": "Taiwan",
+    "CountryISO2": "TW",
+    "CountryISO3": "TWN",
+    "LocalizedCountryName": {
+      "1031": "Taiwan",
+      "1033": "Taiwan",
+      "1036": "Taïwan",
+      "1038": "Tajvan",
+      "1040": "Taiwan",
+      "2070": "Taiwan",
+      "3082": "Taiwán"
+    }
+  },
+  {
+    "Country": "Tajikistan",
+    "CountryISO2": "TJ",
+    "CountryISO3": "TJK",
+    "LocalizedCountryName": {
+      "1031": "Tadschikistan",
+      "1033": "Tajikistan",
+      "1036": "Tadjikistan",
+      "1038": "Tádzsikisztán",
+      "1040": "Tagikistan",
+      "2070": "Tajiquistão",
+      "3082": "Tayikistán"
+    }
+  },
+  {
+    "Country": "Tanzania",
+    "CountryISO2": "TZ",
+    "CountryISO3": "TZA",
+    "LocalizedCountryName": {
+      "1031": "Tansania",
+      "1033": "Tanzania",
+      "1036": "Tanzanie",
+      "1038": "Tanzánia",
+      "1040": "Tanzania",
+      "2070": "Tanzânia",
+      "3082": "Tanzania"
+    }
+  },
+  {
+    "Country": "Thailand",
+    "CountryISO2": "TH",
+    "CountryISO3": "THA",
+    "LocalizedCountryName": {
+      "1031": "Thailand",
+      "1033": "Thailand",
+      "1036": "Thaïlande",
+      "1038": "Thaiföld",
+      "1040": "Thailandia",
+      "2070": "Tailândia",
+      "3082": "Tailandia"
+    }
+  },
+  {
+    "Country": "Timor-Leste",
+    "CountryISO2": "TL",
+    "CountryISO3": "TLS",
+    "LocalizedCountryName": {
+      "1031": "Timor-Leste",
+      "1033": "Timor-Leste",
+      "1036": "Timor-Leste",
+      "1038": "Kelet-Timor",
+      "1040": "Timor Est",
+      "2070": "Timor-Leste",
+      "3082": "Timor Oriental"
+    }
+  },
+  {
+    "Country": "Togo",
+    "CountryISO2": "TG",
+    "CountryISO3": "TGO",
+    "LocalizedCountryName": {
+      "1031": "Togo",
+      "1033": "Togo",
+      "1036": "Togo",
+      "1038": "Togo",
+      "1040": "Togo",
+      "2070": "Togo",
+      "3082": "Togo"
+    }
+  },
+  {
+    "Country": "Tonga",
+    "CountryISO2": "TO",
+    "CountryISO3": "TON",
+    "LocalizedCountryName": {
+      "1031": "Tonga",
+      "1033": "Tonga",
+      "1036": "Tonga",
+      "1038": "Tonga",
+      "1040": "Tonga",
+      "2070": "Tonga",
+      "3082": "Tonga"
+    }
+  },
+  {
+    "Country": "Trinidad and Tobago",
+    "CountryISO2": "TT",
+    "CountryISO3": "TTO",
+    "LocalizedCountryName": {
+      "1031": "Trinidad und Tobago",
+      "1033": "Trinidad and Tobago",
+      "1036": "Trinité-et-Tobago",
+      "1038": "Trinidad és Tobago",
+      "1040": "Trinidad e Tobago",
+      "2070": "Trinidad e Tobago",
+      "3082": "Trinidad y Tobago"
+    }
+  },
+  {
+    "Country": "Tunisia",
+    "CountryISO2": "TN",
+    "CountryISO3": "TUN",
+    "LocalizedCountryName": {
+      "1031": "Tunesien",
+      "1033": "Tunisia",
+      "1036": "Tunisie",
+      "1038": "Tunézia",
+      "1040": "Tunisia",
+      "2070": "Tunísia",
+      "3082": "Túnez"
+    }
+  },
+  {
+    "Country": "Turkey",
+    "CountryISO2": "TR",
+    "CountryISO3": "TUR",
+    "LocalizedCountryName": {
+      "1031": "Türkei",
+      "1033": "Turkey",
+      "1036": "Turquie",
+      "1038": "Törökország",
+      "1040": "Turchia",
+      "2070": "Turquia",
+      "3082": "Turquía"
+    }
+  },
+  {
+    "Country": "Turkmenistan",
+    "CountryISO2": "TM",
+    "CountryISO3": "TKM",
+    "LocalizedCountryName": {
+      "1031": "Turkmenistan",
+      "1033": "Turkmenistan",
+      "1036": "Turkménistan",
+      "1038": "Türkmenisztán",
+      "1040": "Turkmenistan",
+      "2070": "Turcomenistão",
+      "3082": "Turkmenistán"
+    }
+  },
+  {
+    "Country": "Tuvalu",
+    "CountryISO2": "TV",
+    "CountryISO3": "TUV",
+    "LocalizedCountryName": {
+      "1031": "Tuvalu",
+      "1033": "Tuvalu",
+      "1036": "Tuvalu",
+      "1038": "Tuvalu",
+      "1040": "Tuvalu",
+      "2070": "Tuvalu",
+      "3082": "Tuvalu"
+    }
+  },
+  {
+    "Country": "Uganda",
+    "CountryISO2": "UG",
+    "CountryISO3": "UGA",
+    "LocalizedCountryName": {
+      "1031": "Uganda",
+      "1033": "Uganda",
+      "1036": "Ouganda",
+      "1038": "Uganda",
+      "1040": "Uganda",
+      "2070": "Uganda",
+      "3082": "Uganda"
+    }
+  },
+  {
+    "Country": "Ukraine",
+    "CountryISO2": "UA",
+    "CountryISO3": "UKR",
+    "LocalizedCountryName": {
+      "1031": "Ukraine",
+      "1033": "Ukraine",
+      "1036": "Ukraine",
+      "1038": "Ukrajna",
+      "1040": "Ucraina",
+      "2070": "Ucrânia",
+      "3082": "Ucrania"
+    }
+  },
+  {
+    "Country": "United Arab Emirates",
+    "CountryISO2": "AE",
+    "CountryISO3": "ARE",
+    "LocalizedCountryName": {
+      "1031": "Vereinigte Arabische Emirate",
+      "1033": "United Arab Emirates",
+      "1036": "Émirats arabes unis",
+      "1038": "Egyesült Arab Emírségek",
+      "1040": "Emirati Arabi Uniti",
+      "2070": "Emirados Árabes Unidos",
+      "3082": "Emiratos Árabes Unidos"
+    }
+  },
+  {
+    "Country": "United Kingdom",
+    "CountryISO2": "GB",
+    "CountryISO3": "GBR",
+    "LocalizedCountryName": {
+      "1031": "Vereinigtes Königreich",
+      "1033": "United Kingdom",
+      "1036": "Royaume-Uni",
+      "1038": "Egyesült Királyság",
+      "1040": "Regno Unito",
+      "2070": "Reino Unido",
+      "3082": "Reino Unido"
+    }
+  },
+  {
+    "Country": "United States",
+    "CountryISO2": "US",
+    "CountryISO3": "USA",
+    "LocalizedCountryName": {
+      "1031": "Vereinigte Staaten",
+      "1033": "United States",
+      "1036": "États-Unis",
+      "1038": "Egyesült Államok",
+      "1040": "Stati Uniti",
+      "2070": "Estados Unidos",
+      "3082": "Estados Unidos"
+    }
+  },
+  {
+    "Country": "Uruguay",
+    "CountryISO2": "UY",
+    "CountryISO3": "URY",
+    "LocalizedCountryName": {
+      "1031": "Uruguay",
+      "1033": "Uruguay",
+      "1036": "Uruguay",
+      "1038": "Uruguay",
+      "1040": "Uruguay",
+      "2070": "Uruguai",
+      "3082": "Uruguay"
+    }
+  },
+  {
+    "Country": "Uzbekistan",
+    "CountryISO2": "UZ",
+    "CountryISO3": "UZB",
+    "LocalizedCountryName": {
+      "1031": "Usbekistan",
+      "1033": "Uzbekistan",
+      "1036": "Ouzbékistan",
+      "1038": "Üzbegisztán",
+      "1040": "Uzbekistan",
+      "2070": "Uzbequistão",
+      "3082": "Uzbekistán"
+    }
+  },
+  {
+    "Country": "Vanuatu",
+    "CountryISO2": "VU",
+    "CountryISO3": "VUT",
+    "LocalizedCountryName": {
+      "1031": "Vanuatu",
+      "1033": "Vanuatu",
+      "1036": "Vanuatu",
+      "1038": "Vanuatu",
+      "1040": "Vanuatu",
+      "2070": "Vanuatu",
+      "3082": "Vanuatu"
+    }
+  },
+  {
+    "Country": "Vatican City",
+    "CountryISO2": "VA",
+    "CountryISO3": "VAT",
+    "LocalizedCountryName": {
+      "1031": "Vatikanstadt",
+      "1033": "Vatican City",
+      "1036": "Vatican",
+      "1038": "Vatikán",
+      "1040": "Città del Vaticano",
+      "2070": "Cidade do Vaticano",
+      "3082": "Ciudad del Vaticano"
+    }
+  },
+  {
+    "Country": "Venezuela",
+    "CountryISO2": "VE",
+    "CountryISO3": "VEN",
+    "LocalizedCountryName": {
+      "1031": "Venezuela",
+      "1033": "Venezuela",
+      "1036": "Venezuela",
+      "1038": "Venezuela",
+      "1040": "Venezuela",
+      "2070": "Venezuela",
+      "3082": "Venezuela"
+    }
+  },
+  {
+    "Country": "Vietnam",
+    "CountryISO2": "VN",
+    "CountryISO3": "VNM",
+    "LocalizedCountryName": {
+      "1031": "Vietnam",
+      "1033": "Vietnam",
+      "1036": "Viêt Nam",
+      "1038": "Vietnám",
+      "1040": "Vietnam",
+      "2070": "Vietnã",
+      "3082": "Vietnam"
+    }
+  },
+  {
+    "Country": "Yemen",
+    "CountryISO2": "YE",
+    "CountryISO3": "YEM",
+    "LocalizedCountryName": {
+      "1031": "Jemen",
+      "1033": "Yemen",
+      "1036": "Yémen",
+      "1038": "Jemen",
+      "1040": "Yemen",
+      "2070": "Iêmen",
+      "3082": "Yemen"
+    }
+  },
+  {
+    "Country": "Zambia",
+    "CountryISO2": "ZM",
+    "CountryISO3": "ZMB",
+    "LocalizedCountryName": {
+      "1031": "Sambia",
+      "1033": "Zambia",
+      "1036": "Zambie",
+      "1038": "Zambia",
+      "1040": "Zambia",
+      "2070": "Zâmbia",
+      "3082": "Zambia"
+    }
+  },
+  {
+    "Country": "Zimbabwe",
+    "CountryISO2": "ZW",
+    "CountryISO3": "ZWE",
+    "LocalizedCountryName": {
+      "1031": "Simbabwe",
+      "1033": "Zimbabwe",
+      "1036": "Zimbabwe",
+      "1038": "Zimbabwe",
+      "1040": "Zimbabwe",
+      "2070": "Zimbábue",
+      "3082": "Zimbabue"
+    }
+  }
+]

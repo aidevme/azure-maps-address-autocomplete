@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<manifest>
+  <control namespace="AIDEVME.CRM.Pcf" constructor="AzureMapsAddressAutoComplete" version="0.0.13" display-name-key="AzureMapsAddressAutoComplete" description-key="AzureMapsAddressAutoComplete description" control-type="virtual" preview-image="img/preview.png">
+    <external-service-usage enabled="false" />
+    <property name="azureMapsAddressSearchAutoComplete" display-name-key="azureMapsAddressSearchAutoComplete_Display_Key" description-key="azureMapsAddressSearchAutoComplete_Desc_Key" of-type="SingleLine.Text" usage="bound" required="true" />
+    <property name="street" display-name-key="street_Display_Key" description-key="street_Desc_Key" of-type="SingleLine.Text" usage="bound" />
+    <property name="city" display-name-key="city_Display_Key" description-key="city_Desc_Key" of-type="SingleLine.Text" usage="bound" />
+    <property name="postalCode" display-name-key="postalCode_Display_Key" description-key="postalCode_Desc_Key" of-type="SingleLine.Text" usage="bound" />
+    <property name="county" display-name-key="county_Display_Key" description-key="county_Desc_Key" of-type="SingleLine.Text" usage="bound" />
+    <property name="stateProvince" display-name-key="stateProvince_Display_Key" description-key="stateProvince_Desc_Key" of-type="SingleLine.Text" usage="bound" />
+    <property name="country" display-name-key="country_Display_Key" description-key="country_Desc_Key" of-type="SingleLine.Text" usage="bound" />
+    <property name="longitude" display-name-key="longitude_Display_Key" description-key="longitude_Desc_Key" of-type="FP" usage="bound" />
+    <property name="latitude" display-name-key="latitude_Display_Key" description-key="latitude_Desc_Key" of-type="FP" usage="bound" />
+    <property name="resultScore" display-name-key="resultScore_Display_Key" description-key="resultScore_Desc_Key" of-type="FP" usage="bound" />
+    <property name="defaultCountries" display-name-key="defaultCountries_Display_Key" description-key="defaultCountries_Desc_Key" of-type="SingleLine.Text" usage="input" />
+    <property name="showMaps" display-name-key="showMaps_Display_Key" description-key="showMaps_Desc_Key" of-type="TwoOptions" usage="input" default-value="false" />
+    <property name="mapSize" display-name-key="mapSize_Display_Key" description-key="mapSize_Desc_Key" of-type="Enum" usage="input" default-value="1">
+      <value name="small" display-name-key="mapSize_small_Display_Key"  description-key="mapSize_small_Desc_Key">0</value>
+      <value name="medium" display-name-key="mapSize_medium_Display_Key" description-key="mapSize_medium_Desc_Key">1</value>
+      <value name="large" display-name-key="mapSize_large_Display_Key" description-key="mapSize_large_Desc_Key">2</value>
+    </property>
+    <property name="useUserLanguage" display-name-key="useUserLanguage_Display_Key" description-key="useUserLanguage_Desc_Key" of-type="TwoOptions" usage="input" default-value="false" />
+    <property name="defaultLanguage" display-name-key="defaultLanguage_Display_Key" description-key="defaultLanguage_Desc_Key" of-type="Enum" usage="input" default-value="1033">
+      <value name="af-ZA" display-name-key="defaultLanguage_af-ZA_Display_Key"  description-key="defaultLanguage_af-ZA_Desc_Key">1078</value>
+      <value name="ar" display-name-key="defaultLanguage_ar_Display_Key" description-key="defaultLanguage_ar_Desc_Key">1025</value>
+      <value name="bg-BG" display-name-key="defaultLanguage_bg-BG_Display_Key" description-key="defaultLanguage_bg-BG_Desc_Key">1026</value>
+      <value name="ca-ES" display-name-key="defaultLanguage_ca-ES_Display_Key" description-key="defaultLanguage_ca-ES_Desc_Key">1027</value>
+      <value name="cs-CZ" display-name-key="defaultLanguage_cs-CZ_Display_Key" description-key="defaultLanguage_cs-CZ_Desc_Key">1029</value>
+      <value name="da-DK" display-name-key="defaultLanguage_da-DK_Display_Key" description-key="defaultLanguage_da-DK_Desc_Key">1030</value>
+      <value name="de-DE" display-name-key="defaultLanguage_de-DE_Display_Key" description-key="defaultLanguage_de-DE_Desc_Key">1031</value>
+      <value name="el-GR" display-name-key="defaultLanguage_el-GR_Display_Key" description-key="defaultLanguage_el-GR_Desc_Key">1032</value>
+      <value name="en-AU" display-name-key="defaultLanguage_en-AU_Display_Key" description-key="defaultLanguage_en-AU_Desc_Key">3081</value>
+      <value name="en-GB" display-name-key="defaultLanguage_en-GB_Display_Key" description-key="defaultLanguage_en-GB_Desc_Key">2057</value>
+      <value name="en-NZ" display-name-key="defaultLanguage_en-NZ_Display_Key" description-key="defaultLanguage_en-NZ_Desc_Key">5129</value>
+      <value name="en-US" display-name-key="defaultLanguage_en-US_Display_Key" description-key="defaultLanguage_en-US_Desc_Key">1033</value>
+      <value name="es-419" display-name-key="defaultLanguage_es-419_Display_Key" description-key="defaultLanguage_es-419_Desc_Key">22538</value>
+      <value name="es-ES" display-name-key="defaultLanguage_es-ES_Display_Key" description-key="defaultLanguage_es-ES_Desc_Key">3082</value>
+      <value name="es-MX" display-name-key="defaultLanguage_es-MX_Display_Key" description-key="defaultLanguage_es-MX_Desc_Key">2058</value>
+      <value name="et-EE" display-name-key="defaultLanguage_et-EE_Display_Key" description-key="defaultLanguage_et-EE_Desc_Key">1061</value>
+      <value name="eu-ES" display-name-key="defaultLanguage_eu-ES_Display_Key" description-key="defaultLanguage_eu-ES_Desc_Key">1069</value>
+      <value name="fi-FI" display-name-key="defaultLanguage_fi-FI_Display_Key" description-key="defaultLanguage_fi-FI_Desc_Key">1035</value>
+      <value name="fr-CA" display-name-key="defaultLanguage_fr-CA_Display_Key" description-key="defaultLanguage_fr-CA_Desc_Key">3084</value>
+      <value name="fr-FR" display-name-key="defaultLanguage_fr-FR_Display_Key" description-key="defaultLanguage_fr-FR_Desc_Key">1036</value>
+      <value name="gl-ES" display-name-key="defaultLanguage_gl-ES_Display_Key" description-key="defaultLanguage_gl-ES_Desc_Key">1110</value>
+      <value name="he-IL" display-name-key="defaultLanguage_he-IL_Display_Key" description-key="defaultLanguage_he-IL_Desc_Key">1037</value>
+      <value name="hr-HR" display-name-key="defaultLanguage_hr-HR_Display_Key" description-key="defaultLanguage_hr-HR_Desc_Key">1050</value>
+      <value name="hu-HU" display-name-key="defaultLanguage_hu-HU_Display_Key" description-key="defaultLanguage_hu-HU_Desc_Key">1038</value>
+      <value name="id-ID" display-name-key="defaultLanguage_id-ID_Display_Key" description-key="defaultLanguage_id-ID_Desc_Key">1057</value>
+      <value name="it-IT" display-name-key="defaultLanguage_it-IT_Display_Key" description-key="defaultLanguage_it-IT_Desc_Key">1040</value>
+      <value name="kk-KZ" display-name-key="defaultLanguage_kk-KZ_Display_Key" description-key="defaultLanguage_kk-KZ_Desc_Key">1087</value>
+      <value name="lt-LT" display-name-key="defaultLanguage_lt-LT_Display_Key" description-key="defaultLanguage_lt-LT_Desc_Key">1063</value>
+      <value name="lv-LV" display-name-key="defaultLanguage_lv-LV_Display_Key" description-key="defaultLanguage_lv-LV_Desc_Key">1062</value>
+      <value name="ms-MY" display-name-key="defaultLanguage_ms-MY_Display_Key" description-key="defaultLanguage_ms-MY_Desc_Key">1086</value>
+      <value name="nb-NO" display-name-key="defaultLanguage_nb-NO_Display_Key" description-key="defaultLanguage_nb-NO_Desc_Key">1044</value>
+      <value name="nl-BE" display-name-key="defaultLanguage_nl-BE_Display_Key" description-key="defaultLanguage_nl-BE_Desc_Key">2067</value>
+      <value name="nl-NL" display-name-key="defaultLanguage_nl-NL_Display_Key" description-key="defaultLanguage_nl-NL_Desc_Key">1043</value>
+      <value name="pl-PL" display-name-key="defaultLanguage_pl-PL_Display_Key" description-key="defaultLanguage_pl-PL_Desc_Key">1045</value>
+      <value name="pt-BR" display-name-key="defaultLanguage_pt-BR_Display_Key" description-key="defaultLanguage_pt-BR_Desc_Key">1046</value>
+      <value name="pt-PT" display-name-key="defaultLanguage_pt-PT_Display_Key" description-key="defaultLanguage_pt-PT_Desc_Key">2070</value>
+      <value name="ro-RO" display-name-key="defaultLanguage_ro-RO_Display_Key" description-key="defaultLanguage_ro-RO_Desc_Key">1048</value>
+      <value name="ru-RU" display-name-key="defaultLanguage_ru-RU_Display_Key" description-key="defaultLanguage_ru-RU_Desc_Key">1049</value>
+      <value name="sk-SK" display-name-key="defaultLanguage_sk-SK_Display_Key" description-key="defaultLanguage_sk-SK_Desc_Key">1051</value>
+      <value name="sl-SI" display-name-key="defaultLanguage_sl-SI_Display_Key" description-key="defaultLanguage_sl-SI_Desc_Key">1060</value>
+      <value name="sr-Cyrl-RS" display-name-key="defaultLanguage_sr-Cyrl-RS_Display_Key" description-key="defaultLanguage_sr-Cyrl-RS_Desc_Key">10266</value>
+      <value name="sv-SE" display-name-key="defaultLanguage_sv-SE_Display_Key" description-key="defaultLanguage_sv-SE_Desc_Key">1053</value>
+      <value name="th-TH" display-name-key="defaultLanguage_th-TH_Display_Key" description-key="defaultLanguage_th-TH_Desc_Key">1054</value>
+      <value name="tr-TR" display-name-key="defaultLanguage_tr-TR_Display_Key" description-key="defaultLanguage_tr-TR_Desc_Key">1055</value>
+      <value name="uk-UA" display-name-key="defaultLanguage_uk-UA_Display_Key" description-key="defaultLanguage_uk-UA_Desc_Key">1058</value>
+      <value name="vi-VN" display-name-key="defaultLanguage_vi-VN_Display_Key" description-key="defaultLanguage_vi-VN_Desc_Key">1066</value>
+      <value name="zh-Hans-CN" display-name-key="defaultLanguage_zh-Hans-CN_Display_Key" description-key="defaultLanguage_zh-Hans-CN_Desc_Key">2052</value>
+      <value name="zh-Hant-TW" display-name-key="defaultLanguage_zh-Hant-TW_Display_Key" description-key="defaultLanguage_zh-Hant-TW_Desc_Key">1028</value>
+    </property>           
+    <property name="additionalParameters" display-name-key="additionalParameters_Display_Key" description-key="additionalParameters_Desc_Key" of-type="Multiple" usage="input" />
+    <property name="subscriptionKey" display-name-key="subscriptionKey_Display_Key" description-key="subscriptionKey_Desc_Key" of-type="SingleLine.Text" usage="input" required="true"  />
+    <resources>
+      <code path="index.ts" order="1" />
+      <platform-library name="React" version="16.14.0" />
+      <platform-library name="Fluent" version="9.46.2" />
+      <resx path="strings/AzureMapsAddressAutoComplete.1031.resx" version="1.0.0" />
+      <resx path="strings/AzureMapsAddressAutoComplete.1033.resx" version="1.0.0" />
+      <resx path="strings/AzureMapsAddressAutoComplete.1036.resx" version="1.0.0" />
+      <resx path="strings/AzureMapsAddressAutoComplete.1038.resx" version="1.0.0" />
+      <resx path="strings/AzureMapsAddressAutoComplete.1040.resx" version="1.0.0" />
+      <resx path="strings/AzureMapsAddressAutoComplete.2070.resx" version="1.0.0" />
+      <resx path="strings/AzureMapsAddressAutoComplete.3082.resx" version="1.0.0" />
+    </resources>
+    <feature-usage>
+      <uses-feature name="Utility" required="true" />
+      <uses-feature name="WebAPI" required="true" />
+    </feature-usage>
+  </control>
+</manifest>

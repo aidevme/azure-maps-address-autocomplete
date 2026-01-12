@@ -1,0 +1,866 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!--
+    Microsoft ResX Schema
+
+    Version 2.0
+
+    The primary goals of this format is to allow a simple XML format
+    that is mostly human readable. The generation and parsing of the
+    various data types are done through the TypeConverter classes
+    associated with the data types.
+
+    Example:
+
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+
+    There are any number of "resheader" rows that contain simple
+    name/value pairs.
+
+    Each data row contains a name, and value. The row also contains a
+    type or mimetype. Type corresponds to a .NET class that support
+    text/value conversion through the TypeConverter architecture.
+    Classes that don't support this are serialized and stored with the
+    mimetype set.
+
+    The mimetype is used for serialized objects, and tells the
+    ResXResourceReader how to depersist the object. This is currently not
+    extensible. For a given mimetype the value must be set accordingly:
+
+    Note - application/x-microsoft.net.object.binary.base64 is the format
+    that the ResXResourceWriter will generate, however the reader can
+    read any of the formats listed below.
+
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace"/>
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0"/>
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string"/>
+              <xsd:attribute name="type" type="xsd:string"/>
+              <xsd:attribute name="mimetype" type="xsd:string"/>
+              <xsd:attribute ref="xml:space"/>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string"/>
+              <xsd:attribute name="name" type="xsd:string"/>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2"/>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1"/>
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3"/>
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4"/>
+              <xsd:attribute ref="xml:space"/>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required"/>
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+
+  <!-- Nome e descrição do controlo -->
+  <data name="AzureMapsAddressAutoComplete" xml:space="preserve">
+    <value>Preenchimento automático de endereço Azure Maps</value>
+    <comment>Nome de apresentação do controlo</comment>
+  </data>
+  <data name="AzureMapsAddressAutoComplete description" xml:space="preserve">
+    <value>Um controlo PowerApps Component Framework (PCF) para preenchimento automático de endereços com Azure Maps. Fornece pesquisa inteligente de endereços, geocodificação e pré-visualização interativa de mapa.</value>
+    <comment>Descrição do controlo</comment>
+  </data>
+
+  <!-- Campo de pesquisa de endereço -->
+  <data name="azureMapsAddressSearchAutoComplete_Display_Key" xml:space="preserve">
+    <value>Endereço</value>
+    <comment>Nome de apresentação para o campo de endereço principal</comment>
+  </data>
+  <data name="azureMapsAddressSearchAutoComplete_Desc_Key" xml:space="preserve">
+    <value>O campo de endereço principal vinculado à funcionalidade de preenchimento automático. Este campo aciona a pesquisa de endereços do Azure Maps.</value>
+    <comment>Descrição do campo de endereço principal</comment>
+  </data>
+
+  <!-- Rua -->
+  <data name="street_Display_Key" xml:space="preserve">
+    <value>Rua</value>
+    <comment>Nome de apresentação para o campo rua</comment>
+  </data>
+  <data name="street_Desc_Key" xml:space="preserve">
+    <value>O campo rua a preencher com o nome da rua e número do endereço selecionado.</value>
+    <comment>Descrição do campo rua</comment>
+  </data>
+
+  <!-- Cidade -->
+  <data name="city_Display_Key" xml:space="preserve">
+    <value>Cidade</value>
+    <comment>Nome de apresentação para o campo cidade</comment>
+  </data>
+  <data name="city_Desc_Key" xml:space="preserve">
+    <value>O campo cidade a preencher com o município do endereço selecionado.</value>
+    <comment>Descrição do campo cidade</comment>
+  </data>
+
+  <!-- Código postal -->
+  <data name="postalCode_Display_Key" xml:space="preserve">
+    <value>Código Postal</value>
+    <comment>Nome de apresentação para o campo código postal</comment>
+  </data>
+  <data name="postalCode_Desc_Key" xml:space="preserve">
+    <value>O campo código postal a preencher a partir do endereço selecionado.</value>
+    <comment>Descrição do campo código postal</comment>
+  </data>
+
+  <!-- Concelho -->
+  <data name="county_Display_Key" xml:space="preserve">
+    <value>Concelho</value>
+    <comment>Nome de apresentação para o campo concelho</comment>
+  </data>
+  <data name="county_Desc_Key" xml:space="preserve">
+    <value>O campo concelho ou distrito a preencher a partir do endereço selecionado.</value>
+    <comment>Descrição do campo concelho</comment>
+  </data>
+
+  <!-- Distrito/Região -->
+  <data name="stateProvince_Display_Key" xml:space="preserve">
+    <value>Distrito/Região</value>
+    <comment>Nome de apresentação para o campo distrito/região</comment>
+  </data>
+  <data name="stateProvince_Desc_Key" xml:space="preserve">
+    <value>O campo distrito, região ou estado a preencher a partir do endereço selecionado.</value>
+    <comment>Descrição do campo distrito/região</comment>
+  </data>
+
+  <!-- País -->
+  <data name="country_Display_Key" xml:space="preserve">
+    <value>País</value>
+    <comment>Nome de apresentação para o campo país</comment>
+  </data>
+  <data name="country_Desc_Key" xml:space="preserve">
+    <value>O campo país a preencher com o nome do país do endereço selecionado.</value>
+    <comment>Descrição do campo país</comment>
+  </data>
+
+  <!-- Longitude -->
+  <data name="longitude_Display_Key" xml:space="preserve">
+    <value>Longitude</value>
+    <comment>Nome de apresentação para o campo longitude</comment>
+  </data>
+  <data name="longitude_Desc_Key" xml:space="preserve">
+    <value>O campo de coordenada longitude a preencher com a posição geocodificada (graus decimais).</value>
+    <comment>Descrição do campo longitude</comment>
+  </data>
+
+  <!-- Latitude -->
+  <data name="latitude_Display_Key" xml:space="preserve">
+    <value>Latitude</value>
+    <comment>Nome de apresentação para o campo latitude</comment>
+  </data>
+  <data name="latitude_Desc_Key" xml:space="preserve">
+    <value>O campo de coordenada latitude a preencher com a posição geocodificada (graus decimais).</value>
+    <comment>Descrição do campo latitude</comment>
+  </data>
+
+  <!-- Pontuação do resultado -->
+  <data name="resultScore_Display_Key" xml:space="preserve">
+    <value>Pontuação do resultado</value>
+    <comment>Nome de apresentação para o campo pontuação do resultado</comment>
+  </data>
+  <data name="resultScore_Desc_Key" xml:space="preserve">
+    <value>O campo de pontuação de confiança a preencher com a qualidade da correspondência de geocodificação (escala 0-1).</value>
+    <comment>Descrição do campo pontuação do resultado</comment>
+  </data>
+
+  <!-- Países predefinidos -->
+  <data name="defaultCountries_Display_Key" xml:space="preserve">
+    <value>Países predefinidos</value>
+    <comment>Nome de apresentação para a definição países predefinidos</comment>
+  </data>
+  <data name="defaultCountries_Desc_Key" xml:space="preserve">
+    <value>Lista separada por vírgulas de códigos de país ISO 3166-1 alfa-2 para limitar os resultados da pesquisa de endereços (ex: "PT,BR,AO").</value>
+    <comment>Descrição da definição países predefinidos</comment>
+  </data>
+
+  <!-- Mostrar mapa -->
+  <data name="showMaps_Display_Key" xml:space="preserve">
+    <value>Mostrar pré-visualização do mapa</value>
+    <comment>Nome de apresentação para o interruptor mostrar mapa</comment>
+  </data>
+  <data name="showMaps_Desc_Key" xml:space="preserve">
+    <value>Ativar ou desativar o painel de pré-visualização interativa do mapa para sugestões de endereço.</value>
+    <comment>Descrição do interruptor mostrar mapa</comment>
+  </data>
+
+  <!-- Tamanho do mapa -->
+  <data name="mapSize_Display_Key" xml:space="preserve">
+    <value>Tamanho do mapa</value>
+    <comment>Nome de apresentação para a definição tamanho do mapa</comment>
+  </data>
+  <data name="mapSize_Desc_Key" xml:space="preserve">
+    <value>O tamanho do painel de pré-visualização do mapa quando apresentado. Escolha entre Pequeno, Médio ou Grande.</value>
+    <comment>Descrição da definição tamanho do mapa</comment>
+  </data>
+  <data name="mapSize_small_Display_Key" xml:space="preserve">
+    <value>Pequeno</value>
+    <comment>Opção tamanho de mapa pequeno</comment>
+  </data>
+  <data name="mapSize_small_Desc_Key" xml:space="preserve">
+    <value>Apresenta um painel de pré-visualização de mapa pequeno (300x200 píxeis)</value>
+    <comment>Descrição da opção tamanho de mapa pequeno</comment>
+  </data>
+  <data name="mapSize_medium_Display_Key" xml:space="preserve">
+    <value>Médio</value>
+    <comment>Opção tamanho de mapa médio</comment>
+  </data>
+  <data name="mapSize_medium_Desc_Key" xml:space="preserve">
+    <value>Apresenta um painel de pré-visualização de mapa médio (500x350 píxeis)</value>
+    <comment>Descrição da opção tamanho de mapa médio</comment>
+  </data>
+  <data name="mapSize_large_Display_Key" xml:space="preserve">
+    <value>Grande</value>
+    <comment>Opção tamanho de mapa grande</comment>
+  </data>
+  <data name="mapSize_large_Desc_Key" xml:space="preserve">
+    <value>Apresenta um painel de pré-visualização de mapa grande (700x500 píxeis)</value>
+    <comment>Descrição da opção tamanho de mapa grande</comment>
+  </data>
+
+  <!-- Use User Language -->
+  <data name="useUserLanguage_Display_Key" xml:space="preserve">
+    <value>Usar idioma do utilizador</value>
+    <comment>Nome de apresentação para o interruptor de idioma do utilizador</comment>
+  </data>
+  <data name="useUserLanguage_Desc_Key" xml:space="preserve">
+    <value>Ativar ou desativar a utilização da preferência de idioma do utilizador para sugestões de endereço.</value>
+    <comment>Descrição do interruptor de idioma do utilizador</comment>
+  </data>
+
+  <!-- Default Language -->
+  <data name="defaultLanguage_Display_Key" xml:space="preserve">
+    <value>Idioma predefinido</value>
+    <comment>Nome de apresentação para a definição de idioma predefinido</comment>
+  </data>
+  <data name="defaultLanguage_Desc_Key" xml:space="preserve">
+    <value>O idioma predefinido para os resultados da pesquisa de endereços quando a preferência de idioma do utilizador não está disponível ou está desativada.</value>
+    <comment>Descrição da definição de idioma predefinido</comment>
+  </data>
+  <data name="defaultLanguage_af-ZA_Display_Key" xml:space="preserve">
+    <value>Africâner (África do Sul)</value>
+    <comment>Opção de idioma africâner</comment>
+  </data>
+  <data name="defaultLanguage_af-ZA_Desc_Key" xml:space="preserve">
+    <value>Usar africâner (África do Sul) para resultados de pesquisa de endereços</value>
+    <comment>Descrição da opção de idioma africâner</comment>
+  </data>
+  <data name="defaultLanguage_ar_Display_Key" xml:space="preserve">
+    <value>Árabe</value>
+    <comment>Opção de idioma árabe</comment>
+  </data>
+  <data name="defaultLanguage_ar_Desc_Key" xml:space="preserve">
+    <value>Usar árabe para resultados de pesquisa de endereços</value>
+    <comment>Descrição da opção de idioma árabe</comment>
+  </data>
+  <data name="defaultLanguage_bg-BG_Display_Key" xml:space="preserve">
+    <value>Búlgaro (Bulgária)</value>
+    <comment>Opção de idioma búlgaro</comment>
+  </data>
+  <data name="defaultLanguage_bg-BG_Desc_Key" xml:space="preserve">
+    <value>Usar búlgaro (Bulgária) para resultados de pesquisa de endereços</value>
+    <comment>Descrição da opção de idioma búlgaro</comment>
+  </data>
+  <data name="defaultLanguage_ca-ES_Display_Key" xml:space="preserve">
+    <value>Catalão (Espanha)</value>
+    <comment>Opção de idioma catalão</comment>
+  </data>
+  <data name="defaultLanguage_ca-ES_Desc_Key" xml:space="preserve">
+    <value>Usar catalão (Espanha) para resultados de pesquisa de endereços</value>
+    <comment>Descrição da opção de idioma catalão</comment>
+  </data>
+  <data name="defaultLanguage_cs-CZ_Display_Key" xml:space="preserve">
+    <value>Checo (República Checa)</value>
+    <comment>Opção de idioma checo</comment>
+  </data>
+  <data name="defaultLanguage_cs-CZ_Desc_Key" xml:space="preserve">
+    <value>Usar checo (República Checa) para resultados de pesquisa de endereços</value>
+    <comment>Descrição da opção de idioma checo</comment>
+  </data>
+  <data name="defaultLanguage_da-DK_Display_Key" xml:space="preserve">
+    <value>Dinamarquês (Dinamarca)</value>
+    <comment>Opção de idioma dinamarquês</comment>
+  </data>
+  <data name="defaultLanguage_da-DK_Desc_Key" xml:space="preserve">
+    <value>Usar dinamarquês (Dinamarca) para resultados de pesquisa de endereços</value>
+    <comment>Descrição da opção de idioma dinamarquês</comment>
+  </data>
+  <data name="defaultLanguage_de-DE_Display_Key" xml:space="preserve">
+    <value>Alemão (Alemanha)</value>
+    <comment>Opção de idioma alemão</comment>
+  </data>
+  <data name="defaultLanguage_de-DE_Desc_Key" xml:space="preserve">
+    <value>Usar alemão (Alemanha) para resultados de pesquisa de endereços</value>
+    <comment>Descrição da opção de idioma alemão</comment>
+  </data>
+  <data name="defaultLanguage_el-GR_Display_Key" xml:space="preserve">
+    <value>Grego (Grécia)</value>
+    <comment>Opção de idioma grego</comment>
+  </data>
+  <data name="defaultLanguage_el-GR_Desc_Key" xml:space="preserve">
+    <value>Usar grego (Grécia) para resultados de pesquisa de endereços</value>
+    <comment>Descrição da opção de idioma grego</comment>
+  </data>
+  <data name="defaultLanguage_en-AU_Display_Key" xml:space="preserve">
+    <value>Inglês (Austrália)</value>
+    <comment>Opção de idioma inglês Austrália</comment>
+  </data>
+  <data name="defaultLanguage_en-AU_Desc_Key" xml:space="preserve">
+    <value>Usar inglês (Austrália) para resultados de pesquisa de endereços</value>
+    <comment>Descrição da opção de idioma inglês Austrália</comment>
+  </data>
+  <data name="defaultLanguage_en-GB_Display_Key" xml:space="preserve">
+    <value>Inglês (Reino Unido)</value>
+    <comment>Opção de idioma inglês Reino Unido</comment>
+  </data>
+  <data name="defaultLanguage_en-GB_Desc_Key" xml:space="preserve">
+    <value>Usar inglês (Reino Unido) para resultados de pesquisa de endereços</value>
+    <comment>Descrição da opção de idioma inglês Reino Unido</comment>
+  </data>
+  <data name="defaultLanguage_en-NZ_Display_Key" xml:space="preserve">
+    <value>Inglês (Nova Zelândia)</value>
+    <comment>Opção de idioma inglês Nova Zelândia</comment>
+  </data>
+  <data name="defaultLanguage_en-NZ_Desc_Key" xml:space="preserve">
+    <value>Usar inglês (Nova Zelândia) para resultados de pesquisa de endereços</value>
+    <comment>Descrição da opção de idioma inglês Nova Zelândia</comment>
+  </data>
+  <data name="defaultLanguage_en-US_Display_Key" xml:space="preserve">
+    <value>Inglês (Estados Unidos)</value>
+    <comment>Opção de idioma inglês Estados Unidos</comment>
+  </data>
+  <data name="defaultLanguage_en-US_Desc_Key" xml:space="preserve">
+    <value>Usar inglês (Estados Unidos) para resultados de pesquisa de endereços</value>
+    <comment>Descrição da opção de idioma inglês Estados Unidos</comment>
+  </data>
+  <data name="defaultLanguage_es-419_Display_Key" xml:space="preserve">
+    <value>Espanhol (América Latina)</value>
+    <comment>Opção de idioma espanhol América Latina</comment>
+  </data>
+  <data name="defaultLanguage_es-419_Desc_Key" xml:space="preserve">
+    <value>Usar espanhol (América Latina) para resultados de pesquisa de endereços</value>
+    <comment>Descrição da opção de idioma espanhol América Latina</comment>
+  </data>
+  <data name="defaultLanguage_es-ES_Display_Key" xml:space="preserve">
+    <value>Espanhol (Espanha)</value>
+    <comment>Opção de idioma espanhol Espanha</comment>
+  </data>
+  <data name="defaultLanguage_es-ES_Desc_Key" xml:space="preserve">
+    <value>Usar espanhol (Espanha) para resultados de pesquisa de endereços</value>
+    <comment>Descrição da opção de idioma espanhol Espanha</comment>
+  </data>
+  <data name="defaultLanguage_es-MX_Display_Key" xml:space="preserve">
+    <value>Espanhol (México)</value>
+    <comment>Opção de idioma espanhol México</comment>
+  </data>
+  <data name="defaultLanguage_es-MX_Desc_Key" xml:space="preserve">
+    <value>Usar espanhol (México) para resultados de pesquisa de endereços</value>
+    <comment>Descrição da opção de idioma espanhol México</comment>
+  </data>
+  <data name="defaultLanguage_et-EE_Display_Key" xml:space="preserve">
+    <value>Estónio (Estónia)</value>
+    <comment>Opção de idioma estónio</comment>
+  </data>
+  <data name="defaultLanguage_et-EE_Desc_Key" xml:space="preserve">
+    <value>Usar estónio (Estónia) para resultados de pesquisa de endereços</value>
+    <comment>Descrição da opção de idioma estónio</comment>
+  </data>
+  <data name="defaultLanguage_eu-ES_Display_Key" xml:space="preserve">
+    <value>Basco (Espanha)</value>
+    <comment>Opção de idioma basco</comment>
+  </data>
+  <data name="defaultLanguage_eu-ES_Desc_Key" xml:space="preserve">
+    <value>Usar basco (Espanha) para resultados de pesquisa de endereços</value>
+    <comment>Descrição da opção de idioma basco</comment>
+  </data>
+  <data name="defaultLanguage_fi-FI_Display_Key" xml:space="preserve">
+    <value>Finlandês (Finlândia)</value>
+    <comment>Opção de idioma finlandês</comment>
+  </data>
+  <data name="defaultLanguage_fi-FI_Desc_Key" xml:space="preserve">
+    <value>Usar finlandês (Finlândia) para resultados de pesquisa de endereços</value>
+    <comment>Descrição da opção de idioma finlandês</comment>
+  </data>
+  <data name="defaultLanguage_fr-CA_Display_Key" xml:space="preserve">
+    <value>Francês (Canadá)</value>
+    <comment>Opção de idioma francês Canadá</comment>
+  </data>
+  <data name="defaultLanguage_fr-CA_Desc_Key" xml:space="preserve">
+    <value>Usar francês (Canadá) para resultados de pesquisa de endereços</value>
+    <comment>Descrição da opção de idioma francês Canadá</comment>
+  </data>
+  <data name="defaultLanguage_fr-FR_Display_Key" xml:space="preserve">
+    <value>Francês (França)</value>
+    <comment>Opção de idioma francês França</comment>
+  </data>
+  <data name="defaultLanguage_fr-FR_Desc_Key" xml:space="preserve">
+    <value>Usar francês (França) para resultados de pesquisa de endereços</value>
+    <comment>Descrição da opção de idioma francês França</comment>
+  </data>
+  <data name="defaultLanguage_gl-ES_Display_Key" xml:space="preserve">
+    <value>Galego (Espanha)</value>
+    <comment>Opção de idioma galego</comment>
+  </data>
+  <data name="defaultLanguage_gl-ES_Desc_Key" xml:space="preserve">
+    <value>Usar galego (Espanha) para resultados de pesquisa de endereços</value>
+    <comment>Descrição da opção de idioma galego</comment>
+  </data>
+  <data name="defaultLanguage_he-IL_Display_Key" xml:space="preserve">
+    <value>Hebraico (Israel)</value>
+    <comment>Opção de idioma hebraico</comment>
+  </data>
+  <data name="defaultLanguage_he-IL_Desc_Key" xml:space="preserve">
+    <value>Usar hebraico (Israel) para resultados de pesquisa de endereços</value>
+    <comment>Descrição da opção de idioma hebraico</comment>
+  </data>
+  <data name="defaultLanguage_hr-HR_Display_Key" xml:space="preserve">
+    <value>Croata (Croácia)</value>
+    <comment>Opção de idioma croata</comment>
+  </data>
+  <data name="defaultLanguage_hr-HR_Desc_Key" xml:space="preserve">
+    <value>Usar croata (Croácia) para resultados de pesquisa de endereços</value>
+    <comment>Descrição da opção de idioma croata</comment>
+  </data>
+  <data name="defaultLanguage_hu-HU_Display_Key" xml:space="preserve">
+    <value>Húngaro (Hungria)</value>
+    <comment>Opção de idioma húngaro</comment>
+  </data>
+  <data name="defaultLanguage_hu-HU_Desc_Key" xml:space="preserve">
+    <value>Usar húngaro (Hungria) para resultados de pesquisa de endereços</value>
+    <comment>Descrição da opção de idioma húngaro</comment>
+  </data>
+  <data name="defaultLanguage_id-ID_Display_Key" xml:space="preserve">
+    <value>Indonésio (Indonésia)</value>
+    <comment>Opção de idioma indonésio</comment>
+  </data>
+  <data name="defaultLanguage_id-ID_Desc_Key" xml:space="preserve">
+    <value>Usar indonésio (Indonésia) para resultados de pesquisa de endereços</value>
+    <comment>Descrição da opção de idioma indonésio</comment>
+  </data>
+  <data name="defaultLanguage_it-IT_Display_Key" xml:space="preserve">
+    <value>Italiano (Itália)</value>
+    <comment>Opção de idioma italiano</comment>
+  </data>
+  <data name="defaultLanguage_it-IT_Desc_Key" xml:space="preserve">
+    <value>Usar italiano (Itália) para resultados de pesquisa de endereços</value>
+    <comment>Descrição da opção de idioma italiano</comment>
+  </data>
+  <data name="defaultLanguage_kk-KZ_Display_Key" xml:space="preserve">
+    <value>Cazaque (Cazaquistão)</value>
+    <comment>Opção de idioma cazaque</comment>
+  </data>
+  <data name="defaultLanguage_kk-KZ_Desc_Key" xml:space="preserve">
+    <value>Usar cazaque (Cazaquistão) para resultados de pesquisa de endereços</value>
+    <comment>Descrição da opção de idioma cazaque</comment>
+  </data>
+  <data name="defaultLanguage_lt-LT_Display_Key" xml:space="preserve">
+    <value>Lituano (Lituânia)</value>
+    <comment>Opção de idioma lituano</comment>
+  </data>
+  <data name="defaultLanguage_lt-LT_Desc_Key" xml:space="preserve">
+    <value>Usar lituano (Lituânia) para resultados de pesquisa de endereços</value>
+    <comment>Descrição da opção de idioma lituano</comment>
+  </data>
+  <data name="defaultLanguage_lv-LV_Display_Key" xml:space="preserve">
+    <value>Letão (Letónia)</value>
+    <comment>Opção de idioma letão</comment>
+  </data>
+  <data name="defaultLanguage_lv-LV_Desc_Key" xml:space="preserve">
+    <value>Usar letão (Letónia) para resultados de pesquisa de endereços</value>
+    <comment>Descrição da opção de idioma letão</comment>
+  </data>
+  <data name="defaultLanguage_ms-MY_Display_Key" xml:space="preserve">
+    <value>Malaio (Malásia)</value>
+    <comment>Opção de idioma malaio</comment>
+  </data>
+  <data name="defaultLanguage_ms-MY_Desc_Key" xml:space="preserve">
+    <value>Usar malaio (Malásia) para resultados de pesquisa de endereços</value>
+    <comment>Descrição da opção de idioma malaio</comment>
+  </data>
+  <data name="defaultLanguage_nb-NO_Display_Key" xml:space="preserve">
+    <value>Norueguês Bokmål (Noruega)</value>
+    <comment>Opção de idioma norueguês Bokmål</comment>
+  </data>
+  <data name="defaultLanguage_nb-NO_Desc_Key" xml:space="preserve">
+    <value>Usar norueguês Bokmål (Noruega) para resultados de pesquisa de endereços</value>
+    <comment>Descrição da opção de idioma norueguês Bokmål</comment>
+  </data>
+  <data name="defaultLanguage_nl-BE_Display_Key" xml:space="preserve">
+    <value>Neerlandês (Bélgica)</value>
+    <comment>Opção de idioma neerlandês Bélgica</comment>
+  </data>
+  <data name="defaultLanguage_nl-BE_Desc_Key" xml:space="preserve">
+    <value>Usar neerlandês (Bélgica) para resultados de pesquisa de endereços</value>
+    <comment>Descrição da opção de idioma neerlandês Bélgica</comment>
+  </data>
+  <data name="defaultLanguage_nl-NL_Display_Key" xml:space="preserve">
+    <value>Neerlandês (Países Baixos)</value>
+    <comment>Opção de idioma neerlandês</comment>
+  </data>
+  <data name="defaultLanguage_nl-NL_Desc_Key" xml:space="preserve">
+    <value>Usar neerlandês (Países Baixos) para resultados de pesquisa de endereços</value>
+    <comment>Descrição da opção de idioma neerlandês</comment>
+  </data>
+  <data name="defaultLanguage_pl-PL_Display_Key" xml:space="preserve">
+    <value>Polaco (Polónia)</value>
+    <comment>Opção de idioma polaco</comment>
+  </data>
+  <data name="defaultLanguage_pl-PL_Desc_Key" xml:space="preserve">
+    <value>Usar polaco (Polónia) para resultados de pesquisa de endereços</value>
+    <comment>Descrição da opção de idioma polaco</comment>
+  </data>
+  <data name="defaultLanguage_pt-BR_Display_Key" xml:space="preserve">
+    <value>Português (Brasil)</value>
+    <comment>Opção de idioma português Brasil</comment>
+  </data>
+  <data name="defaultLanguage_pt-BR_Desc_Key" xml:space="preserve">
+    <value>Usar português (Brasil) para resultados de pesquisa de endereços</value>
+    <comment>Descrição da opção de idioma português Brasil</comment>
+  </data>
+  <data name="defaultLanguage_pt-PT_Display_Key" xml:space="preserve">
+    <value>Português (Portugal)</value>
+    <comment>Opção de idioma português Portugal</comment>
+  </data>
+  <data name="defaultLanguage_pt-PT_Desc_Key" xml:space="preserve">
+    <value>Usar português (Portugal) para resultados de pesquisa de endereços</value>
+    <comment>Descrição da opção de idioma português Portugal</comment>
+  </data>
+  <data name="defaultLanguage_ro-RO_Display_Key" xml:space="preserve">
+    <value>Romeno (Roménia)</value>
+    <comment>Opção de idioma romeno</comment>
+  </data>
+  <data name="defaultLanguage_ro-RO_Desc_Key" xml:space="preserve">
+    <value>Usar romeno (Roménia) para resultados de pesquisa de endereços</value>
+    <comment>Descrição da opção de idioma romeno</comment>
+  </data>
+  <data name="defaultLanguage_ru-RU_Display_Key" xml:space="preserve">
+    <value>Russo (Rússia)</value>
+    <comment>Opção de idioma russo</comment>
+  </data>
+  <data name="defaultLanguage_ru-RU_Desc_Key" xml:space="preserve">
+    <value>Usar russo (Rússia) para resultados de pesquisa de endereços</value>
+    <comment>Descrição da opção de idioma russo</comment>
+  </data>
+  <data name="defaultLanguage_sk-SK_Display_Key" xml:space="preserve">
+    <value>Eslovaco (Eslováquia)</value>
+    <comment>Opção de idioma eslovaco</comment>
+  </data>
+  <data name="defaultLanguage_sk-SK_Desc_Key" xml:space="preserve">
+    <value>Usar eslovaco (Eslováquia) para resultados de pesquisa de endereços</value>
+    <comment>Descrição da opção de idioma eslovaco</comment>
+  </data>
+  <data name="defaultLanguage_sl-SI_Display_Key" xml:space="preserve">
+    <value>Esloveno (Eslovénia)</value>
+    <comment>Opção de idioma esloveno</comment>
+  </data>
+  <data name="defaultLanguage_sl-SI_Desc_Key" xml:space="preserve">
+    <value>Usar esloveno (Eslovénia) para resultados de pesquisa de endereços</value>
+    <comment>Descrição da opção de idioma esloveno</comment>
+  </data>
+  <data name="defaultLanguage_sr-Cyrl-RS_Display_Key" xml:space="preserve">
+    <value>Sérvio cirílico (Sérvia)</value>
+    <comment>Opção de idioma sérvio cirílico</comment>
+  </data>
+  <data name="defaultLanguage_sr-Cyrl-RS_Desc_Key" xml:space="preserve">
+    <value>Usar sérvio cirílico (Sérvia) para resultados de pesquisa de endereços</value>
+    <comment>Descrição da opção de idioma sérvio cirílico</comment>
+  </data>
+  <data name="defaultLanguage_sv-SE_Display_Key" xml:space="preserve">
+    <value>Sueco (Suécia)</value>
+    <comment>Opção de idioma sueco</comment>
+  </data>
+  <data name="defaultLanguage_sv-SE_Desc_Key" xml:space="preserve">
+    <value>Usar sueco (Suécia) para resultados de pesquisa de endereços</value>
+    <comment>Descrição da opção de idioma sueco</comment>
+  </data>
+  <data name="defaultLanguage_th-TH_Display_Key" xml:space="preserve">
+    <value>Tailandês (Tailândia)</value>
+    <comment>Opção de idioma tailandês</comment>
+  </data>
+  <data name="defaultLanguage_th-TH_Desc_Key" xml:space="preserve">
+    <value>Usar tailandês (Tailândia) para resultados de pesquisa de endereços</value>
+    <comment>Descrição da opção de idioma tailandês</comment>
+  </data>
+  <data name="defaultLanguage_tr-TR_Display_Key" xml:space="preserve">
+    <value>Turco (Turquia)</value>
+    <comment>Opção de idioma turco</comment>
+  </data>
+  <data name="defaultLanguage_tr-TR_Desc_Key" xml:space="preserve">
+    <value>Usar turco (Turquia) para resultados de pesquisa de endereços</value>
+    <comment>Descrição da opção de idioma turco</comment>
+  </data>
+  <data name="defaultLanguage_uk-UA_Display_Key" xml:space="preserve">
+    <value>Ucraniano (Ucrânia)</value>
+    <comment>Opção de idioma ucraniano</comment>
+  </data>
+  <data name="defaultLanguage_uk-UA_Desc_Key" xml:space="preserve">
+    <value>Usar ucraniano (Ucrânia) para resultados de pesquisa de endereços</value>
+    <comment>Descrição da opção de idioma ucraniano</comment>
+  </data>
+  <data name="defaultLanguage_vi-VN_Display_Key" xml:space="preserve">
+    <value>Vietnamita (Vietname)</value>
+    <comment>Opção de idioma vietnamita</comment>
+  </data>
+  <data name="defaultLanguage_vi-VN_Desc_Key" xml:space="preserve">
+    <value>Usar vietnamita (Vietname) para resultados de pesquisa de endereços</value>
+    <comment>Descrição da opção de idioma vietnamita</comment>
+  </data>
+  <data name="defaultLanguage_zh-Hans-CN_Display_Key" xml:space="preserve">
+    <value>Chinês simplificado (China)</value>
+    <comment>Opção de idioma chinês simplificado</comment>
+  </data>
+  <data name="defaultLanguage_zh-Hans-CN_Desc_Key" xml:space="preserve">
+    <value>Usar chinês simplificado (China) para resultados de pesquisa de endereços</value>
+    <comment>Descrição da opção de idioma chinês simplificado</comment>
+  </data>
+  <data name="defaultLanguage_zh-Hant-TW_Display_Key" xml:space="preserve">
+    <value>Chinês tradicional (Taiwan)</value>
+    <comment>Opção de idioma chinês tradicional</comment>
+  </data>
+  <data name="defaultLanguage_zh-Hant-TW_Desc_Key" xml:space="preserve">
+    <value>Usar chinês tradicional (Taiwan) para resultados de pesquisa de endereços</value>
+    <comment>Descrição da opção de idioma chinês tradicional</comment>
+  </data>
+
+  <!-- Parâmetros adicionais -->
+  <data name="additionalParameters_Display_Key" xml:space="preserve">
+    <value>Parâmetros adicionais</value>
+    <comment>Nome de apresentação para a definição parâmetros adicionais</comment>
+  </data>
+  <data name="additionalParameters_Desc_Key" xml:space="preserve">
+    <value>Objeto JSON contendo parâmetros adicionais da API Azure Maps para personalizar o comportamento de pesquisa.</value>
+    <comment>Descrição da definição parâmetros adicionais</comment>
+  </data>
+
+  <!-- Chave de subscrição -->
+  <data name="subscriptionKey_Display_Key" xml:space="preserve">
+    <value>Chave de subscrição Azure Maps</value>
+    <comment>Nome de apresentação para a definição chave de subscrição</comment>
+  </data>
+  <data name="subscriptionKey_Desc_Key" xml:space="preserve">
+    <value>A chave de subscrição da sua conta Azure Maps para autenticação da API. Disponível no portal Azure.</value>
+    <comment>Descrição da definição chave de subscrição</comment>
+  </data>
+
+  <!-- Textos da interface - Marcadores de posição e dicas -->
+  <data name="addressInputPlaceholder_Key" xml:space="preserve">
+    <value>Introduza um endereço...</value>
+    <comment>Texto de marcação de posição para o campo de entrada de endereço</comment>
+  </data>
+  <data name="addressSelectedHint_Key" xml:space="preserve">
+    <value>Endereço selecionado com sucesso</value>
+    <comment>Mensagem de dica quando um endereço é selecionado com sucesso</comment>
+  </data>
+  <data name="addressSuggestionsAriaLabel_Key" xml:space="preserve">
+    <value>Sugestões de endereços</value>
+    <comment>Etiqueta aria para a lista de sugestões de endereços</comment>
+  </data>
+
+  <!-- Diálogo de erro -->
+  <data name="errorDialogTitle_Key" xml:space="preserve">
+    <value>Erro na pesquisa de endereço</value>
+    <comment>Título predefinido para o diálogo de erro</comment>
+  </data>
+  <data name="errorHttpStatus_Key" xml:space="preserve">
+    <value>Estado HTTP:</value>
+    <comment>Etiqueta para o código de estado HTTP no diálogo de erro</comment>
+  </data>
+  <data name="errorTarget_Key" xml:space="preserve">
+    <value>Alvo:</value>
+    <comment>Etiqueta para o alvo do erro no diálogo de erro</comment>
+  </data>
+  <data name="errorDetails_Key" xml:space="preserve">
+    <value>Detalhes:</value>
+    <comment>Etiqueta para os detalhes do erro no diálogo de erro</comment>
+  </data>
+  <data name="errorOkButton_Key" xml:space="preserve">
+    <value>OK</value>
+    <comment>Texto do botão OK no diálogo de erro</comment>
+  </data>
+
+  <!-- Mensagens de erro de estado HTTP -->
+  <data name="errorHttp400_Key" xml:space="preserve">
+    <value>O pedido de pesquisa era inválido. Por favor, verifique a sua entrada.</value>
+    <comment>Mensagem de erro para HTTP 400 Bad Request</comment>
+  </data>
+  <data name="errorHttp401_Key" xml:space="preserve">
+    <value>Autenticação falhou. Por favor, verifique a sua chave de subscrição.</value>
+    <comment>Mensagem de erro para HTTP 401 Unauthorized</comment>
+  </data>
+  <data name="errorHttp403_Key" xml:space="preserve">
+    <value>Acesso negado. A sua subscrição pode não ter permissão para esta operação.</value>
+    <comment>Mensagem de erro para HTTP 403 Forbidden</comment>
+  </data>
+  <data name="errorHttp404_Key" xml:space="preserve">
+    <value>O recurso solicitado não foi encontrado.</value>
+    <comment>Mensagem de erro para HTTP 404 Not Found</comment>
+  </data>
+  <data name="errorHttp429_Key" xml:space="preserve">
+    <value>Demasiados pedidos. Por favor, aguarde um momento e tente novamente.</value>
+    <comment>Mensagem de erro para HTTP 429 Too Many Requests</comment>
+  </data>
+  <data name="errorHttp500_Key" xml:space="preserve">
+    <value>O serviço Azure Maps encontrou um erro. Por favor, tente novamente mais tarde.</value>
+    <comment>Mensagem de erro para HTTP 500 Internal Server Error</comment>
+  </data>
+  <data name="errorHttp503_Key" xml:space="preserve">
+    <value>O serviço Azure Maps está temporariamente indisponível. Por favor, tente novamente mais tarde.</value>
+    <comment>Mensagem de erro para HTTP 503 Service Unavailable</comment>
+  </data>
+  <data name="errorHttpDefault_Key" xml:space="preserve">
+    <value>Ocorreu um erro inesperado ao pesquisar endereços.</value>
+    <comment>Mensagem de erro predefinida para erros HTTP inesperados</comment>
+  </data>
+
+  <!-- Painel do mapa -->
+  <data name="mapPanelLoading_Key" xml:space="preserve">
+    <value>A carregar mapa...</value>
+    <comment>Mensagem de carregamento para o spinner do mapa</comment>
+  </data>
+  <data name="mapPanelShowDetails_Key" xml:space="preserve">
+    <value>Mostrar detalhes do endereço</value>
+    <comment>Etiqueta aria para o botão mostrar detalhes do endereço</comment>
+  </data>
+  <data name="mapPanelClose_Key" xml:space="preserve">
+    <value>Fechar</value>
+    <comment>Etiqueta aria para o botão fechar</comment>
+  </data>
+  <data name="mapPanelMapShowing_Key" xml:space="preserve">
+    <value>Mapa a mostrar</value>
+    <comment>Prefixo de etiqueta aria para mapa a mostrar endereço</comment>
+  </data>
+  <data name="mapPanelCountry_Key" xml:space="preserve">
+    <value>País:</value>
+    <comment>Etiqueta para o país nos detalhes do endereço</comment>
+  </data>
+  <data name="mapPanelSubdivision_Key" xml:space="preserve">
+    <value>Subdivisão:</value>
+    <comment>Etiqueta para a subdivisão nos detalhes do endereço</comment>
+  </data>
+  <data name="mapPanelMunicipality_Key" xml:space="preserve">
+    <value>Município:</value>
+    <comment>Etiqueta para o município nos detalhes do endereço</comment>
+  </data>
+  <data name="mapPanelNeighbourhood_Key" xml:space="preserve">
+    <value>Bairro:</value>
+    <comment>Etiqueta para o bairro nos detalhes do endereço</comment>
+  </data>
+  <data name="mapPanelPostalCode_Key" xml:space="preserve">
+    <value>Código Postal:</value>
+    <comment>Etiqueta para o código postal nos detalhes do endereço</comment>
+  </data>
+  <data name="mapPanelCoordinates_Key" xml:space="preserve">
+    <value>Coordenadas:</value>
+    <comment>Etiqueta para as coordenadas nos detalhes do endereço</comment>
+  </data>
+
+  <!-- Etiquetas dos campos do painel Azure Maps -->
+  <data name="azure-maps-panel-street" xml:space="preserve">
+    <value>Rua</value>
+    <comment>Etiqueta para o campo rua no painel de detalhes do endereço</comment>
+  </data>
+  <data name="azure-maps-panel-city" xml:space="preserve">
+    <value>Cidade</value>
+    <comment>Etiqueta para o campo cidade no painel de detalhes do endereço</comment>
+  </data>
+  <data name="azure-maps-panel-postalCode" xml:space="preserve">
+    <value>Código Postal</value>
+    <comment>Etiqueta para o campo código postal no painel de detalhes do endereço</comment>
+  </data>
+  <data name="azure-maps-panel-county" xml:space="preserve">
+    <value>Concelho</value>
+    <comment>Etiqueta para o campo concelho no painel de detalhes do endereço</comment>
+  </data>
+  <data name="azure-maps-panel-stateProvince" xml:space="preserve">
+    <value>Distrito/Região</value>
+    <comment>Etiqueta para o campo distrito/região no painel de detalhes do endereço</comment>
+  </data>
+  <data name="azure-maps-panel-country" xml:space="preserve">
+    <value>País</value>
+    <comment>Etiqueta para o campo país no painel de detalhes do endereço</comment>
+  </data>
+  <data name="azure-maps-panel-longitude" xml:space="preserve">
+    <value>Longitude</value>
+    <comment>Etiqueta para o campo longitude no painel de detalhes do endereço</comment>
+  </data>
+  <data name="azure-maps-panel-latitude" xml:space="preserve">
+    <value>Latitude</value>
+    <comment>Etiqueta para o campo latitude no painel de detalhes do endereço</comment>
+  </data>
+  <data name="azure-maps-panel-geographicCoordinates" xml:space="preserve">
+    <value>Coordenadas Geográficas</value>
+    <comment>Texto de separação para a secção de coordenadas geográficas no painel de detalhes do endereço</comment>
+  </data>
+  <data name="azure-maps-panel-cancel" xml:space="preserve">
+    <value>Cancelar</value>
+    <comment>Texto do botão Cancelar no painel de detalhes do endereço</comment>
+  </data>
+  <data name="azure-maps-panel-select" xml:space="preserve">
+    <value>Selecionar</value>
+    <comment>Texto do botão Selecionar no painel de detalhes do endereço</comment>
+  </data>
+</root>
