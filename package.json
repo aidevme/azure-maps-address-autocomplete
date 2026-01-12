@@ -1,7 +1,11 @@
 {
-  "name": "pcf-project",
+  "name": "azure-maps-address-autocomplete",
   "version": "1.0.0",
   "description": "Project containing your PowerApps Component Framework (PCF) control.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aidevme/azure-maps-address-autocomplete.git"
+  },
   "scripts": {
     "build": "pcf-scripts build",
     "clean": "pcf-scripts clean",
