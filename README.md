@@ -1,4 +1,4 @@
-# Azure Maps Address AutoComplete
+# Azure Maps Address AutoComplete Control
 
 A Power Apps Component Framework (PCF) control that provides intelligent address autocomplete functionality using the Azure Maps Search API.
 
