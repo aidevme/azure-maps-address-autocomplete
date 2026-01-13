@@ -1974,6 +1974,12 @@
         "CountryISO2": "ZW",
         "CountryISO3": "ZWE"
       }
-    ]
+    ],
+    "CountryTable": {
+      "TableName": "aidevme_Country",
+      "CountryNameField": "aidevme_Name",
+      "CountryISO2Field": "aidevme_CountryISO2",
+      "CountryISO3Field": "aidevme_CountryISO3"
+    }
   }
 }

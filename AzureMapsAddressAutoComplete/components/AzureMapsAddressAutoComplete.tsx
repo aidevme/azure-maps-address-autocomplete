@@ -53,6 +53,9 @@ export const AzureMapsAddressAutoComplete: React.FC<
   } = props;
   const styles = useAzureMapsAddressAutoCompleteStyles();
 
+  // TODO: Remove after testing - Temporary testing: log countries
+  //console.log("pcfContext.countries:", pcfContext?.countries);
+
   // Generate unique IDs for accessibility
   const listboxId = useId("address-suggestions-listbox");
   const inputId = useId("address-input");

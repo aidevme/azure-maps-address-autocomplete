@@ -7,6 +7,8 @@ import {
   IUserSettingsRetrieveResponse,
 } from "../UserSetting/UserSettingService";
 
+import countriesData from '../../statics/countries.json';
+
 /**
  * Context info from PCF mode object (not officially typed).
  *
@@ -132,6 +134,8 @@ export class PcfContextService {
   theme: Theme;
   /** Callback invoked when the selected address value changes. */
   onSelectedValueChange?: (value: { address: string }) => void;
+  /** List of all available countries with ISO codes and localized names. */
+  countries: Country[];
 
   /**
    * Constructor to initialize the PCF Context Service.
@@ -254,6 +258,9 @@ export class PcfContextService {
       this.uiLanguage = DEFAULT_LOCALE;
       this.helpLanguage = DEFAULT_LOCALE;
 
+      // Initialize countries list
+      this.countries = getAllCountries();
+
       console.log(
         "PcfContextService constructor: useUserLanguage =",
         this.useUserLanguage
@@ -272,6 +279,7 @@ export class PcfContextService {
       this.defaultLanguage = DEFAULT_LOCALE;
       this.uiLanguage = DEFAULT_LOCALE;
       this.helpLanguage = DEFAULT_LOCALE;
+      this.countries = getAllCountries();
     }
   }
 
@@ -633,3 +641,36 @@ export class PcfContextService {
     return userSettingService.getUserSettings(this.getUserId());
   }
 }
+
+/**
+ * Represents a country with ISO codes and localized names.
+ *
+ * @public
+ */
+export interface Country {
+  /** The country name in English. */
+  Country: string;
+  /** ISO 3166-1 alpha-2 country code (e.g., 'US', 'DE'). */
+  CountryISO2: string;
+  /** ISO 3166-1 alpha-3 country code (e.g., 'USA', 'DEU'). */
+  CountryISO3: string;
+  /** Localized country names keyed by LCID. */
+  LocalizedCountryName: Record<string, string>;
+}
+
+/**
+ * Returns the list of all available countries.
+ *
+ * @returns An array of Country objects with ISO codes and localized names.
+ *
+ * @example
+ * ```typescript
+ * const countries = getAllCountries();
+ * // [{ Country: "Afghanistan", CountryISO2: "AF", CountryISO3: "AFG", ... }, ...]
+ * ```
+ *
+ * @public
+ */
+export const getAllCountries = (): Country[] => {
+  return countriesData as Country[];
+};

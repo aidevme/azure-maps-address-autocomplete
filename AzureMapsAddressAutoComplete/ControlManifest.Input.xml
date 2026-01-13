@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <manifest>
-  <control namespace="AIDEVME.CRM.Pcf" constructor="AzureMapsAddressAutoComplete" version="1.0.0" display-name-key="AzureMapsAddressAutoComplete" description-key="AzureMapsAddressAutoComplete description" control-type="virtual" preview-image="img/preview.png">
+  <control namespace="AIDEVME.CRM.Pcf" constructor="AzureMapsAddressAutoComplete" version="1.0.1" display-name-key="AzureMapsAddressAutoComplete" description-key="AzureMapsAddressAutoComplete description" control-type="virtual" preview-image="img/preview.png">
     <external-service-usage enabled="false" />
     <property name="azureMapsAddressSearchAutoComplete" display-name-key="azureMapsAddressSearchAutoComplete_Display_Key" description-key="azureMapsAddressSearchAutoComplete_Desc_Key" of-type="SingleLine.Text" usage="bound" required="true" />
     <property name="street" display-name-key="street_Display_Key" description-key="street_Desc_Key" of-type="SingleLine.Text" usage="bound" />

@@ -34,3 +34,19 @@ export {
   isDataverseApiError,
   hasDataverseErrorProperties
 } from './dataverseTypes';
+
+export {
+  // Additional parameters types
+  type CountryChoice,
+  type CountryLookup,
+  type CountryTableConfig,
+  type CountriesConfig,
+  type AzureMapServiceConfigs,
+  type AdditionalParameters,
+  // Helper functions
+  parseAdditionalParameters,
+  findCountryChoiceByName,
+  findCountryLookupByISO2,
+  findCountryLookupByISO3,
+  findCountryLookupByName
+} from './additionalParametersTypes';
