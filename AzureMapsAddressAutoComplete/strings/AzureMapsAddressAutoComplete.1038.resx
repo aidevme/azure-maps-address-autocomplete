@@ -129,6 +129,16 @@
     <comment>Leírás az állam/tartomány mezőhöz</comment>
   </data>
 
+  <!-- Állam/Tartomány kód -->
+  <data name="stateProvinceCode_Display_Key" xml:space="preserve">
+    <value>Állam/Tartomány kód</value>
+    <comment>Megjelenítési név az állam/tartomány kód mezőhöz</comment>
+  </data>
+  <data name="stateProvinceCode_Desc_Key" xml:space="preserve">
+    <value>Az állam vagy tartomány kód mező (pl. PE, BU, FE) a kiválasztott címből való kitöltéshez.</value>
+    <comment>Leírás az állam/tartomány kód mezőhöz</comment>
+  </data>
+
   <!-- Ország -->
   <data name="country_Display_Key" xml:space="preserve">
     <value>Ország</value>
@@ -137,6 +147,26 @@
   <data name="country_Desc_Key" xml:space="preserve">
     <value>Az ország mező a kiválasztott cím országnevének kitöltéséhez.</value>
     <comment>Leírás az ország mezőhöz</comment>
+  </data>
+
+  <!-- Országkód ISO2 -->
+  <data name="countryCodeISO2_Display_Key" xml:space="preserve">
+    <value>Országkód (ISO2)</value>
+    <comment>Megjelenítési név az ISO 3166-1 alpha-2 országkód mezőhöz</comment>
+  </data>
+  <data name="countryCodeISO2_Desc_Key" xml:space="preserve">
+    <value>Az ISO 3166-1 alpha-2 országkód mező (pl. US, GB, HU) a kiválasztott címből való kitöltéshez.</value>
+    <comment>Leírás az ISO2 országkód mezőhöz</comment>
+  </data>
+
+  <!-- Országkód ISO3 -->
+  <data name="countryCodeISO3_Display_Key" xml:space="preserve">
+    <value>Országkód (ISO3)</value>
+    <comment>Megjelenítési név az ISO 3166-1 alpha-3 országkód mezőhöz</comment>
+  </data>
+  <data name="countryCodeISO3_Desc_Key" xml:space="preserve">
+    <value>Az ISO 3166-1 alpha-3 országkód mező (pl. USA, GBR, HUN) a kiválasztott címből való kitöltéshez.</value>
+    <comment>Leírás az ISO3 országkód mezőhöz</comment>
   </data>
 
   <!-- Hosszúsági fok -->

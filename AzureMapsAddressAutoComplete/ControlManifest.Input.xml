@@ -8,8 +8,11 @@
     <property name="postalCode" display-name-key="postalCode_Display_Key" description-key="postalCode_Desc_Key" of-type="SingleLine.Text" usage="bound" />
     <property name="county" display-name-key="county_Display_Key" description-key="county_Desc_Key" of-type="SingleLine.Text" usage="bound" />
     <property name="stateProvince" display-name-key="stateProvince_Display_Key" description-key="stateProvince_Desc_Key" of-type="SingleLine.Text" usage="bound" />
-    <property name="country" display-name-key="country_Display_Key" description-key="country_Desc_Key" of-type="SingleLine.Text" usage="bound" />
-    <property name="longitude" display-name-key="longitude_Display_Key" description-key="longitude_Desc_Key" of-type="FP" usage="bound" />
+    <property name="stateProvinceCode" display-name-key="stateProvinceCode_Display_Key" description-key="stateProvinceCode_Desc_Key" of-type="SingleLine.Text" usage="bound" />   
+    <property name="country" display-name-key="country_Display_Key" description-key="country_Desc_Key" of-type-group="countryTypes" usage="bound" />
+    <property name="countryCodeISO2" display-name-key="countryCodeISO2_Display_Key" description-key="countryCodeISO2_Desc_Key" of-type="SingleLine.Text" usage="bound" />
+    <property name="countryCodeISO3" display-name-key="countryCodeISO3_Display_Key" description-key="countryCodeISO3_Desc_Key" of-type="SingleLine.Text" usage="bound" />
+    <property name="longitude" display-name-key="longitude_Display_Key" description-key="longitude_Desc_Key" of-type="FP" usage="bound" />    
     <property name="latitude" display-name-key="latitude_Display_Key" description-key="latitude_Desc_Key" of-type="FP" usage="bound" />
     <property name="resultScore" display-name-key="resultScore_Display_Key" description-key="resultScore_Desc_Key" of-type="FP" usage="bound" />
     <property name="defaultCountries" display-name-key="defaultCountries_Display_Key" description-key="defaultCountries_Desc_Key" of-type="SingleLine.Text" usage="input" />
@@ -72,6 +75,11 @@
     </property>           
     <property name="additionalParameters" display-name-key="additionalParameters_Display_Key" description-key="additionalParameters_Desc_Key" of-type="Multiple" usage="input" />
     <property name="subscriptionKey" display-name-key="subscriptionKey_Display_Key" description-key="subscriptionKey_Desc_Key" of-type="SingleLine.Text" usage="input" required="true"  />
+    <type-group name="countryTypes">
+       <type>Lookup.Simple</type>
+       <type>OptionSet</type>
+       <type>SingleLine.Text</type>
+    </type-group>
     <resources>
       <code path="index.ts" order="1" />
       <platform-library name="React" version="16.14.0" />

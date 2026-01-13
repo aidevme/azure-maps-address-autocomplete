@@ -32,8 +32,10 @@ export interface AzureMapsAddress {
   extendedPostalCode?: string;
   /** The country name. */
   country?: string;
-  /** The ISO 3166-1 alpha-2 country code. */
+  /** The ISO 3166-1 alpha-2 country code (e.g., 'US', 'HU'). */
   countryCode?: string;
+  /** The ISO 3166-1 alpha-3 country code (e.g., 'USA', 'HUN'). */
+  countryCodeISO3?: string;
   /** The local name of the area. */
   localName?: string;
 }

@@ -23,7 +23,8 @@ export {
   formatPrimaryAddress,
   formatSecondaryAddress,
   formatCountryCode,
-  formatPostalCode
+  formatPostalCode,
+  //convertIso2ToIso3
 } from './formatters';
 
 export {

@@ -188,6 +188,16 @@
     <comment>Description du champ région/province</comment>
   </data>
 
+  <!-- Code Région/Province -->
+  <data name="stateProvinceCode_Display_Key" xml:space="preserve">
+    <value>Code Région/Province</value>
+    <comment>Nom d'affichage pour le champ code région/province</comment>
+  </data>
+  <data name="stateProvinceCode_Desc_Key" xml:space="preserve">
+    <value>Le champ code région ou province (ex: IDF, PAC, ARA) à remplir depuis l'adresse sélectionnée.</value>
+    <comment>Description du champ code région/province</comment>
+  </data>
+
   <!-- Pays -->
   <data name="country_Display_Key" xml:space="preserve">
     <value>Pays</value>
@@ -196,6 +206,26 @@
   <data name="country_Desc_Key" xml:space="preserve">
     <value>Le champ pays à remplir avec le nom du pays de l'adresse sélectionnée.</value>
     <comment>Description du champ pays</comment>
+  </data>
+
+  <!-- Code Pays ISO2 -->
+  <data name="countryCodeISO2_Display_Key" xml:space="preserve">
+    <value>Code Pays (ISO2)</value>
+    <comment>Nom d'affichage pour le champ code pays ISO 3166-1 alpha-2</comment>
+  </data>
+  <data name="countryCodeISO2_Desc_Key" xml:space="preserve">
+    <value>Le champ code pays ISO 3166-1 alpha-2 (ex: US, GB, FR) à remplir depuis l'adresse sélectionnée.</value>
+    <comment>Description du champ code pays ISO2</comment>
+  </data>
+
+  <!-- Code Pays ISO3 -->
+  <data name="countryCodeISO3_Display_Key" xml:space="preserve">
+    <value>Code Pays (ISO3)</value>
+    <comment>Nom d'affichage pour le champ code pays ISO 3166-1 alpha-3</comment>
+  </data>
+  <data name="countryCodeISO3_Desc_Key" xml:space="preserve">
+    <value>Le champ code pays ISO 3166-1 alpha-3 (ex: USA, GBR, FRA) à remplir depuis l'adresse sélectionnée.</value>
+    <comment>Description du champ code pays ISO3</comment>
   </data>
 
   <!-- Longitude -->

@@ -1,7 +1,7 @@
 import { IInputs, IOutputs } from "./generated/ManifestTypes";
 import { AzureMapsAddressAutoCompleteApp, IAzureMapsAddressAutoCompleteAppProps } from "./AzureMapsAddressAutoCompleteApp";
 import { AzureMapsSearchResult } from "./components/AzureMapsAddressAutoComplete";
-import { getStringValue, getNumberValue } from "./utils/pcfPropertyHelpers";
+import { getStringValue, getNumberValue } from "./utils";
 import * as React from "react";
 import { v4 as uuidv4 } from "uuid";
 
@@ -17,7 +17,10 @@ export class AzureMapsAddressAutoComplete implements ComponentFramework.ReactCon
     private postalCode: string;
     private county: string;
     private stateProvince: string;
+    private stateProvinceCode: string;
     private country: string;
+    private countryCodeISO2: string;
+    private countryCodeISO3: string;
     private latitude: number | undefined;
     private longitude: number | undefined;
     private resultScore: number | undefined;
@@ -45,7 +48,10 @@ export class AzureMapsAddressAutoComplete implements ComponentFramework.ReactCon
         this.postalCode = getStringValue(context.parameters.postalCode);
         this.county = getStringValue(context.parameters.county);
         this.stateProvince = getStringValue(context.parameters.stateProvince);
+        this.stateProvinceCode = getStringValue(context.parameters.stateProvinceCode);
         this.country = getStringValue(context.parameters.country);
+        this.countryCodeISO2 = getStringValue(context.parameters.countryCodeISO2);
+        this.countryCodeISO3 = getStringValue(context.parameters.countryCodeISO3);
         this.latitude = getNumberValue(context.parameters.latitude);
         this.longitude = getNumberValue(context.parameters.longitude);
         this.resultScore = getNumberValue(context.parameters.resultScore);
@@ -105,8 +111,17 @@ export class AzureMapsAddressAutoComplete implements ComponentFramework.ReactCon
             // State/Province from countrySubdivisionName or countrySubdivision
             this.stateProvince = result.address.countrySubdivisionName ?? result.address.countrySubdivision ?? '';
             
+            // State/Province Code
+            this.stateProvinceCode = result.address.countrySubdivisionCode ?? '';
+            
             // Country
             this.country = result.address.country ?? '';
+            
+            // Country Code ISO2
+            this.countryCodeISO2 = result.address.countryCode ?? '';
+            
+            // Country Code ISO3 
+            this.countryCodeISO3 = result.address.countryCodeISO3 ?? '';
             
             // Coordinates
             this.latitude = result.position?.lat;
@@ -132,7 +147,10 @@ export class AzureMapsAddressAutoComplete implements ComponentFramework.ReactCon
             postalCode: this.postalCode,
             county: this.county,
             stateProvince: this.stateProvince,
+            stateProvinceCode: this.stateProvinceCode,
             country: this.country,
+            countryCodeISO2: this.countryCodeISO2,
+            countryCodeISO3: this.countryCodeISO3,
             latitude: this.latitude,
             longitude: this.longitude,
             resultScore: this.resultScore,

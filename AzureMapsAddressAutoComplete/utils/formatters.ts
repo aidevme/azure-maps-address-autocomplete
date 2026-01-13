@@ -167,3 +167,23 @@ export const formatCountryCode = (countryCode: string | undefined): string => {
 export const formatPostalCode = (postalCode: string | undefined): string => {
   return postalCode ? `${postalCode} - ` : '';
 };
+
+/**
+ * Country data structure for ISO code mapping.
+ */
+interface CountryData {
+  Country: string;
+  CountryISO2: string;
+  CountryISO3: string;
+  LocalizedCountryName: Record<string, string>;
+}
+
+// Import countries data for ISO2 to ISO3 mapping
+//import countriesData from '../statics/countries.json';
+
+// Create a lookup map for faster ISO2 to ISO3 conversion
+// const iso2ToIso3Map: Map<string, string> = new Map(
+//   (countriesData as CountryData[]).map((c) => [c.CountryISO2.toUpperCase(), c.CountryISO3])
+// );
+
+

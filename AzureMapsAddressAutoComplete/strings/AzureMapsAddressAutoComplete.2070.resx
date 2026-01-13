@@ -188,6 +188,16 @@
     <comment>Descrição do campo distrito/região</comment>
   </data>
 
+  <!-- Código Distrito/Região -->
+  <data name="stateProvinceCode_Display_Key" xml:space="preserve">
+    <value>Código Distrito/Região</value>
+    <comment>Nome de apresentação para o campo código distrito/região</comment>
+  </data>
+  <data name="stateProvinceCode_Desc_Key" xml:space="preserve">
+    <value>O campo código distrito ou região (ex: LIS, POR, FAR) a preencher a partir do endereço selecionado.</value>
+    <comment>Descrição do campo código distrito/região</comment>
+  </data>
+
   <!-- País -->
   <data name="country_Display_Key" xml:space="preserve">
     <value>País</value>
@@ -196,6 +206,26 @@
   <data name="country_Desc_Key" xml:space="preserve">
     <value>O campo país a preencher com o nome do país do endereço selecionado.</value>
     <comment>Descrição do campo país</comment>
+  </data>
+
+  <!-- Código País ISO2 -->
+  <data name="countryCodeISO2_Display_Key" xml:space="preserve">
+    <value>Código País (ISO2)</value>
+    <comment>Nome de apresentação para o campo código país ISO 3166-1 alpha-2</comment>
+  </data>
+  <data name="countryCodeISO2_Desc_Key" xml:space="preserve">
+    <value>O campo código país ISO 3166-1 alpha-2 (ex: US, GB, PT) a preencher a partir do endereço selecionado.</value>
+    <comment>Descrição do campo código país ISO2</comment>
+  </data>
+
+  <!-- Código País ISO3 -->
+  <data name="countryCodeISO3_Display_Key" xml:space="preserve">
+    <value>Código País (ISO3)</value>
+    <comment>Nome de apresentação para o campo código país ISO 3166-1 alpha-3</comment>
+  </data>
+  <data name="countryCodeISO3_Desc_Key" xml:space="preserve">
+    <value>O campo código país ISO 3166-1 alpha-3 (ex: USA, GBR, PRT) a preencher a partir do endereço selecionado.</value>
+    <comment>Descrição do campo código país ISO3</comment>
   </data>
 
   <!-- Longitude -->

@@ -188,6 +188,16 @@
     <comment>Beschreibung für Bundesland/Region-Feld</comment>
   </data>
 
+  <!-- State/Province Code -->
+  <data name="stateProvinceCode_Display_Key" xml:space="preserve">
+    <value>Bundesland/Region-Code</value>
+    <comment>Anzeigename für Bundesland/Region-Code-Feld</comment>
+  </data>
+  <data name="stateProvinceCode_Desc_Key" xml:space="preserve">
+    <value>Das Bundesland- oder Regionscode-Feld (z.B. BY, NW, BE) zum Befüllen aus der ausgewählten Adresse.</value>
+    <comment>Beschreibung für Bundesland/Region-Code-Feld</comment>
+  </data>
+
   <!-- Country -->
   <data name="country_Display_Key" xml:space="preserve">
     <value>Land</value>
@@ -196,6 +206,26 @@
   <data name="country_Desc_Key" xml:space="preserve">
     <value>Das Länderfeld zum Befüllen mit dem Ländernamen aus der ausgewählten Adresse.</value>
     <comment>Beschreibung für Länderfeld</comment>
+  </data>
+
+  <!-- Country Code ISO2 -->
+  <data name="countryCodeISO2_Display_Key" xml:space="preserve">
+    <value>Ländercode (ISO2)</value>
+    <comment>Anzeigename für ISO 3166-1 alpha-2 Ländercode-Feld</comment>
+  </data>
+  <data name="countryCodeISO2_Desc_Key" xml:space="preserve">
+    <value>Das ISO 3166-1 alpha-2 Ländercode-Feld (z.B. US, GB, DE) zum Befüllen aus der ausgewählten Adresse.</value>
+    <comment>Beschreibung für ISO2 Ländercode-Feld</comment>
+  </data>
+
+  <!-- Country Code ISO3 -->
+  <data name="countryCodeISO3_Display_Key" xml:space="preserve">
+    <value>Ländercode (ISO3)</value>
+    <comment>Anzeigename für ISO 3166-1 alpha-3 Ländercode-Feld</comment>
+  </data>
+  <data name="countryCodeISO3_Desc_Key" xml:space="preserve">
+    <value>Das ISO 3166-1 alpha-3 Ländercode-Feld (z.B. USA, GBR, DEU) zum Befüllen aus der ausgewählten Adresse.</value>
+    <comment>Beschreibung für ISO3 Ländercode-Feld</comment>
   </data>
 
   <!-- Longitude -->

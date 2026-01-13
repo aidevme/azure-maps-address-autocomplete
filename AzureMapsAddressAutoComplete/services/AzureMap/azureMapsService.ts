@@ -35,6 +35,7 @@ export interface AzureMapsSearchResult {
     extendedPostalCode?: string;
     country?: string;
     countryCode?: string;
+    countryCodeISO3?: string;
     localName?: string;
   };
   position: {

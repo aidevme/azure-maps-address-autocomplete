@@ -187,6 +187,16 @@
     <comment>Description for state/province field</comment>
   </data>
 
+  <!-- State/Province Code -->
+  <data name="stateProvinceCode_Display_Key" xml:space="preserve">
+    <value>State/Province Code</value>
+    <comment>Display name for state/province code field</comment>
+  </data>
+  <data name="stateProvinceCode_Desc_Key" xml:space="preserve">
+    <value>The state or province code field (e.g., CA, TX, NY) to populate from the selected address.</value>
+    <comment>Description for state/province code field</comment>
+  </data>
+
   <!-- Country -->
   <data name="country_Display_Key" xml:space="preserve">
     <value>Country</value>
@@ -195,6 +205,26 @@
   <data name="country_Desc_Key" xml:space="preserve">
     <value>The country field to populate with the country name from the selected address.</value>
     <comment>Description for country field</comment>
+  </data>
+
+  <!-- Country Code ISO2 -->
+  <data name="countryCodeISO2_Display_Key" xml:space="preserve">
+    <value>Country Code (ISO2)</value>
+    <comment>Display name for ISO 3166-1 alpha-2 country code field</comment>
+  </data>
+  <data name="countryCodeISO2_Desc_Key" xml:space="preserve">
+    <value>The ISO 3166-1 alpha-2 country code field (e.g., US, GB, DE) to populate from the selected address.</value>
+    <comment>Description for ISO2 country code field</comment>
+  </data>
+
+  <!-- Country Code ISO3 -->
+  <data name="countryCodeISO3_Display_Key" xml:space="preserve">
+    <value>Country Code (ISO3)</value>
+    <comment>Display name for ISO 3166-1 alpha-3 country code field</comment>
+  </data>
+  <data name="countryCodeISO3_Desc_Key" xml:space="preserve">
+    <value>The ISO 3166-1 alpha-3 country code field (e.g., USA, GBR, DEU) to populate from the selected address.</value>
+    <comment>Description for ISO3 country code field</comment>
   </data>
 
   <!-- Longitude -->
