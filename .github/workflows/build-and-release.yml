@@ -11,7 +11,7 @@ on:
 
 env:
   SOLUTION_NAME: AzureMapsAddressAutoComplete
-  SOLUTION_FOLDER: Solution
+  SOLUTION_FOLDER: Solution/AzureMapsAddressSolution
 
 jobs:
   # ===========================================
