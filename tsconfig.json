@@ -3,6 +3,12 @@
     "compilerOptions": {
         "typeRoots": ["node_modules/@types"],
         "resolveJsonModule": true,
-        "allowSyntheticDefaultImports": true
-    }
+        "allowSyntheticDefaultImports": true,
+        "esModuleInterop": true,
+        "moduleResolution": "node"
+    },
+    "include": [
+        "AzureMapsAddressAutoComplete/**/*",
+        "__tests__/**/*"
+    ]
 }
