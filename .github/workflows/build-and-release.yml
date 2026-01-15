@@ -120,6 +120,24 @@ jobs:
           name: unmanaged-solution
           path: ./artifacts/unmanaged
 
+      - name: Rename artifacts to avoid conflicts
+        run: |
+          echo "=== Renaming Artifacts ==="
+          for file in ./artifacts/managed/*.zip; do
+            if [ -f "$file" ]; then
+              filename=$(basename "$file" .zip)
+              mv "$file" "./artifacts/managed/${filename}_managed.zip"
+              echo "Renamed: $file -> ./artifacts/managed/${filename}_managed.zip"
+            fi
+          done
+          for file in ./artifacts/unmanaged/*.zip; do
+            if [ -f "$file" ]; then
+              filename=$(basename "$file" .zip)
+              mv "$file" "./artifacts/unmanaged/${filename}_unmanaged.zip"
+              echo "Renamed: $file -> ./artifacts/unmanaged/${filename}_unmanaged.zip"
+            fi
+          done
+
       - name: List downloaded artifacts
         run: |
           echo "=== Downloaded Artifacts ==="
