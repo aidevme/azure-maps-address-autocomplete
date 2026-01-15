@@ -31,7 +31,7 @@
     "@microsoft/eslint-plugin-power-apps": "^0.2.51",
     "@shko.online/componentframework-mock": "^0.9.0",
     "@testing-library/jest-dom": "^6.9.1",
-    "@testing-library/react": "^16.3.1",
+    "@testing-library/react": "^12.1.5",
     "@testing-library/user-event": "^14.6.1",
     "@types/jest": "^30.0.0",
     "@types/node": "^25.0.5",
