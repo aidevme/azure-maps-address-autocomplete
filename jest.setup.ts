@@ -22,17 +22,30 @@ global.ResizeObserver = jest.fn().mockImplementation(() => ({
   disconnect: jest.fn(),
 }));
 
-// Suppress console errors during tests (optional)
-// Uncomment if you want to suppress expected errors
-// const originalError = console.error;
-// beforeAll(() => {
-//   console.error = (...args: unknown[]) => {
-//     if (typeof args[0] === 'string' && args[0].includes('Warning:')) {
-//       return;
-//     }
-//     originalError.call(console, ...args);
-//   };
-// });
-// afterAll(() => {
-//   console.error = originalError;
-// });
+// Suppress noisy console warnings during tests
+const originalWarn = console.warn;
+const originalError = console.error;
+
+beforeAll(() => {
+  console.warn = (...args: unknown[]) => {
+    // Suppress warnings from componentframework-mock library
+    if (typeof args[0] === 'string' && args[0].includes('could not find row')) {
+      return;
+    }
+    originalWarn.apply(console, args);
+  };
+
+  console.error = (...args: unknown[]) => {
+    // Suppress React act() warnings and other expected errors
+    if (typeof args[0] === 'string' && 
+        (args[0].includes('Warning:') || args[0].includes('could not find row'))) {
+      return;
+    }
+    originalError.apply(console, args);
+  };
+});
+
+afterAll(() => {
+  console.warn = originalWarn;
+  console.error = originalError;
+});
