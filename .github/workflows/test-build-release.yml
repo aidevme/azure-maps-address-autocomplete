@@ -35,9 +35,7 @@ jobs:
         run: npm ci
 
       - name: Run unit tests
-        run: echo "No unit tests configured yet"
-        # TODO: Add test command when tests are implemented
-        # run: npm test
+        run: npm test -- --ci --coverage
 
   # ===========================================
   # Build Job - Runs on every push and PR
