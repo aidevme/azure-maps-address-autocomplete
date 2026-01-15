@@ -1976,10 +1976,10 @@
       }
     ],
     "CountryTable": {
-      "TableName": "aidevme_Country",
-      "CountryNameField": "aidevme_Name",
-      "CountryISO2Field": "aidevme_CountryISO2",
-      "CountryISO3Field": "aidevme_CountryISO3"
+      "TableName": "aidevme_country",
+      "CountryNameField": "aidevme_name",
+      "CountryISO2Field": "aidevme_countryiso2code",
+      "CountryISO3Field": "aidevme_countryiso3code"
     }
   }
 }
