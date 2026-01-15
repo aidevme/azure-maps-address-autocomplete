@@ -24,3 +24,7 @@
 
 # bundle analyzer report
 bundle-report.html
+
+# test coverage
+/coverage
+test_output.txt
