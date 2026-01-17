@@ -465,7 +465,7 @@ export class PcfContextService {
     const currentUrl = globalThis.location.href;
     return designModeUrls.some((url) => currentUrl.includes(url));
   }
-
+ 
   public isCanvasApp(): boolean {
     return this.context.mode.allocatedHeight !== -1;
   }

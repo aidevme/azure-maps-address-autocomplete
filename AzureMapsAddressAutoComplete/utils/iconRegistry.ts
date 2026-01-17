@@ -15,7 +15,8 @@ import {
   GlobeRegular,
   Info16Regular,
   LocationRegular,
-  SearchRegular
+  SearchRegular,
+  ArrowUndoRegular
 } from "@fluentui/react-icons";
 
 /**
@@ -52,5 +53,7 @@ export const Icons = {
   /** Icon for location/address markers. */
   LocationRegular: LocationRegular,
   /** Icon for search input fields. */
-  SearchRegular: SearchRegular
+  SearchRegular: SearchRegular,
+  /** Icon for undo actions. */
+  ArrowUndoRegular: ArrowUndoRegular,
 } as const;

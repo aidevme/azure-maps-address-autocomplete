@@ -39,9 +39,9 @@ export class AzureMapsAddressAutoComplete
     | undefined;
   private countryCodeISO2: string;
   private countryCodeISO3: string;
-  private latitude: number | undefined;
-  private longitude: number | undefined;
-  private resultScore: number | undefined;
+  private latitude: number | null | undefined;
+  private longitude: number | null | undefined;
+  private resultScore: number | null | undefined;
   private additionalParamsConfig: AdditionalParameters | undefined;
 
   /**
@@ -84,6 +84,8 @@ export class AzureMapsAddressAutoComplete
     this.additionalParamsConfig = parseAdditionalParameters(
       context.parameters.additionalParameters?.raw
     );
+
+    console.log("AzureMapsAddressAutoComplete init context:", context);
   }
 
   /**
@@ -122,6 +124,7 @@ export class AzureMapsAddressAutoComplete
    * @param result - The full Azure Maps search result.
    */
   private handleSelect(address: string, result?: AzureMapsSearchResult): void {
+    console.log("handleSelect called - address:", address, "result:", result);
     this.currentValue = address;
 
     if (result) {
@@ -168,6 +171,22 @@ export class AzureMapsAddressAutoComplete
       const scoreValue: unknown = result.score;
       this.resultScore =
         typeof scoreValue === "number" ? scoreValue : undefined;
+    } else {
+      // Clear all address fields when no result (e.g., Clear button clicked)
+      console.log("handleSelect: Clearing all address fields");
+      this.street = "";
+      this.city = "";
+      this.postalCode = "";
+      this.county = "";
+      this.stateProvince = "";
+      this.stateProvinceCode = "";
+      this.country = "";
+      this.countryCodeISO2 = "";
+      this.countryCodeISO3 = "";
+      // Use null instead of undefined to clear bound numeric fields in Dataverse
+      this.latitude = null;
+      this.longitude = null;
+      this.resultScore = null;
     }
 
     this.notifyOutputChanged();
@@ -227,7 +246,7 @@ export class AzureMapsAddressAutoComplete
         break;
     }
 
-    return {
+    const outputs = {
       azureMapsAddressSearchAutoComplete: this.currentValue,
       street: this.street,
       city: this.city,
@@ -238,10 +257,13 @@ export class AzureMapsAddressAutoComplete
       country: countryOutput,
       countryCodeISO2: this.countryCodeISO2,
       countryCodeISO3: this.countryCodeISO3,
-      latitude: this.latitude,
-      longitude: this.longitude,
-      resultScore: this.resultScore,
+      // Cast null to satisfy IOutputs type while allowing PCF to clear the field
+      latitude: this.latitude as number | undefined,
+      longitude: this.longitude as number | undefined,
+      resultScore: this.resultScore as number | undefined,
     };
+    console.log("getOutputs returning:", outputs);
+    return outputs;
   }
 
   /**

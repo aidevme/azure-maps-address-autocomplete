@@ -737,13 +737,33 @@
   </data>
 
   <!-- Textos da interface - Marcadores de posição e dicas -->
-  <data name="addressInputPlaceholder_Key" xml:space="preserve">
+  <data name="azure-maps-address-auto-complete-address-input-placeholder" xml:space="preserve">
     <value>Introduza um endereço...</value>
     <comment>Texto de marcação de posição para o campo de entrada de endereço</comment>
   </data>
-  <data name="addressSelectedHint_Key" xml:space="preserve">
+  <data name="azure-maps-address-auto-complete-address-selected-hint" xml:space="preserve">
     <value>Endereço selecionado com sucesso</value>
     <comment>Mensagem de dica quando um endereço é selecionado com sucesso</comment>
+  </data>
+  <data name="azure-maps-address-auto-complete-address-cleared-hint" xml:space="preserve">
+    <value>Endereço limpo com sucesso</value>
+    <comment>Mensagem de dica quando um endereço é limpo com sucesso</comment>
+  </data>
+  <data name="azure-maps-address-auto-complete-clear-dialog-title" xml:space="preserve">
+    <value>Limpar campos de endereço</value>
+    <comment>Título da caixa de diálogo de confirmação de limpeza de endereço</comment>
+  </data>
+  <data name="azure-maps-address-auto-complete-clear-dialog-message" xml:space="preserve">
+    <value>Tem certeza de que deseja limpar todos os campos de endereço? Esta ação removerá todas as informações de endereço salvas e não pode ser desfeita.</value>
+    <comment>Mensagem da caixa de diálogo de confirmação de limpeza de endereço</comment>
+  </data>
+  <data name="azure-maps-address-auto-complete-clear-dialog-clear-button-label" xml:space="preserve">
+    <value>Limpar</value>
+    <comment>Etiqueta do botão Limpar na caixa de diálogo de confirmação de limpeza de endereço</comment>
+  </data>
+  <data name="azure-maps-address-auto-complete-clear-dialog-cancel-button-label" xml:space="preserve">
+    <value>Cancelar</value>
+    <comment>Etiqueta do botão Cancelar na caixa de diálogo de confirmação de limpeza de endereço</comment>
   </data>
   <data name="addressSuggestionsAriaLabel_Key" xml:space="preserve">
     <value>Sugestões de endereços</value>

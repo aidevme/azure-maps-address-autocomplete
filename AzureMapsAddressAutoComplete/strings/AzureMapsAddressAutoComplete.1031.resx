@@ -737,13 +737,33 @@
   </data>
 
   <!-- UI-Texte - Platzhalter und Hinweise -->
-  <data name="addressInputPlaceholder_Key" xml:space="preserve">
+  <data name="azure-maps-address-auto-complete-address-input-placeholder" xml:space="preserve">
     <value>Adresse eingeben...</value>
     <comment>Platzhaltertext für das Adresseingabefeld</comment>
   </data>
-  <data name="addressSelectedHint_Key" xml:space="preserve">
+  <data name="azure-maps-address-auto-complete-address-selected-hint" xml:space="preserve">
     <value>Adresse erfolgreich ausgewählt</value>
     <comment>Hinweis bei erfolgreicher Adressauswahl</comment>
+  </data>
+  <data name="azure-maps-address-auto-complete-address-cleared-hint" xml:space="preserve">
+    <value>Adresse erfolgreich gelöscht</value>
+    <comment>Hinweis bei erfolgreicher Adresslöschung</comment>
+  </data>
+  <data name="azure-maps-address-auto-complete-clear-dialog-title" xml:space="preserve">
+    <value>Adressfelder löschen</value>
+    <comment>Titel für den Bestätigungsdialog zum Löschen der Adresse</comment>
+  </data>
+  <data name="azure-maps-address-auto-complete-clear-dialog-message" xml:space="preserve">
+    <value>Möchten Sie wirklich alle Adressfelder löschen? Diese Aktion entfernt alle gespeicherten Adressinformationen und kann nicht rückgängig gemacht werden.</value>
+    <comment>Nachricht für den Bestätigungsdialog zum Löschen der Adresse</comment>
+  </data>
+  <data name="azure-maps-address-auto-complete-clear-dialog-clear-button-label" xml:space="preserve">
+    <value>Löschen</value>
+    <comment>Beschriftung für die Schaltfläche "Löschen" im Bestätigungsdialog zum Löschen der Adresse</comment>
+  </data>
+  <data name="azure-maps-address-auto-complete-clear-dialog-cancel-button-label" xml:space="preserve">
+    <value>Abbrechen</value>
+    <comment>Beschriftung für die Schaltfläche "Abbrechen" im Bestätigungsdialog zum Löschen der Adresse</comment>
   </data>
   <data name="addressSuggestionsAriaLabel_Key" xml:space="preserve">
     <value>Adressvorschläge</value>

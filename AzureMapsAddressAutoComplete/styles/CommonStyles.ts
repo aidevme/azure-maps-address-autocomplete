@@ -10,19 +10,17 @@ export const useAzureMapsAddressAutoCompleteStyles = makeStyles({
     flexDirection: 'column',
     gap: tokens.spacingVerticalS,
     width: '100%',
-    maxWidth: '800px',
     position: 'relative',
   },
   /** Input field styles. */
   input: {
     width: '100%',
-    minWidth: '150px',
     // Ensure the input's internal wrapper doesn't hide the search icon
     '& .fui-Input__contentAfter': {
       flexShrink: 0,
       display: 'flex',
       alignItems: 'center',
-      paddingRight: tokens.spacingHorizontalS,
+      paddingRight: tokens.spacingHorizontalXS,
     },
   },
   /** Dropdown container styles. */
@@ -104,12 +102,10 @@ export const useAzureMapsAddressAutoCompleteStyles = makeStyles({
     alignItems: 'center',
     justifyContent: 'center',
     color: tokens.colorNeutralForeground3,
+    // Set dimensions via font-size for CSP compliance
+    // Icons inherit size from parent fontSize
     fontSize: '20px',
-    '& > svg': {
-      width: '20px',
-      height: '20px',
-      fill: 'currentColor',
-    },
+    lineHeight: '20px',
   },
   /** Globe button styles with hover effect. */
   globeButton: {

@@ -677,13 +677,33 @@
     <comment>Leírás az előfizetési kulcs beállításhoz</comment>
   </data>
   <!-- Felhasználói felületi szövegek - Helyőrzők és tippek -->
-  <data name="addressInputPlaceholder_Key" xml:space="preserve">
+  <data name="azure-maps-address-auto-complete-address-input-placeholder" xml:space="preserve">
     <value>Adjon meg egy címet...</value>
     <comment>Helyőrző szöveg a címbeviteli mezőhöz</comment>
   </data>
-  <data name="addressSelectedHint_Key" xml:space="preserve">
+  <data name="azure-maps-address-auto-complete-address-selected-hint" xml:space="preserve">
     <value>Cím sikeresen kiválasztva</value>
     <comment>Tájékoztató üzenet sikeres címválasztáskor</comment>
+  </data>
+  <data name="azure-maps-address-auto-complete-address-cleared-hint" xml:space="preserve">
+    <value>Cím sikeresen törölve</value>
+    <comment>Tájékoztató üzenet sikeres címtörléskor</comment>
+  </data>
+  <data name="azure-maps-address-auto-complete-clear-dialog-title" xml:space="preserve">
+    <value>Címmezők törlése</value>
+    <comment>A címtörlési megerősítő párbeszédablak címe</comment>
+  </data>
+  <data name="azure-maps-address-auto-complete-clear-dialog-message" xml:space="preserve">
+    <value>Biztosan törli az összes címmezőt? Ez a művelet eltávolítja az összes mentett címadatot, és nem vonható vissza.</value>
+    <comment>A címtörlési megerősítő párbeszédablak üzenete</comment>
+  </data>
+  <data name="azure-maps-address-auto-complete-clear-dialog-clear-button-label" xml:space="preserve">
+    <value>Törlés</value>
+    <comment>A Törlés gomb felirata a címtörlési megerősítő párbeszédablakban</comment>
+  </data>
+  <data name="azure-maps-address-auto-complete-clear-dialog-cancel-button-label" xml:space="preserve">
+    <value>Mégse</value>
+    <comment>A Mégse gomb felirata a címtörlési megerősítő párbeszédablakban</comment>
   </data>
   <data name="addressSuggestionsAriaLabel_Key" xml:space="preserve">
     <value>Címjavaslatok</value>

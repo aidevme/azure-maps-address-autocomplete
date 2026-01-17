@@ -737,13 +737,33 @@
   </data>
 
   <!-- Textes UI - Espaces réservés et indices -->
-  <data name="addressInputPlaceholder_Key" xml:space="preserve">
+  <data name="azure-maps-address-auto-complete-address-input-placeholder" xml:space="preserve">
     <value>Saisissez une adresse...</value>
     <comment>Texte d'espace réservé pour le champ de saisie d'adresse</comment>
   </data>
-  <data name="addressSelectedHint_Key" xml:space="preserve">
+  <data name="azure-maps-address-auto-complete-address-selected-hint" xml:space="preserve">
     <value>Adresse sélectionnée avec succès</value>
     <comment>Message d'indication lors de la sélection réussie d'une adresse</comment>
+  </data>
+  <data name="azure-maps-address-auto-complete-address-cleared-hint" xml:space="preserve">
+    <value>Adresse effacée avec succès</value>
+    <comment>Message d'indication lors de l'effacement réussi d'une adresse</comment>
+  </data>
+  <data name="azure-maps-address-auto-complete-clear-dialog-title" xml:space="preserve">
+    <value>Effacer les champs d'adresse</value>
+    <comment>Titre de la boîte de dialogue de confirmation d'effacement de l'adresse</comment>
+  </data>
+  <data name="azure-maps-address-auto-complete-clear-dialog-message" xml:space="preserve">
+    <value>Êtes-vous sûr de vouloir effacer tous les champs d'adresse ? Cette action supprimera toutes les informations d'adresse enregistrées et ne peut pas être annulée.</value>
+    <comment>Message de la boîte de dialogue de confirmation d'effacement de l'adresse</comment>
+  </data>
+  <data name="azure-maps-address-auto-complete-clear-dialog-clear-button-label" xml:space="preserve">
+    <value>Effacer</value>
+    <comment>Libellé du bouton Effacer dans la boîte de dialogue de confirmation d'effacement de l'adresse</comment>
+  </data>
+  <data name="azure-maps-address-auto-complete-clear-dialog-cancel-button-label" xml:space="preserve">
+    <value>Annuler</value>
+    <comment>Libellé du bouton Annuler dans la boîte de dialogue de confirmation d'effacement de l'adresse</comment>
   </data>
   <data name="addressSuggestionsAriaLabel_Key" xml:space="preserve">
     <value>Suggestions d'adresses</value>

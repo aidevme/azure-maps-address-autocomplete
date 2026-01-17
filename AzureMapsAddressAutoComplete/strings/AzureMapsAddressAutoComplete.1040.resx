@@ -737,13 +737,33 @@
   </data>
 
   <!-- Testi UI - Segnaposto e suggerimenti -->
-  <data name="addressInputPlaceholder_Key" xml:space="preserve">
+  <data name="azure-maps-address-auto-complete-address-input-placeholder" xml:space="preserve">
     <value>Inserisci un indirizzo...</value>
     <comment>Testo segnaposto per il campo di inserimento indirizzo</comment>
   </data>
-  <data name="addressSelectedHint_Key" xml:space="preserve">
+  <data name="azure-maps-address-auto-complete-address-selected-hint" xml:space="preserve">
     <value>Indirizzo selezionato con successo</value>
     <comment>Messaggio di suggerimento alla selezione riuscita dell'indirizzo</comment>
+  </data>
+  <data name="azure-maps-address-auto-complete-address-cleared-hint" xml:space="preserve">
+    <value>Indirizzo cancellato con successo</value>
+    <comment>Messaggio di suggerimento alla cancellazione riuscita dell'indirizzo</comment>
+  </data>
+  <data name="azure-maps-address-auto-complete-clear-dialog-title" xml:space="preserve">
+    <value>Cancella campi indirizzo</value>
+    <comment>Titolo per la finestra di dialogo di conferma della cancellazione dell'indirizzo</comment>
+  </data>
+  <data name="azure-maps-address-auto-complete-clear-dialog-message" xml:space="preserve">
+    <value>Sei sicuro di voler cancellare tutti i campi indirizzo? Questa azione rimuoverà tutte le informazioni sull'indirizzo salvate e non può essere annullata.</value>
+    <comment>Messaggio per la finestra di dialogo di conferma della cancellazione dell'indirizzo</comment>
+  </data>
+  <data name="azure-maps-address-auto-complete-clear-dialog-clear-button-label" xml:space="preserve">
+    <value>Cancella</value>
+    <comment>Etichetta per il pulsante Cancella nella finestra di dialogo di conferma della cancellazione dell'indirizzo</comment>
+  </data>
+  <data name="azure-maps-address-auto-complete-clear-dialog-cancel-button-label" xml:space="preserve">
+    <value>Annulla</value>
+    <comment>Etichetta per il pulsante Annulla nella finestra di dialogo di conferma della cancellazione dell'indirizzo</comment>
   </data>
   <data name="addressSuggestionsAriaLabel_Key" xml:space="preserve">
     <value>Suggerimenti indirizzi</value>

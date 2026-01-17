@@ -737,13 +737,33 @@
   </data>
 
   <!-- Textos de interfaz - Marcadores de posición y sugerencias -->
-  <data name="addressInputPlaceholder_Key" xml:space="preserve">
+  <data name="azure-maps-address-auto-complete-address-input-placeholder" xml:space="preserve">
     <value>Introduzca una dirección...</value>
     <comment>Texto de marcador de posición para el campo de entrada de dirección</comment>
   </data>
-  <data name="addressSelectedHint_Key" xml:space="preserve">
+  <data name="azure-maps-address-auto-complete-address-selected-hint" xml:space="preserve">
     <value>Dirección seleccionada correctamente</value>
     <comment>Mensaje de sugerencia cuando se selecciona correctamente una dirección</comment>
+  </data>
+  <data name="azure-maps-address-auto-complete-address-cleared-hint" xml:space="preserve">
+    <value>Dirección borrada correctamente</value>
+    <comment>Mensaje de sugerencia cuando se borra correctamente una dirección</comment>
+  </data>
+  <data name="azure-maps-address-auto-complete-clear-dialog-title" xml:space="preserve">
+    <value>Borrar campos de dirección</value>
+    <comment>Título del cuadro de diálogo de confirmación de borrado de dirección</comment>
+  </data>
+  <data name="azure-maps-address-auto-complete-clear-dialog-message" xml:space="preserve">
+    <value>¿Está seguro de que desea borrar todos los campos de dirección? Esta acción eliminará toda la información de dirección guardada y no se puede deshacer.</value>
+    <comment>Mensaje del cuadro de diálogo de confirmación de borrado de dirección</comment>
+  </data>
+  <data name="azure-maps-address-auto-complete-clear-dialog-clear-button-label" xml:space="preserve">
+    <value>Borrar</value>
+    <comment>Etiqueta del botón Borrar en el cuadro de diálogo de confirmación de borrado de dirección</comment>
+  </data>
+  <data name="azure-maps-address-auto-complete-clear-dialog-cancel-button-label" xml:space="preserve">
+    <value>Cancelar</value>
+    <comment>Etiqueta del botón Cancelar en el cuadro de diálogo de confirmación de borrado de dirección</comment>
   </data>
   <data name="addressSuggestionsAriaLabel_Key" xml:space="preserve">
     <value>Sugerencias de direcciones</value>

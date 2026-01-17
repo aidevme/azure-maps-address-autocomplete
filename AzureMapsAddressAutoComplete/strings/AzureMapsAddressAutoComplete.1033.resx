@@ -736,13 +736,33 @@
   </data>
 
   <!-- UI Text - Placeholders and Hints -->
-  <data name="addressInputPlaceholder_Key" xml:space="preserve">
+  <data name="azure-maps-address-auto-complete-address-input-placeholder" xml:space="preserve">
     <value>Enter an address...</value>
     <comment>Placeholder text for the address input field</comment>
   </data>
-  <data name="addressSelectedHint_Key" xml:space="preserve">
+  <data name="azure-maps-address-auto-complete-address-selected-hint" xml:space="preserve">
     <value>Address Successfully Selected</value>
     <comment>Hint message shown when an address is successfully selected</comment>
+  </data>
+  <data name="azure-maps-address-auto-complete-address-cleared-hint" xml:space="preserve">
+    <value>Address Successfully Cleared</value>
+    <comment>Hint message shown when an address is successfully cleared</comment>
+  </data>
+  <data name="azure-maps-address-auto-complete-clear-dialog-title" xml:space="preserve">
+    <value>Clear Address Fields</value>
+    <comment>Title for the clear address confirmation dialog</comment>
+  </data>
+  <data name="azure-maps-address-auto-complete-clear-dialog-message" xml:space="preserve">
+    <value>Are you sure you want to clear all address fields? This action will remove all saved address information and cannot be undone.</value>
+    <comment>Message for the clear address confirmation dialog</comment>
+  </data>
+  <data name="azure-maps-address-auto-complete-clear-dialog-clear-button-label" xml:space="preserve">
+    <value>Clear</value>
+    <comment>Label for the Clear button in the clear address confirmation dialog</comment>
+  </data>
+  <data name="azure-maps-address-auto-complete-clear-dialog-cancel-button-label" xml:space="preserve">
+    <value>Cancel</value>
+    <comment>Label for the Cancel button in the clear address confirmation dialog</comment>
   </data>
   <data name="addressSuggestionsAriaLabel_Key" xml:space="preserve">
     <value>Address suggestions</value>

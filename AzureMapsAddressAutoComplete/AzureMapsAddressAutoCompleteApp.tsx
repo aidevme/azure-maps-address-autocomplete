@@ -108,7 +108,7 @@ export class AzureMapsAddressAutoCompleteApp extends React.Component<
       return null;
     }
 
-    const { instanceid, ...autoCompleteProps } = this.props;
+    const { instanceid, context: _context, ...autoCompleteProps } = this.props;
     const { initError, showErrorDialog } = this.state;
 
     // Get disabled state from pcfContextService
