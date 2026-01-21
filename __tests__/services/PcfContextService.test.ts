@@ -1,3 +1,6 @@
+/* eslint-disable @typescript-eslint/no-empty-function */
+/* eslint-disable @typescript-eslint/no-unsafe-member-access */
+/* eslint-disable @typescript-eslint/no-explicit-any */
 /**
  * Unit tests for PcfContextService
  */
@@ -321,6 +324,47 @@ describe('PcfContextService', () => {
 
     it('should return false for dynamics.com runtime', () => {
       expect(true).toBe(true); // Placeholder
+    });
+  });
+
+  describe('isAuthoringMode (static)', () => {
+    it('should return true when context.mode.isAuthoringMode is true', () => {
+      const mockContext = createMockContext({});
+      (mockContext.mode as any).isAuthoringMode = true;
+
+      const result = PcfContextService.isAuthoringMode(mockContext);
+
+      expect(result).toBe(true);
+    });
+
+    it('should return false when context.mode.isAuthoringMode is false', () => {
+      const mockContext = createMockContext({});
+      (mockContext.mode as any).isAuthoringMode = false;
+
+      const result = PcfContextService.isAuthoringMode(mockContext);
+
+      expect(result).toBe(false);
+    });
+
+    it('should return false when context.mode.isAuthoringMode is undefined', () => {
+      const mockContext = createMockContext({});
+      (mockContext.mode as any).isAuthoringMode = undefined;
+
+      const result = PcfContextService.isAuthoringMode(mockContext);
+
+      expect(result).toBe(false);
+    });
+
+    it('should return false when context is not provided', () => {
+      const result = PcfContextService.isAuthoringMode();
+
+      expect(result).toBe(false);
+    });
+
+    it('should return false when context is undefined', () => {
+      const result = PcfContextService.isAuthoringMode(undefined);
+
+      expect(result).toBe(false);
     });
   });
 

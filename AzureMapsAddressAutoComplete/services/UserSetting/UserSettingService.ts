@@ -5,6 +5,15 @@ import { USER_SETTING_MESSAGES } from "../../constants/messages";
 import { DataverseApiError } from "../../types";
 
 /**
+ * Dataverse API response type for usersettings entity.
+ */
+interface DataverseUserSettingEntity {
+  systemuserid: string;
+  uilanguageid: number;
+  helplanguageid: number;
+}
+
+/**
  * Cache entry for user settings with expiration.
  */
 interface CacheEntry {
@@ -18,9 +27,19 @@ interface CacheEntry {
 const CACHE_EXPIRATION_MS = 5 * 60 * 1000;
 
 /**
+ * Maximum number of user settings to cache (prevents memory leaks).
+ */
+const MAX_CACHE_SIZE = 100;
+
+/**
  * Static cache for user settings to avoid repeated API calls.
  */
 const userSettingsCache = new Map<string, CacheEntry>();
+
+/**
+ * Map of pending requests to prevent duplicate API calls for same user.
+ */
+const pendingRequests = new Map<string, Promise<IUserSettingsRetrieveResponse>>();
 
 export interface IUserSettingServiceProps {
   pcfContextService: PcfContextService;
@@ -94,6 +113,33 @@ export class UserSettingService {
       };
     }
 
+    // Check if request is already in flight (deduplication)
+    const pending = pendingRequests.get(userId);
+    if (pending) {
+      console.log(`UserSettingService: Deduplicating request for user ${userId}`);
+      return pending;
+    }
+
+    // Create new request and track it
+    const promise = this.fetchUserSettings(userId);
+    pendingRequests.set(userId, promise);
+
+    try {
+      const result = await promise;
+      return result;
+    } finally {
+      // Always clean up pending request
+      pendingRequests.delete(userId);
+    }
+  }
+
+  /**
+   * Fetches user settings from Dataverse API.
+   * @param userId - The user ID to retrieve settings for
+   * @returns Promise with user settings response
+   * @private
+   */
+  private async fetchUserSettings(userId: string): Promise<IUserSettingsRetrieveResponse> {
     try {
       const entityName = "usersettings";
       const query = "?$select=systemuserid,helplanguageid,uilanguageid";
@@ -103,10 +149,10 @@ export class UserSettingService {
         query
       );
 
-      const uilanguageid = result.uilanguageid as number;
-      const helplanguageid = result.helplanguageid as number;
+      // Type-safe casting to expected Dataverse entity structure
+      const entity = result as unknown as DataverseUserSettingEntity;
 
-      if (!result.systemuserid) {
+      if (!entity.systemuserid) {
         return {
           isSuccess: false,
           message: `${USER_SETTING_MESSAGES.USER_SETTINGS_NOT_FOUND} ${userId}`,
@@ -114,22 +160,22 @@ export class UserSettingService {
         };
       }
 
-      const uilanguage = lcidToLocale(uilanguageid);
-      const helplanguage = lcidToLocale(helplanguageid);
+      const uilanguage = lcidToLocale(entity.uilanguageid);
+      const helplanguage = lcidToLocale(entity.helplanguageid);
 
       // Check if any locale fell back to default
       const fallbackMessages: string[] = [];
-      if (!hasLocaleMapping(uilanguageid)) {
-        fallbackMessages.push(`${USER_SETTING_MESSAGES.UI_LANGUAGE_LCID_NOT_FOUND} ${DEFAULT_LOCALE} (LCID: ${uilanguageid})`);
+      if (!hasLocaleMapping(entity.uilanguageid)) {
+        fallbackMessages.push(`${USER_SETTING_MESSAGES.UI_LANGUAGE_LCID_NOT_FOUND} ${DEFAULT_LOCALE} (LCID: ${entity.uilanguageid})`);
       }
-      if (!hasLocaleMapping(helplanguageid)) {
-        fallbackMessages.push(`${USER_SETTING_MESSAGES.HELP_LANGUAGE_LCID_NOT_FOUND} ${DEFAULT_LOCALE} (LCID: ${helplanguageid})`);
+      if (!hasLocaleMapping(entity.helplanguageid)) {
+        fallbackMessages.push(`${USER_SETTING_MESSAGES.HELP_LANGUAGE_LCID_NOT_FOUND} ${DEFAULT_LOCALE} (LCID: ${entity.helplanguageid})`);
       }
 
       const userSettingItem: IUserSettingItem = {
-        systemuserid: result.systemuserid as string,
-        uilanguageid,
-        helplanguageid,
+        systemuserid: entity.systemuserid,
+        uilanguageid: entity.uilanguageid,
+        helplanguageid: entity.helplanguageid,
         uilanguage,
         helplanguage,
       };
@@ -193,8 +239,18 @@ export class UserSettingService {
 
   /**
    * Stores user settings in cache with expiration.
+   * Implements LRU eviction when cache reaches maximum size.
    */
   private setCache(userId: string, data: IUserSettingItem): void {
+    // Evict oldest entry if at max capacity (LRU)
+    if (userSettingsCache.size >= MAX_CACHE_SIZE) {
+      const firstKey = userSettingsCache.keys().next().value;
+      if (firstKey) {
+        console.log(`UserSettingService: Cache at max size (${MAX_CACHE_SIZE}), evicting oldest entry: ${firstKey}`);
+        userSettingsCache.delete(firstKey);
+      }
+    }
+
     userSettingsCache.set(userId, {
       data,
       expiresAt: Date.now() + CACHE_EXPIRATION_MS,

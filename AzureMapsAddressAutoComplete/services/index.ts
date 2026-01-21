@@ -37,3 +37,20 @@ export type {
     IUserSettingItem,
     IUserSettingsRetrieveResponse,
 } from "./UserSetting/UserSettingService";
+
+// Country Service
+export { CountryService } from "./Country/CountryService";
+export type {
+    ICountryServiceProps,
+    ICountryItem,
+    ICountryRetrieveResponse,
+    ICountryRetrieveMultipleResponse,
+} from "./Country/CountryService";
+
+// Metadata Service
+export { MetadataService } from "./Metadata/MetadataService";
+export type {
+    IMetadataServiceProps,
+    GlobalOptionSetOption,
+    PicklistOption,
+} from "./Metadata/MetadataService";

@@ -78,6 +78,9 @@ export class AzureMapsAddressAutoCompleteApp extends React.Component<
   private async initializeAsync(): Promise<void> {
     try {
       await this.pcfContextService.initialize();
+      console.debug('AzureMapsAddressAutoCompleteApp: PcfContextService initialized');
+      console.debug('  isInDesignMode:', PcfContextService.isInDesignMode(this.props.context));
+      console.debug('  isAuthoringMode:', PcfContextService.isAuthoringMode(this.props.context));
       this.setState({ isInitialized: true });
     } catch (err) {
       console.error('AzureMapsAddressAutoCompleteApp: Initialization failed:', err);
@@ -127,7 +130,7 @@ export class AzureMapsAddressAutoCompleteApp extends React.Component<
     return (
       <PcfContextProvider pcfcontext={this.pcfContextService}>
         <IdPrefixProvider value={`azure-maps-control-${instanceid}`}>
-          <FluentProvider theme={theme}>
+          <FluentProvider theme={theme} style={{ width: '100%', display: 'block' }}>
             <AzureMapsAddressAutoComplete
               {...autoCompleteProps}
               pcfContext={this.pcfContextService}

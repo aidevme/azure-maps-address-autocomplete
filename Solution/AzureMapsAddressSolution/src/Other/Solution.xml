@@ -22,7 +22,7 @@
       <Description description="Um controlo PowerApps Component Framework (PCF) para preenchimento automático de endereços com Azure Maps. Fornece pesquisa inteligente de endereços, geocodificação e pré-visualização interativa de mapas para Dynamics 365 e Power Apps." languagecode="2070" />
       <Description description="Un control de PowerApps Component Framework (PCF) para autocompletado de direcciones con Azure Maps. Proporciona búsqueda inteligente de direcciones, geocodificación y vista previa interactiva de mapas para Dynamics 365 y Power Apps." languagecode="3082" />
     </Descriptions>
-    <Version>1.0.0.18</Version>
+    <Version>1.0.0.39</Version>
     <!-- Solution Package Type: Unmanaged(0)/Managed(1)/Both(2)-->
     <Managed>2</Managed>
     <Publisher>
@@ -102,7 +102,9 @@
         </Address>
       </Addresses>
     </Publisher>
-    <RootComponents />
+    <RootComponents>
+      <RootComponent type="9" schemaName="aidevme_countries" behavior="0" />
+    </RootComponents>
     <MissingDependencies />
   </SolutionManifest>
 </ImportExportXml>

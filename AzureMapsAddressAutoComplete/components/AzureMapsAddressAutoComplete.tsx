@@ -260,7 +260,7 @@ export const AzureMapsAddressAutoComplete: React.FC<
         <Input
           id={inputId}
           className={styles.input}
-          style={{ display: "flex" }}
+          style={{ display: "flex", width: "100%", minWidth: 0 }}
           value={inputValue}
           placeholder={localizedPlaceholder}
           disabled={disabled}

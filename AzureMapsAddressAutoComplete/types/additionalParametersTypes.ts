@@ -4,6 +4,8 @@
  * @module types/additionalParametersTypes
  */
 
+import { PcfContextService } from '../services/PcfContext/PcfContextService';
+
 /**
  * Choice option for OptionSet field type.
  * Maps to Dataverse OptionSet values.
@@ -145,17 +147,40 @@ export function findCountryChoiceByName(
 
 /**
  * Finds a country lookup by ISO2 code.
+ * 
+ * Uses PcfContextService to query Dataverse for country data, falling back to
+ * in-memory config lookup if no service is provided.
  *
- * @param config - The parsed AdditionalParameters configuration.
+ * @param config - The parsed AdditionalParameters configuration (used as fallback).
  * @param iso2Code - The ISO 3166-1 alpha-2 country code.
+ * @param pcfContextService - Optional PcfContextService instance for Dataverse queries.
  * @returns The matching CountryLookup, or undefined if not found.
  *
  * @public
  */
-export function findCountryLookupByISO2(
+export async function findCountryLookupByISO2(
   config: AdditionalParameters | undefined,
-  iso2Code: string
-): CountryLookup | undefined {
+  iso2Code: string,
+  pcfContextService?: PcfContextService
+): Promise<CountryLookup | undefined> {
+  // If PcfContextService is provided, use it to query Dataverse
+  if (pcfContextService) {
+    const entity = await pcfContextService.getCountryByIso2(iso2Code);
+    console.log(`findCountryLookupByISO2: iso2Code='${iso2Code}', entity:`, entity);
+    if (entity) {
+      const countryLookup = {
+        Id: entity.aidevme_countryid as string,
+        Name: entity.aidevme_name as string,
+        CountryISO2: entity.aidevme_countryiso2code as string,
+        CountryISO3: entity.aidevme_countryiso3code as string,
+      };
+      console.log(`findCountryLookupByISO2: Returning countryLookup:`, countryLookup);
+      return countryLookup;
+    }
+    return undefined;
+  }
+
+  // Fallback to in-memory config lookup
   return config?.CountriesConfig.Lookup.find(
     c => c.CountryISO2.toUpperCase() === iso2Code.toUpperCase()
   );
@@ -163,17 +188,40 @@ export function findCountryLookupByISO2(
 
 /**
  * Finds a country lookup by ISO3 code.
+ * 
+ * Uses PcfContextService to query Dataverse for country data, falling back to
+ * in-memory config lookup if no service is provided.
  *
- * @param config - The parsed AdditionalParameters configuration.
+ * @param config - The parsed AdditionalParameters configuration (used as fallback).
  * @param iso3Code - The ISO 3166-1 alpha-3 country code.
+ * @param pcfContextService - Optional PcfContextService instance for Dataverse queries.
  * @returns The matching CountryLookup, or undefined if not found.
  *
  * @public
  */
-export function findCountryLookupByISO3(
+export async function findCountryLookupByISO3(
   config: AdditionalParameters | undefined,
-  iso3Code: string
-): CountryLookup | undefined {
+  iso3Code: string,
+  pcfContextService?: PcfContextService
+): Promise<CountryLookup | undefined> {
+  // If PcfContextService is provided, use it to query Dataverse
+  if (pcfContextService) {
+    const entity = await pcfContextService.getCountryByIso3(iso3Code);
+    console.log(`findCountryLookupByISO3: iso3Code='${iso3Code}', entity:`, entity);
+    if (entity) {
+      const countryLookup = {
+        Id: entity.aidevme_countryid as string,
+        Name: entity.aidevme_name as string,
+        CountryISO2: entity.aidevme_countryiso2code as string,
+        CountryISO3: entity.aidevme_countryiso3code as string,
+      };
+      console.log(`findCountryLookupByISO3: Returning countryLookup:`, countryLookup);
+      return countryLookup;
+    }
+    return undefined;
+  }
+
+  // Fallback to in-memory config lookup
   return config?.CountriesConfig.Lookup.find(
     c => c.CountryISO3.toUpperCase() === iso3Code.toUpperCase()
   );

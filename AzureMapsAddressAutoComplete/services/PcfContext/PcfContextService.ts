@@ -5,9 +5,12 @@ import { DEFAULT_LOCALE } from "../../utils/localeUtils";
 import {
   UserSettingService,
   IUserSettingsRetrieveResponse,
-} from "../UserSetting/UserSettingService";
+  MetadataService,
+  GlobalOptionSetOption,
+  CountryService,
+} from "../index";
 
-import countriesData from '../../statics/countries.json';
+import countriesData from "../../statics/countries.json";
 
 /**
  * Context info from PCF mode object (not officially typed).
@@ -136,6 +139,12 @@ export class PcfContextService {
   onSelectedValueChange?: (value: { address: string }) => void;
   /** List of all available countries with ISO codes and localized names. */
   countries: Country[];
+  /** Cache for optionset metadata keyed by field name. */
+  private optionSetCache: Map<string, GlobalOptionSetOption[]>;
+  /** Reference to the metadata service for fetching optionset data. */
+  private metadataService: MetadataService;
+  /** Reference to the country service for fetching country data. */
+  private countryService: CountryService;
 
   /**
    * Constructor to initialize the PCF Context Service.
@@ -171,7 +180,7 @@ export class PcfContextService {
       this.additionalParameters = "";
 
       // Extract boolean properties safely (TwoOptionsProperty can be error-typed)
-      this.showMaps = params.showMaps?.raw === true;   
+      this.showMaps = params.showMaps?.raw === true;
       this.useUserLanguage = params.useUserLanguage?.raw === true;
 
       // Extract defaultLanguage with validation - PCF enum returns numeric LCID values
@@ -235,7 +244,8 @@ export class PcfContextService {
       };
 
       this.defaultLanguage =
-        (defaultLanguageNum !== undefined && lcidToLocaleMap[defaultLanguageNum]) ||
+        (defaultLanguageNum !== undefined &&
+          lcidToLocaleMap[defaultLanguageNum]) ||
         "en-US";
 
       // Extract mapSize with validation - PCF enum returns numeric values
@@ -246,13 +256,13 @@ export class PcfContextService {
           ? Number.parseInt(mapSizeRaw, 10)
           : mapSizeRaw;
       this.mapSize =
-        mapSizeNum === 0 ? "small" : mapSizeNum === 2 ? "large" : "medium";     
+        mapSizeNum === 0 ? "small" : mapSizeNum === 2 ? "large" : "medium";
 
       // Disabled if control is disabled OR field is secured and not editable
       const fieldSecurity = params.azureMapsAddressSearchAutoComplete.security;
       this.disabled =
         props.context.mode.isControlDisabled ||
-        (fieldSecurity?.secured === true && fieldSecurity?.editable === false);       
+        (fieldSecurity?.secured === true && fieldSecurity?.editable === false);
 
       // Initialize language settings with defaults, then fetch from user settings
       this.uiLanguage = DEFAULT_LOCALE;
@@ -261,9 +271,12 @@ export class PcfContextService {
       // Initialize countries list
       this.countries = getAllCountries();
 
+      // Initialize optionset cache (metadata/country services created on-demand when needed)
+      this.optionSetCache = new Map();
+
       console.log(
         "PcfContextService constructor: useUserLanguage =",
-        this.useUserLanguage
+        this.useUserLanguage,
       );
     } else {
       // Default initialization if props are not provided
@@ -280,6 +293,11 @@ export class PcfContextService {
       this.uiLanguage = DEFAULT_LOCALE;
       this.helpLanguage = DEFAULT_LOCALE;
       this.countries = getAllCountries();
+      this.optionSetCache = new Map();
+      // Services require a context, so we create a minimal mock for default init
+      const mockContext = {} as ComponentFramework.Context<IInputs>;
+      this.metadataService = new MetadataService({ context: mockContext });
+      this.countryService = new CountryService({ context: mockContext });
     }
   }
 
@@ -306,7 +324,7 @@ export class PcfContextService {
   public async initialize(): Promise<void> {
     if (this.useUserLanguage) {
       console.log(
-        "PcfContextService.initialize: Loading user language settings..."
+        "PcfContextService.initialize: Loading user language settings...",
       );
       await this.initUserLanguageSettings();
     }
@@ -328,13 +346,13 @@ export class PcfContextService {
    */
   private async initUserLanguageSettings(): Promise<void> {
     console.log(
-      "initUserLanguageSettings: Starting to load user language settings..."
+      "initUserLanguageSettings: Starting to load user language settings...",
     );
     try {
       const settings = await this.getUserSettings();
       console.log(
         "initUserLanguageSettings: User settings response:",
-        settings
+        settings,
       );
       if (settings.isSuccess && settings.result) {
         this.uiLanguage = settings.result.uilanguage;
@@ -343,14 +361,14 @@ export class PcfContextService {
           "initUserLanguageSettings: Loaded - uiLanguage:",
           this.uiLanguage,
           "helpLanguage:",
-          this.helpLanguage
+          this.helpLanguage,
         );
       }
     } catch (error) {
       // Log the error and re-throw so it can be handled by the calling component
       console.warn(
         "initUserLanguageSettings: Failed to load user language settings:",
-        error
+        error,
       );
       throw error;
     }
@@ -451,7 +469,7 @@ export class PcfContextService {
    * @public
    */
   public static isInDesignMode(
-    context?: ComponentFramework.Context<IInputs>
+    context?: ComponentFramework.Context<IInputs>,
   ): boolean {
     // Previously only handled commercial cloud.
     // Updated to also handle GCC, GCC High, and DoD maker portal URLs.
@@ -465,7 +483,17 @@ export class PcfContextService {
     const currentUrl = globalThis.location.href;
     return designModeUrls.some((url) => currentUrl.includes(url));
   }
- 
+
+  public static isAuthoringMode(
+    context?: ComponentFramework.Context<IInputs>,
+  ): boolean {
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any, @typescript-eslint/no-unsafe-member-access
+    if (context && (context.mode as any).isAuthoringMode === true) {
+      return true;
+    }
+    return false;
+  }
+
   public isCanvasApp(): boolean {
     return this.context.mode.allocatedHeight !== -1;
   }
@@ -639,6 +667,156 @@ export class PcfContextService {
       pcfContextService: this,
     });
     return userSettingService.getUserSettings(this.getUserId());
+  }
+
+  /**
+   * Retrieves or fetches optionset metadata for a field using entity attribute metadata.
+   *
+   * This method manages caching of optionset options to avoid redundant API calls.
+   * It handles both global and local optionsets by fetching from the entity attribute definition.
+   *
+   * @param fieldName - Unique identifier for this field (used as cache key)
+   * @param attributeLogicalName - The logical name of the attribute field
+   * @returns Promise resolving to the array of optionset options, or undefined if not available
+   *
+   * @remarks
+   * This method fetches metadata from EntityDefinitions endpoint which provides
+   * complete optionset information regardless of whether it's local or global.
+   * Subsequent calls with the same fieldName return cached data instantly.
+   *
+   * @example
+   * ```typescript
+   * const options = await pcfService.getOrFetchOptionSetMetadata(
+   *   'country',
+   *   'aidevme_address3_countryregion'
+   * );
+   * if (options) {
+   *   const usaOption = options.find(opt => opt.Value === 1);
+   * }
+   * ```
+   *
+   * @public
+   */
+  public async getOrFetchOptionSetMetadata(
+    fieldName: string,
+    attributeLogicalName: string
+  ): Promise<GlobalOptionSetOption[] | undefined> {
+    // Lazy-initialize metadata service only when needed (i.e., when country field is OptionSet)
+    if (!this.metadataService) {
+      this.metadataService = new MetadataService({ context: this.context });
+    }
+
+    // Check cache first
+    const cached = this.optionSetCache.get(fieldName);
+    if (cached) {
+      console.log(
+        `PcfContextService: Returning ${cached.length} cached options for field '${fieldName}'`
+      );
+      return cached;
+    }
+
+    // Get entity type name from context
+    const entityTypeName = this.getEntityTypeName();
+
+    console.log(
+      `PcfContextService: Fetching optionset metadata for '${entityTypeName}.${attributeLogicalName}' (field: '${fieldName}')...`
+    );
+
+    try {
+      // Use the new MetadataService method to get optionset from attribute
+      const picklistOptions = await this.metadataService.getOptionSetMetadata(
+        entityTypeName,
+        attributeLogicalName
+      );
+
+      // Transform PicklistOption to GlobalOptionSetOption format for compatibility
+      const options: GlobalOptionSetOption[] = picklistOptions.map((opt) => ({
+        Value: opt.value,
+        Label: opt.label,
+        Description: opt.description,
+        ExternalValue: opt.externalValue ?? "",
+        Color: null,
+      }));
+
+      this.optionSetCache.set(fieldName, options);
+      console.log(
+        `PcfContextService: Successfully cached ${options.length} options for field '${fieldName}'`
+      );
+      console.log(
+        "First 5 options:",
+        options.slice(0, 5).map((opt) => ({
+          Value: opt.Value,
+          Label: opt.Label,
+        }))
+      );
+      return options;
+    } catch (error: unknown) {
+      const errorMsg = error instanceof Error ? error.message : String(error);
+      console.error(
+        `PcfContextService: Failed to fetch optionset metadata for field '${fieldName}':`,
+        errorMsg
+      );
+      return undefined;
+    }
+  }
+
+  /**
+   * Gets cached optionset metadata for a field.
+   *
+   * Returns previously fetched optionset options without making API calls.
+   * Use this method when you know the metadata has already been loaded.
+   *
+   * @param fieldName - The field name used when caching the metadata
+   * @returns Array of optionset options if cached, undefined otherwise
+   *
+   * @example
+   * ```typescript
+   * const options = pcfService.getCachedOptionSetMetadata('country');
+   * if (options) {
+   *   const match = options.find(opt => opt.ExternalValue === 'USA');
+   * }
+   * ```
+   *
+   * @public
+   */
+  public getCachedOptionSetMetadata(
+    fieldName: string
+  ): GlobalOptionSetOption[] | undefined {
+    return this.optionSetCache.get(fieldName);
+  }
+
+  /**
+   * Retrieves a country by ISO2 code.
+   * 
+   * @param iso2Code - The ISO 3166-1 alpha-2 country code.
+   * @returns Promise resolving to the country entity, or undefined if not found.
+   * 
+   * @public
+   */
+  public async getCountryByIso2(iso2Code: string): Promise<ComponentFramework.WebApi.Entity | undefined> {
+    // Lazy-initialize country service only when needed (i.e., when country field is Lookup.Simple)
+    if (!this.countryService) {
+      this.countryService = new CountryService({ context: this.context });
+    }
+     
+    return await this.countryService.getCountryByIso2(iso2Code);
+  }
+
+  /**
+   * Retrieves a country by ISO3 code.
+   * 
+   * @param iso3Code - The ISO 3166-1 alpha-3 country code.
+   * @returns Promise resolving to the country entity, or undefined if not found.
+   * 
+   * @public
+   */
+  public async getCountryByIso3(iso3Code: string): Promise<ComponentFramework.WebApi.Entity | undefined> {
+    // Lazy-initialize country service only when needed (i.e., when country field is Lookup.Simple)
+    if (!this.countryService) {
+      this.countryService = new CountryService({ context: this.context });
+    }
+     
+    return await this.countryService.getCountryByIso3(iso3Code);
   }
 }
 

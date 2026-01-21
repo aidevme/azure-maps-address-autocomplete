@@ -46,8 +46,14 @@ jest.mock('../../AzureMapsAddressAutoComplete/services/PcfContext/PcfContextServ
     countries: [],
   };
 
+  const MockPcfContextService: any = jest.fn().mockImplementation(() => mockInstance);
+  
+  // Add static methods
+  MockPcfContextService.isInDesignMode = jest.fn().mockReturnValue(false);
+  MockPcfContextService.isAuthoringMode = jest.fn().mockReturnValue(false);
+
   return {
-    PcfContextService: jest.fn().mockImplementation(() => mockInstance),
+    PcfContextService: MockPcfContextService,
   };
 });
 
